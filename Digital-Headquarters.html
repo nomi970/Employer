@@ -25,10 +25,9 @@
 
     <!----------------------- CSS ------------------------------->
     <link rel="stylesheet" type="text/css" href="assets/css/navigation.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/Naeem.css" />
     <link rel="stylesheet" href="assets/css/common.css" />
-
+    <link rel="stylesheet" href="./assets/css/numan.css">
     <title>Dashboard | Employer Ease</title>
 
     <style>
@@ -470,10 +469,266 @@
                 </div>
                 <!-- Content Section -->
                 <div class="dashboard-content">
-                   
+                    <div class="main__wraper">
+                        <div class="digital_headquater__tabs">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                        aria-selected="true">Overall Score</button>
+                                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-profile" type="button" role="tab"
+                                        aria-controls="nav-profile" aria-selected="false">Business Details</button>
+                                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-contact" type="button" role="tab"
+                                        aria-controls="nav-contact" aria-selected="false">Listings</button>
+                                    <button class="nav-link" id="nav-review-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-review" type="button" role="tab" aria-controls="nav-review"
+                                        aria-selected="false">Reviews</button>
+                                    <button class="nav-link" id="nav-social-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-social" type="button" role="tab" aria-controls="nav-social"
+                                        aria-selected="false">Social</button>
+                                    <button class="nav-link" id="nav-website-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-website" type="button" role="tab"
+                                        aria-controls="nav-website" aria-selected="false">Website</button>
+                                    <button class="nav-link" id="nav-e-commerce-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-e-commerce" type="button" role="tab"
+                                        aria-controls="nav-e-commerce" aria-selected="false">E-Commerce</button>
+                                    <button class="nav-link" id="nav-e-commerce-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-advertising" type="button" role="tab"
+                                        aria-controls="nav-advertising" aria-selected="false">Advertising</button>
+                                    <button class="nav-link" id="nav-seo-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-seo" type="button" role="tab" aria-controls="nav-seo"
+                                        aria-selected="false">SEO</button>
+                                    <button class="nav-link" id="nav-technology-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-technology" type="button" role="tab"
+                                        aria-controls="nav-technology" aria-selected="false">Technology</button>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                    aria-labelledby="nav-home-tab">
+                                    <div class="d-flex align-items-center justify-content-between mt_24 flex-wrap gap-2">
+                                        <h2 class="fs_18 fw_600 global-black ln_28">Overall score for EmployerEase, LLC</h2>
+                                        <button class="info_btn" type="button">
+                                            <div>
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_7442_4114)">
+                                                        <path
+                                                            d="M10 6.66663V9.99996M10 13.3333H10.0084M18.3334 9.99996C18.3334 14.6023 14.6024 18.3333 10 18.3333C5.39765 18.3333 1.66669 14.6023 1.66669 9.99996C1.66669 5.39759 5.39765 1.66663 10 1.66663C14.6024 1.66663 18.3334 5.39759 18.3334 9.99996Z"
+                                                            stroke="#344054" stroke-width="1.66667"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_7442_4114">
+                                                            <rect width="20" height="20" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="border__wrapper mt_24">
+                                        <div class="main__over_scroe_info">
+                                            <div>
+                                                <div id="circularProgress"></div>
+                                            </div>
+                                            <div class="main__score_items">
+                                                <div class="overall_score_items">
+                                                    <div class="overall_score_items__bx">
+                                                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M15.3235 5.20944C15.6309 4.58686 15.7845 4.27556 15.9931 4.17611C16.1746 4.08957 16.3855 4.08957 16.567 4.17611C16.7755 4.27556 16.9292 4.58686 17.2365 5.20944L20.1521 11.1161C20.2428 11.2999 20.2882 11.3918 20.3545 11.4631C20.4132 11.5263 20.4836 11.5775 20.5618 11.6138C20.6501 11.6549 20.7515 11.6697 20.9543 11.6994L27.476 12.6526C28.1628 12.753 28.5061 12.8032 28.6651 12.9709C28.8033 13.1169 28.8683 13.3174 28.842 13.5167C28.8118 13.7458 28.5632 13.9879 28.066 14.4722L23.3486 19.0669C23.2016 19.2101 23.128 19.2818 23.0806 19.367C23.0386 19.4424 23.0116 19.5253 23.0012 19.611C22.9895 19.7079 23.0068 19.809 23.0415 20.0113L24.1546 26.5012C24.272 27.1857 24.3307 27.5279 24.2204 27.731C24.1244 27.9077 23.9538 28.0317 23.7561 28.0683C23.5288 28.1104 23.2215 27.9488 22.6068 27.6256L16.7765 24.5595C16.5949 24.4639 16.504 24.4162 16.4083 24.3974C16.3236 24.3808 16.2365 24.3808 16.1517 24.3974C16.056 24.4162 15.9652 24.4639 15.7836 24.5595L9.95324 27.6256C9.33856 27.9488 9.03122 28.1104 8.80397 28.0683C8.60625 28.0317 8.43564 27.9077 8.33966 27.731C8.22934 27.5279 8.28804 27.1857 8.40544 26.5012L9.51852 20.0113C9.55323 19.809 9.57058 19.7079 9.55884 19.611C9.54844 19.5253 9.52149 19.4424 9.47948 19.367C9.43204 19.2818 9.35851 19.2101 9.21146 19.0669L4.49409 14.4722C3.99689 13.9879 3.7483 13.7458 3.71804 13.5167C3.69172 13.3174 3.75675 13.1169 3.89501 12.9709C4.05392 12.8032 4.3973 12.753 5.08407 12.6526L11.6058 11.6994C11.8086 11.6697 11.91 11.6549 11.9983 11.6138C12.0765 11.5775 12.1469 11.5263 12.2056 11.4631C12.2719 11.3918 12.3172 11.2999 12.408 11.1161L15.3235 5.20944Z" stroke="#6F7784" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>                                                                                                               
+                                                    </div>
+                                                    <p class="font_16 fw_600 ln_20 global-normal-blue mt-3">Listings</p>
+                                                </div>
+                                                <div class="overall_score_items">
+                                                    <div class="overall_score_items__bx">
+                                                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M28.32 16.6051L12.32 16.6051M28.32 8.60506L12.32 8.60506M28.32 24.6051L12.32 24.6051M6.9867 16.6051C6.9867 17.3414 6.38975 17.9384 5.65337 17.9384C4.91699 17.9384 4.32004 17.3414 4.32004 16.6051C4.32004 15.8687 4.91699 15.2717 5.65337 15.2717C6.38975 15.2717 6.9867 15.8687 6.9867 16.6051ZM6.9867 8.60506C6.9867 9.34144 6.38975 9.9384 5.65337 9.9384C4.91699 9.9384 4.32004 9.34144 4.32004 8.60506C4.32004 7.86868 4.91699 7.27173 5.65337 7.27173C6.38975 7.27173 6.9867 7.86868 6.9867 8.60506ZM6.9867 24.6051C6.9867 25.3414 6.38975 25.9384 5.65337 25.9384C4.91699 25.9384 4.32004 25.3414 4.32004 24.6051C4.32004 23.8687 4.91699 23.2717 5.65337 23.2717C6.38975 23.2717 6.9867 23.8687 6.9867 24.6051Z" stroke="#6F7784" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>                                                        
+                                                    </div>
+                                                    <p class="font_16 fw_600 ln_20 global-normal-blue mt-3">Social</p>
+                                                </div>
+                                                <div class="overall_score_items">
+                                                    <div class="overall_score_items__bx">
+                                                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M29.5534 28.605V25.9383C29.5534 23.4532 27.8537 21.3651 25.5534 20.773M20.8867 4.99266C22.8413 5.78384 24.22 7.70006 24.22 9.93831C24.22 12.1766 22.8413 14.0928 20.8867 14.884M22.8867 28.605C22.8867 26.12 22.8867 24.8774 22.4807 23.8973C21.9394 22.5905 20.9012 21.5523 19.5943 21.011C18.6142 20.605 17.3717 20.605 14.8867 20.605H10.8867C8.40168 20.605 7.15917 20.605 6.17906 21.011C4.87224 21.5523 3.83398 22.5905 3.29268 23.8973C2.8867 24.8774 2.8867 26.12 2.8867 28.605M18.22 9.93831C18.22 12.8838 15.8322 15.2716 12.8867 15.2716C9.94118 15.2716 7.55337 12.8838 7.55337 9.93831C7.55337 6.99279 9.94118 4.60498 12.8867 4.60498C15.8322 4.60498 18.22 6.99279 18.22 9.93831Z" stroke="#6F7784" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>                                                                                                               
+                                                    </div>
+                                                    <p class="font_16 fw_600 ln_20 global-normal-blue mt-3">Social</p>
+                                                </div>
+                                                <div class="overall_score_items">
+                                                    <div class="overall_score_items__bx">
+                                                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M28.17 12.605L28.17 4.60498M28.17 4.60498H20.17M28.17 4.60498L17.5033 15.2716M13.5033 7.27165H10.57C8.3298 7.27165 7.2097 7.27165 6.35405 7.70762C5.6014 8.09111 4.98948 8.70304 4.60599 9.45569C4.17001 10.3113 4.17001 11.4314 4.17001 13.6716V22.205C4.17001 24.4452 4.17001 25.5653 4.60599 26.4209C4.98948 27.1736 5.6014 27.7855 6.35405 28.169C7.2097 28.605 8.3298 28.605 10.57 28.605H19.1033C21.3436 28.605 22.4637 28.605 23.3193 28.169C24.072 27.7855 24.6839 27.1736 25.0674 26.4209C25.5033 25.5653 25.5033 24.4452 25.5033 22.205V19.2716" stroke="#6F7784" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>                                                                                                              
+                                                    </div>
+                                                    <p class="font_16 fw_600 ln_20 global-normal-blue mt-3">Website</p>
+                                                </div>
+                                                <div class="overall_score_items">
+                                                    <div class="overall_score_items__bx">
+                                                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M2.78668 3.27161H4.52823C4.85626 3.27161 5.02027 3.27161 5.15226 3.33193C5.26857 3.38508 5.36714 3.47057 5.43622 3.5782C5.5146 3.70033 5.53779 3.8627 5.58418 4.18742L6.21525 8.60494M6.21525 8.60494L7.61778 18.9135C7.79576 20.2216 7.88475 20.8757 8.19748 21.3681C8.47305 21.8019 8.86813 22.1469 9.33516 22.3614C9.86517 22.6049 10.5253 22.6049 11.8455 22.6049H23.256C24.5127 22.6049 25.1411 22.6049 25.6546 22.3788C26.1074 22.1795 26.4958 21.8581 26.7764 21.4506C27.0946 20.9884 27.2122 20.3712 27.4473 19.1366L29.2122 9.87119C29.2949 9.43668 29.3363 9.21943 29.2763 9.04961C29.2237 8.90063 29.1199 8.77519 28.9834 8.69563C28.8278 8.60494 28.6067 8.60494 28.1643 8.60494H6.21525ZM13.4533 28.6049C13.4533 29.3413 12.8564 29.9383 12.12 29.9383C11.3836 29.9383 10.7867 29.3413 10.7867 28.6049C10.7867 27.8686 11.3836 27.2716 12.12 27.2716C12.8564 27.2716 13.4533 27.8686 13.4533 28.6049ZM24.12 28.6049C24.12 29.3413 23.5231 29.9383 22.7867 29.9383C22.0503 29.9383 21.4533 29.3413 21.4533 28.6049C21.4533 27.8686 22.0503 27.2716 22.7867 27.2716C23.5231 27.2716 24.12 27.8686 24.12 28.6049Z" stroke="#6F7784" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>                                                                                                                
+                                                    </div>
+                                                    <p class="font_16 fw_600 ln_20 global-normal-blue mt-3">Ecommerce</p>
+                                                </div>
+                                                <div class="overall_score_items">
+                                                    <div class="overall_score_items__bx">
+                                                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M22.7417 28.605L16.075 23.2716L9.40837 28.605M9.1417 23.2716H23.0084C25.2486 23.2716 26.3687 23.2716 27.2243 22.8357C27.977 22.4522 28.5889 21.8403 28.9724 21.0876C29.4084 20.232 29.4084 19.1119 29.4084 16.8716V11.005C29.4084 8.76477 29.4084 7.64467 28.9724 6.78902C28.5889 6.03637 27.977 5.42445 27.2243 5.04095C26.3687 4.60498 25.2486 4.60498 23.0084 4.60498H9.1417C6.90149 4.60498 5.78138 4.60498 4.92574 5.04095C4.17309 5.42445 3.56117 6.03637 3.17767 6.78902C2.7417 7.64467 2.7417 8.76477 2.7417 11.005V16.8716C2.7417 19.1119 2.7417 20.232 3.17767 21.0876C3.56117 21.8403 4.17309 22.4522 4.92574 22.8357C5.78138 23.2716 6.90149 23.2716 9.1417 23.2716Z" stroke="#6F7784" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>                                                                                                               
+                                                    </div>
+                                                    <p class="font_16 fw_600 ln_20 global-normal-blue mt-3">Advertising</p>
+                                                </div>
+                                                <div class="overall_score_items">
+                                                    <div class="overall_score_items__bx">
+                                                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M20.0874 12.605H7.35335C5.5124 12.605 4.02002 11.1126 4.02002 9.27165C4.02002 7.4307 5.5124 5.93831 7.35335 5.93831H20.0874M11.9527 27.2716H24.6867C26.5276 27.2716 28.02 25.7793 28.02 23.9383C28.02 22.0974 26.5276 20.605 24.6867 20.605H11.9527M4.02002 23.9383C4.02002 26.5156 6.10936 28.605 8.68669 28.605C11.264 28.605 13.3534 26.5156 13.3534 23.9383C13.3534 21.361 11.264 19.2716 8.68669 19.2716C6.10936 19.2716 4.02002 21.361 4.02002 23.9383ZM28.02 9.27165C28.02 11.849 25.9307 13.9383 23.3534 13.9383C20.776 13.9383 18.6867 11.849 18.6867 9.27165C18.6867 6.69432 20.776 4.60498 23.3534 4.60498C25.9307 4.60498 28.02 6.69432 28.02 9.27165Z" stroke="#6F7784" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>                                                                                                          
+                                                    </div>
+                                                    <p class="font_16 fw_600 ln_20 global-normal-blue mt-3">SEO</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border__wrapper mt_24">
+                                        <div class="d-flex justify-content-between gap_108 wrap__922">
+                                            <div>
+                                                <h2 class="fs_18 fw_600 global-black ln_28">Dominate Your Local Market</h2>
+                                                <p class="font_16 fw_400 global-gray ln_26 mx_695">73% of consumers lose trust in a business with inaccurate listings and 88% of consumers look to online reviews when making buying decisions. Stop losing customers to your competitors and start winning them back. Fix your listings, improve your review scores, and hear what people are saying about you—all from one dashboard.</p>
+                                                <button class="global__btn mt_32" type="button">Get Started</button>
+                                            </div>
+                                            <div><img class="image_res" width="261" height="220" src="./assets/images/local_market.png" alt="local_market"></div>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                    aria-labelledby="nav-profile-tab">
+                                    <div class="mt_24">
+                                        <h2 class="fs_18 fw_600 global-black ln_28">Business Details</h2>
+                                    </div>
+                                    <div class="border__wrapper mt_24">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <div>
+                                                    <h2 class="font_14 fw_400 global-x-light-gray ln_16">Name</h2>
+                                                    <p class="font_16 fw_400 global-black mt-1">EmployerEase, LLC</p>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <h2 class="font_14 fw_400 global-x-light-gray ln_16">Address</h2>
+                                                    <p class="font_16 fw_400 global-black mt-1">23074 East Pummelos Road Queen Creek, AZ 85142</p>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <h2 class="font_14 fw_400 global-x-light-gray ln_16">Phone Number</h2>
+                                                    <p class="font_16 fw_400 global-black mt-1">857-998-1308</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <div>
+                                                    <h2 class="font_14 fw_400 global-x-light-gray ln_16">Website</h2>
+                                                    <a href="https://EmployerEase.com" target="_blank" class="font_16 fw_400 mt-1 text-decoration-none" style="color: #1976D2;">https://EmployerEase.com</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border__wrapper mt_24">
+                                        <div class="d-flex justify-content-between gap_108 wrap__922">
+                                            <div>
+                                                <h2 class="fs_18 fw_600 global-black ln_28">Dominate Your Local Market</h2>
+                                                <p class="font_16 fw_400 global-gray ln_26 mx_695">73% of consumers lose trust in a business with inaccurate listings and 88% of consumers look to online reviews when making buying decisions. Stop losing customers to your competitors and start winning them back. Fix your listings, improve your review scores, and hear what people are saying about you—all from one dashboard.</p>
+                                                <button class="global__btn mt_32" type="button">Get Started</button>
+                                            </div>
+                                            <div><img class="image_res" width="261" height="220" src="./assets/images/local_market.png" alt="local_market"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                    aria-labelledby="nav-contact-tab">
+                                    <div class="mt_24">
+                                        <h2 class="fs_18 fw_600 global-black ln_28">Listings</h2>
+                                    </div>
+                                    <div class="border__wrapper mt_24">
+                                        <div class="main__listing_video_wrapper">
+                                                <div>
+                                                    <div class="video-container">
+                                                        <video id="myVideo" width="261" height="230" poster="./assets/images/video_poster.png" co>
+                                                          <source src="./assets/images/demo_video.mp4" type="video/mp4">
+                                                          Your browser does not support the video tag.
+                                                        </video>
+                                                        <div class="main__playPauseButton">
+                                                            <button id="playPauseButton" class="play-pause-button play-icon"></button>
+                                                        </div>
+                                                        
+                                                      </div>
+                                                </div>
+                                                <div>
+                                                    <p class="font_16 fw_400 global-gray ln_26 mx_695">Bad news: we can’t find many listings for your business, which means customers can’t either. What’s worse is that the listings we found are mostly inaccurate. With 85% of consumers searching for a business online, you’re losing revenue to your competitors.</p>
+                                                    <p class="font_16 fw_400 global-gray ln_26 mx_695 mt_24">Add your business to review sites, business directories, and social sites to turn online searchers into customers.</p>
+                                                    <button class="global__btn mt_32" type="button">Get Started</button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="border__wrapper mt_24">
+                                        <div class="bar-graph-container">
+                                            <!-- First Bar -->
+                                            <div class="bar-row">
+                                              <div class="label">
+                                                <span class="label-text color_progress">Your Business</span>
+                                                <div class="bar__main">
+                                                    <div class="bar">
+                                                        <div class="progress" id="yourBusinessBar"></div>
+                                                      </div>
+                                                    <span id="yourBusinessValue" class="value color_progress">0%</span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <!-- Second Bar -->
+                                            <div class="bar-row">
+                                              <div class="label">
+                                                <span class="label-text color_avaibale">Available listing sites</span>
+                                                <div class="bar__main">
+                                                    <div class="bar">
+                                                        <div class="progress" id="availableListingBar"></div>
+                                                      </div>
+                                                    <span id="availableListingValue" class="value color_avaibale">0%</span>
+                                                </div>
+                                               
+                                              </div>
+                                              
+                                            </div>
+                                          </div>
+                                          
+                                          
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-review" role="tabpanel"
+                                    aria-labelledby="nav-review-tab">Reviews</div>
+                                <div class="tab-pane fade" id="nav-social" role="tabpanel"
+                                    aria-labelledby="nav-social-tab">Social</div>
+                                <div class="tab-pane fade" id="nav-website" role="tabpanel"
+                                    aria-labelledby="nav-website-tab">Website</div>
+                                <div class="tab-pane fade" id="nav-e-commerce" role="tabpanel"
+                                    aria-labelledby="nav-e-commerce-tab">E-Commerce</div>
+                                <div class="tab-pane fade" id="nav-advertising" role="tabpanel"
+                                    aria-labelledby="nav-advertising-tab">Advertising</div>
+                                <div class="tab-pane fade" id="nav-seo" role="tabpanel" aria-labelledby="nav-seo-tab">
+                                    SEO</div>
+                                <div class="tab-pane fade" id="nav-technology" role="tabpanel"
+                                    aria-labelledby="nav-technology-tab">Technology</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
     </section>
+
 
     <!-------------------------- ********** Section 1 ********** ------------------------->
 
@@ -491,24 +746,122 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
 
-    <!--------------------------------- Popper Js Ends----------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
 
-
-    <script src="assets/js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
-    <!--------------------------------- Flate Picker----------------------------->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
-        flatpickr("#datePicker", {
-            inline: true, // Makes the date picker always visible
-            defaultDate: "2024-11-18", // Preselect a date
-            onChange: function (selectedDates, dateStr, instance) {
-                console.log("Selected date:", dateStr);
+        // Create the circular progress bar
+        const bar = new ProgressBar.Circle('#circularProgress', {
+            color: '#407d9e', 
+            strokeWidth: 12, 
+            trailColor: '#e6e6e6', 
+            trailWidth: 12, 
+            easing: 'easeInOut',
+            duration: 1400,
+            text: {
+                value: '', 
+                className: 'progress-text', 
+            },
+            svgStyle: {
+                strokeLinecap: 'round',
             },
         });
+        function updateProgress(value) {
+            const progressDecimal = value / 100;
+            bar.animate(progressDecimal);
+            document.querySelector('.progress-text').textContent = `${value}%`;
+        }
+        updateProgress(14);
     </script>
+   <script>
+    const video = document.getElementById('myVideo');
+const playPauseButton = document.getElementById('playPauseButton');
+const playPauseContainer = document.querySelector('.main__playPauseButton');
 
+let hideTimeout;
+
+// Function to toggle play/pause and update button icon
+function togglePlayPause() {
+    if (video.paused || video.ended) {
+        video.play();
+        playPauseButton.classList.remove('play-icon');
+        playPauseButton.classList.add('pause-icon');
+    } else {
+        video.pause();
+        playPauseButton.classList.remove('pause-icon');
+        playPauseButton.classList.add('play-icon');
+    }
+}
+
+// Function to hide the button after 2 seconds
+function hideButton() {
+    hideTimeout = setTimeout(() => {
+        playPauseContainer.classList.add('hidden');
+    }, 2000);
+}
+
+// Function to reset hiding timeout and show the button again
+function resetHideTimeout() {
+    clearTimeout(hideTimeout);
+    playPauseContainer.classList.remove('hidden');
+    if (!video.paused) hideButton(); // Start hiding process again if the video is playing
+}
+
+// Event listener for button click to toggle play/pause
+playPauseButton.addEventListener('click', () => {
+    togglePlayPause();
+    if (!video.paused) {
+        hideButton();
+    }
+});
+
+// Show the button when the video is paused or ended (video stopped)
+video.addEventListener('pause', () => {
+    playPauseButton.classList.remove('pause-icon');
+    playPauseButton.classList.add('play-icon'); // Show play icon when paused
+    playPauseContainer.classList.remove('hidden');
+    clearTimeout(hideTimeout);
+});
+
+// Show the button when the video ends (video stopped)
+video.addEventListener('ended', () => {
+    playPauseButton.classList.remove('pause-icon');
+    playPauseButton.classList.add('play-icon'); // Show play icon when video ends
+    playPauseContainer.classList.remove('hidden');
+    clearTimeout(hideTimeout);
+});
+
+// Show the button when the user hovers over or interacts with the video container
+const videoContainer = document.querySelector('.video-container');
+videoContainer.addEventListener('mousemove', resetHideTimeout);
+videoContainer.addEventListener('touchstart', resetHideTimeout);
+
+// Hide the button after the video starts playing
+video.addEventListener('play', hideButton);
+
+   </script>
+   <script>
+    // Function to dynamically update progress bars with percentage values
+function updateBarWithPercentage(barId, valueId, percentage) {
+  // Update the width of the progress bar
+  const progressBar = document.getElementById(barId);
+  progressBar.style.width = `${percentage}%`;
+
+  // Update the displayed percentage
+  const valueDisplay = document.getElementById(valueId);
+  valueDisplay.textContent = `${percentage}%`;
+}
+
+// Percentage values for the progress bars
+const yourBusinessPercentage = 15; // Example: 15%
+const availableListingSitesPercentage = 100; // Example: 85%
+
+// Update the green bar (Your Business)
+updateBarWithPercentage('yourBusinessBar', 'yourBusinessValue', yourBusinessPercentage);
+
+// Update the blue bar (Available listing sites)
+updateBarWithPercentage('availableListingBar', 'availableListingValue', availableListingSitesPercentage);
+
+   </script>
 </body>
 
 </html>
