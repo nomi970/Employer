@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.19/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <title>Get Started</title>
+</head>
+<body>
+    <section class="" style="height: 100%;">
+        <div class="main_get_started global-light-gray-bg">
+            <div class="get_started_info global-bg-white">
+                <div class="main_logo"><img src="./assets/images/main-logo.png" alt="main-logo"></div>
+                <div class="get_info_main_content">
+                    <h2 class="font_36 fw_600 global-black">Get Started</h2>
+                    <p class="font_16 fw_400 global-gray mt_12">Welcome now! Please fill onboarding form.</p>
+                    <form id="companyForm" action="" method="post">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <!-- Step 1 -->
+                            <div class="carousel-item active">
+                                <div class="over__flow">
+                              <div class="row g-3 mt_32">
+                                <div class="col-lg-6 col-md-6 global_input mt-0">
+                                  <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="f-name">First Name <span class="required_span">*</span></label>
+                                  <input class="mt-2" type="text" name="name" id="name" placeholder="Enter first name" required>
+                                  <div class="error-message" style="color: red !important; display: none;">Please enter your first name</div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 global_input mt-0">
+                                  <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="last-name">Last Name <span class="required_span">*</span></label>
+                                  <input class="mt-2" type="text" name="last_name" id="last-name" placeholder="Enter last name" required>
+                                  <div class="error-message" style="color: red; display: none;">Please enter your last name</div>
+                                </div>
+                              </div>
+                              <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="company-name">Company Name </label>
+                                <input class="mt-2" type="name" name="company_name" id="company-name" placeholder="Enter company name">
+                            </div>
+                            <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="company-position">Position at Company </label>
+                                <input class="mt-2" type="name" name="company_position" id="company-position" placeholder="Enter position">
+                            </div>
+                            <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="email">Email </label>
+                                <input class="mt-2" type="email" name="email" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="phone">Phone Number </label>
+                                <input class="mt-2" type="phone" name="phone" id="phone" placeholder="Enter your phone number">
+                            </div>
+                            <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="company-address">Company Address </label>
+                                <input class="mt-2" type="text" name="company_address" id="company-address" placeholder="Enter your address">
+                            </div>
+                        </div>
+                              <button type="button" class="form_next_btn mt_24" id="next1">Next</button>
+                            </div>
+                            <!-- Step 2 -->
+                            <div class="carousel-item">
+                                <div class="over__flow">
+                              <div class="global_input mt_32">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="physical-locations">How many physical locations does your company have? <span class="required_span">*</span></label>
+                                <input class="mt-2" type="text" name="physical_locations" id="physical-locations" placeholder="e.g. 23" required>
+                                <div class="error-message" style="color: red; display: none;">Please enter the number of physical locations</div>
+                              </div>
+                              <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="company-type">Is your Company a Startup or Established? <span class="required_span">*</span></label>
+                                <select class="custom-select mt-2" name="company_type" id="company-type" required>
+                                  <option value="" selected disabled>Please Select</option>
+                                  <option value="early-stage-startup">Early-Stage Startup</option>
+                                  <option value="growing-startup">Growing Startup</option>
+                                  <option value="established-business">Established Business</option>
+                                  <option value="enterprise">Large Enterprise</option>
+                                </select>
+                                <div class="error-message" style="color: red; display: none;">Please select your company type</div>
+                              </div>
+                              <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="company-size">Enter the Size of your Company </label>
+                                <select class="custom-select mt-2" name="company_size" id="company-size">
+                                    <option value="" selected disabled>Please Select</option>
+                                    <option value="1-10">1-10 employees</option>
+                                    <option value="11-50">11-50 employees</option>
+                                    <option value="51-100">51-100 employees</option>
+                                    <option value="101-500">101-500 employees</option>
+                                    <option value="501-1000">501-1000 employees</option>
+                                    <option value="1000+">1000+ employees</option>
+                                </select>
+                            </div>
+                              <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="company-operate">How many States does your company operate in? <span class="required_span">*</span></label>
+                                <input class="mt-2" type="text" name="company_operate" id="company-operate" placeholder="e.g. 23" required>
+                                <div class="error-message" style="color: red; display: none;">Please enter number of states</div>
+                              </div>
+                              <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="you-employee">Do you have Employees </label>
+                                <select class="custom-select mt-2" name="you_employee" id="you-employee">
+                                    <option value="" selected disabled>Please Select</option>
+                                    <option value="1">No</option>
+                                    <option value="2">Yes</option>
+                                </select>
+                            </div>
+                            <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="employee-count">Employee Count</label>
+                                <input class="mt-2" type="name" name="employee_count" id="employee-count" placeholder="e.g.  23">
+                                <p class="font_14 fw_400 ln_20 global-gray mt-2">** Enter 0 if there are no Employees</p>
+                            </div>
+                        </div>
+                              <button type="button" class="form_next_btn mt_24" id="next2">Next</button>
+                            </div>
+                            <!-- Step 3 -->
+                            <div class="carousel-item">
+                                <div class="over__flow">
+                              <div class="global_input mt_32">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="annual-payroll">What is your company’s annual payroll? <span class="required_span">*</span></label>
+                                <input class="mt-2" type="text" name="annual_payroll" id="annual-payroll" placeholder="e.g. 23" required>
+                                <div class="error-message" style="color: red; display: none;">Please enter your company's annual payroll</div>
+                                <p class="font_14 fw_400 ln_20 global-gray mt-2">Include Owners and Officers payroll. If none, enter next 12 Months Anticipated Gross Payroll.</p>
+                              </div>
+                              <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="work-schedule">"Do Employees have set work schedules or shifts?"</label>
+                                <select class="custom-select mt-2" name="work_schedule" id="work-schedule">
+                                    <option value="" selected disabled>Please Select</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                            <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="sell-type">Do you sell goods or services, and payment methods? </label>
+                                <select class="custom-select mt-2" name="sell_type" id="sell-type">
+                                    <option value="" selected disabled>Please Select</option>
+                                    <option value="goods">Goods</option>
+                                    <option value="services">Services</option>
+                                    <option value="both">Both Goods and Services</option>
+                                </select>
+                            </div>
+                              <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="crm-email-software">Are you using CRMs and Email Marketing Software? <span class="required_span">*</span></label>
+                                <select class="custom-select mt-2" name="crm_email_software" id="crm-email-software" required>
+                                  <option value="" selected disabled>Please Select</option>
+                                  <option value="both">Yes, both CRM and Email Marketing Software</option>
+                                  <option value="crm-only">Yes, CRM only</option>
+                                  <option value="email-only">Yes, Email Marketing Software only</option>
+                                  <option value="neither">No, neither</option>
+                                </select>
+                                <div class="error-message" style="color: red; display: none;">Please select an option</div>
+                              </div>
+                              <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="crm-sales">Please list all the CRM, Sales & Marketing Software</label>
+                                <select class="custom-select mt-2" name="crm_sales" id="crm-sales" >
+                                    <option value="" selected disabled>Please Select</option>
+                                    <option value="salesforce">Salesforce</option>
+                                    <option value="hubspot-crm">HubSpot CRM</option>
+                                    <option value="zoho-crm">Zoho CRM</option>
+                                    <option value="pipedrive">Pipedrive</option>
+                                </select>
+                            </div>
+                            <div class="global_input mt-3">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="crm-management">Who Manages your CRM, Sales & Marketing Software?</label>
+                                <select class="custom-select mt-2" name="crm_management" id="crm-management">
+                                    <option value="" selected disabled>Please Select</option>
+                                    <option value="marketing-team">Marketing Team</option>
+                                    <option value="sales-team">Sales Team</option>
+                                    <option value="it-department">IT Department</option>
+                                    <option value="external-agency">External Agency</option>
+                                    <option value="ceo-or-founder">CEO or Founder</option>
+                                    <option value="dedicated-team">Dedicated Team</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                              <button type="button" class="form_next_btn mt_24" id="next3">Next</button>
+                            </div>
+                            <!-- Step 4 -->
+                            <div class="carousel-item">
+                                <div class="over__flow">
+                              <div class="global_input mt_32">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="gross-revenue">Please enter your Company’s Annual Gross Revenue <span class="required_span">*</span></label>
+                                <input class="mt-2" type="text" name="gross_revenue" id="gross-revenue" placeholder="e.g. 23" required>
+                                <div class="error-message" style="color: red; display: none;">Please enter your company's gross revenue</div>
+                                <p class="font_14 fw_400 ln_20 global-gray mt-2">$ Enter your Anticipated Gross Sales or Enter 0</p>
+                              </div>
+                              <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="accountant-management">Do you have an internal accountant or use 3rd parties?</label>
+                                <select class="custom-select mt-2" name="accountant_management" id="accountant-management">
+                                    <option value="" selected disabled>Please Select</option>
+                                    <option value="internal-accountant">Internal Accountant</option>
+                                    <option value="third-party-accountant">Third-Party Accountant</option>
+                                    <option value="both">Both (Internal & Third-Party)</option>
+                                    <option value="neither">Neither</option>
+                                </select>
+                            </div>
+                            <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="accounting-involvement">Rate your desired involvement in accounting (1-10).</label>
+                                <select class="custom-select mt-2" name="accounting_involvement" id="accounting-involvement">
+                                    <option value="" selected disabled>Please Select</option>
+                                    <option value="1">1 - Minimal involvement</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10 - Maximum involvement</option>
+                                </select>
+                            </div>
+                            <div class="global_input mt_20">
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="fileInput">
+                                  Group Census & Supporting Docs Upload
+                                </label>
+                                <div class="upload-container mt-2" onclick="document.getElementById('fileInput').click()">
+                                  <div class="upload-icon"><img src="./assets/images/icons/upload-file-icon.svg" alt="upload-file-icon"></div>
+                                  <label class="font_14 fw_600 ln_20 global-normal-blue mt_12" for="fileInput">Click to upload <span class="font_14 fw_400 ln_20 global-gray">or drag and drop</span></label> 
+                                  <input type="file" id="fileInput" class="upload-input" accept=".svg, .png, .jpg, .jpeg, .gif" multiple>
+                                  <p class="font_12 fw_400 ln_18 global-gray mt-1">SVG, PNG, JPG or GIF (max. 800×400px)</p>
+                                </div>
+                                <div id="preview-container" class="preview-container"></div>
+                              </div>
+                              <div>
+                                <h2 class="font_14 fw_500 ln_20 w-100 global-dark-gray">Please Rate How Easy this form was</h2>
+                                <div>
+                                    <div class="d-flex align-items-baseline gap-2 mt-2">
+                                        <div class="rating-box">
+                                            <div class="rating-container static-ratings">
+                                                <input type="radio" name="rating" value="5" id="star-5">
+                                                <label for="star-5">
+                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 0.5L16.079 7.86365L24 9.66718L18.6 16.0217L19.4164 24.5L12 21.0637L4.58359 24.5L5.39999 16.0217L-5.72205e-06 9.66718L7.92097 7.86365L12 0.5Z" fill="#D9DEE2"/>
+                                                        </svg>                                                        
+                                                </label>
+                            
+                                                <input type="radio" name="rating" value="4" id="star-4">
+                                                <label for="star-4">
+                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 0.5L16.079 7.86365L24 9.66718L18.6 16.0217L19.4164 24.5L12 21.0637L4.58359 24.5L5.39999 16.0217L-5.72205e-06 9.66718L7.92097 7.86365L12 0.5Z" fill="#D9DEE2"/>
+                                                        </svg>                                                        
+                                                </label>
+                            
+                                                <input type="radio" name="rating" value="3" id="star-3">
+                                                <label for="star-3">
+                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 0.5L16.079 7.86365L24 9.66718L18.6 16.0217L19.4164 24.5L12 21.0637L4.58359 24.5L5.39999 16.0217L-5.72205e-06 9.66718L7.92097 7.86365L12 0.5Z" fill="#D9DEE2"/>
+                                                        </svg>                                                        
+                                                </label>
+                            
+                                                <input type="radio" name="rating" value="2" id="star-2">
+                                                <label for="star-2">
+                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 0.5L16.079 7.86365L24 9.66718L18.6 16.0217L19.4164 24.5L12 21.0637L4.58359 24.5L5.39999 16.0217L-5.72205e-06 9.66718L7.92097 7.86365L12 0.5Z" fill="#D9DEE2"/>
+                                                        </svg>                                                        
+                                                </label>
+                            
+                                                <input type="radio" name="rating" value="1" id="star-1">
+                                                <label for="star-1">
+                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 0.5L16.079 7.86365L24 9.66718L18.6 16.0217L19.4164 24.5L12 21.0637L4.58359 24.5L5.39999 16.0217L-5.72205e-06 9.66718L7.92097 7.86365L12 0.5Z" fill="#D9DEE2"/>
+                                                        </svg>                                                        
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div>
+                                <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="accounting-involvement">Would you recommend our services to other businesses?</label>
+                              </div>
+                              <div class="d-flex align-items-center gap-3 mt-2">
+                                <div class="d-flex align-items-center gap-2">
+                                    <input type="radio" name="radioGroup" id="radio1">
+                                    <label class="font_14 fw_600 ln_20 global-dark-gray" for="radio1">Yes</label>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <input type="radio" name="radioGroup" id="radio2">
+                                    <label class="font_14 fw_600 ln_20 global-dark-gray" for="radio2">No</label>
+                                </div>
+                            </div>
+                        </div>
+                              <button type="submit" class="form_next_btn mt_24">Submit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                </div>
+            </div>
+            <div><img class="get_started_im h_50vh_sm" width="100%" src="./assets/images/get-started-sec.png" alt=""></div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Include jQuery and jQuery Validation Plugin -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        let imagesArray = [];
+      
+        // Function to handle file input change
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+          const files = Array.from(event.target.files);
+          files.forEach(file => {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+              imagesArray.push(e.target.result); // Add to images array
+              displayImages(); // Update preview display
+            };
+            reader.readAsDataURL(file); // Convert file to base64 string
+          });
+          event.target.value = ''; // Reset the file input
+        });
+      
+        // Function to display images in preview container
+        function displayImages() {
+          const previewContainer = document.getElementById('preview-container');
+          previewContainer.innerHTML = ''; // Clear existing previews
+          imagesArray.forEach((src, index) => {
+            const previewItem = document.createElement('div');
+            previewItem.classList.add('preview-item');
+      
+            const img = document.createElement('img');
+            img.src = src;
+            previewItem.appendChild(img);
+      
+            const removeButton = document.createElement('button');
+            removeButton.innerText = 'x';
+            removeButton.classList.add('remove-button');
+            removeButton.onclick = () => removeImage(index);
+            previewItem.appendChild(removeButton);
+      
+            previewContainer.appendChild(previewItem);
+          });
+        }
+      
+        // Function to remove image from array and update display
+        function removeImage(index) {
+          imagesArray.splice(index, 1); // Remove from array
+          displayImages(); // Update preview display
+        }
+      </script>
+      <script>
+        $(document).ready(function() {
+  // Initialize form validation
+  $("#companyForm").validate({
+    rules: {
+      name: {
+        required: true
+      },
+      last_name: {
+        required: true
+      },
+      physical_locations: {
+        required: true,
+        number: true
+      },
+      company_type: {
+        required: true
+      },
+      company_operate: {
+        required: true,
+        number: true
+      },
+      annual_payroll: {
+        required: true,
+        number: true
+      },
+      crm_email_software: {
+        required: true
+      },
+      gross_revenue: {
+        required: true,
+        number: true
+      }
+    },
+    messages: {
+      name: {
+        required: "Please enter your first name"
+      },
+      last_name: {
+        required: "Please enter your last name"
+      },
+      physical_locations: {
+        required: "Please enter the number of physical locations",
+        number: "Please enter a valid number"
+      },
+      company_type: {
+        required: "Please select your company type"
+      },
+      company_operate: {
+        required: "Please enter number of states",
+        number: "Please enter a valid number"
+      },
+      annual_payroll: {
+        required: "Please enter your company's annual payroll",
+        number: "Please enter a valid number"
+      },
+      crm_email_software: {
+        required: "Please select an option"
+      },
+      gross_revenue: {
+        required: "Please enter your company's gross revenue",
+        number: "Please enter a valid number"
+      }
+    },
+    errorPlacement: function(error, element) {
+      error.insertAfter(element); // Show error message under the input field
+    },
+    submitHandler: function(form) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Show SweetAlert success message after successful form validation
+      Swal.fire({
+        title: 'Form Submitted Successfully!',
+        text: 'Your form has been successfully submitted.',
+        icon: 'success',
+        confirmButtonText: 'Great!'
+      });
+
+      // Optionally, you can handle the form submission with AJAX or just submit
+      // form.submit();  // Uncomment this line if you need to submit the form to the server
+    }
+  });
+
+  // Navigate through carousel steps
+  $('#next1').on('click', function() {
+    if ($("#companyForm").valid()) {
+      $('#carouselExampleCaptions').carousel('next');
+    }
+  });
+
+  $('#next2').on('click', function() {
+    if ($("#companyForm").valid()) {
+      $('#carouselExampleCaptions').carousel('next');
+    }
+  });
+
+  $('#next3').on('click', function() {
+    if ($("#companyForm").valid()) {
+      $('#carouselExampleCaptions').carousel('next');
+    }
+  });
+});
+
+      </script>
+</body>
+</html>

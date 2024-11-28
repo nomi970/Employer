@@ -365,8 +365,9 @@ input[type="radio"]:checked {
     height: 44px;
     background: transparent;
 }
-
-
+.action__btn{
+    width: 20px;
+}
 
 
 
