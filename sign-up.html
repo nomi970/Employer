@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.19/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <title>Get Started</title>
+    <style>
+        .d__grid{
+            display: grid;
+        }
+        @media screen and (max-width: 992px) {
+            /* .get_started_im{
+                display: none;
+            } */
+            .n_none_500{
+                display: none;
+            }
+            .d__grid{
+                display: unset;
+                border-radius: 0;
+            }
+            .get_info_main_content{
+                margin-top: 40px;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <section class="" style="height: 100%;">
+        <div class="main_get_started global-light-gray-bg">
+            <div class="get_started_info global-bg-white d__grid">
+                <div class="main_logo" style="height: 0;"><img src="./assets/images/main-logo.png" alt="main-logo"></div>
+                <!-- <div class="get_info_main_content">
+                    <div class="text-center text-md-start">
+                        <h2 class="font_36 fw_600 global-black">Sign up</h2>
+                        <p class="font_16 fw_400 global-gray mt_12">Start your 30-day free trial.</p>
+                    </div>
+                    <div>
+                        <div class="global_input mt_32">
+                            <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="f-name">First Name <span class="required_span">*</span></label>
+                            <input class="mt-2" type="text" name="name" id="name" placeholder="Enter first name" required>
+                          </div>
+                        <div class="global_input mt_20">
+                            <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="company-name">Email <span class="required_span">*</span></label>
+                            <input class="mt-2" type="email" name="email" id="emial" placeholder="Enter your email">
+                        </div>
+                        <div class="global_input position-relative w-100 mt_20">
+                            <label for="password" class="font_14 fw_500 ln_20 w-100 global-dark-gray">Password <span class="required_span">*</span></label>
+                            <input id="password" class="mt-2" type="password" name="password" placeholder="Password" />
+                            <span toggle="#password" class="field-icon toggle-password absolute cursor-pointer"
+                                style="top: 40px; right: 13px; position: absolute;">
+                                <img src="assets/images/icons/close-eye.svg" alt="Toggle Password Visibility"
+                                    class="eye-icon">
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <button type="button" class="form_next_btn mt_24" id="next1">Create account</button>
+                    <div class="separator mt_24">
+                        <span class="font_14 fw_400 ln_20 global-dark-gray">or</span>
+                    </div>
+                    <div class="google_linkdin_btn mt-3">
+                        <button type="button" class="d-flex align-items-center gap-2 justify-content-center">
+                            <img width="24" height="24" src="./assets/images/icons/google-icon.svg" alt="google-icon">
+                            <p class="font_16 fw_600 ln_24 global-dark-gray">Sign in with Google</p>
+                        </button>
+                        <button type="button" class="d-flex align-items-center gap-2 justify-content-center mt-3">
+                            <img width="24" height="24" src="./assets/images/icons/linkedin-icon.svg" alt="linkedin-icon">
+                            <p class="font_16 fw_600 ln_24 global-dark-gray">Sign in with LinkedIn</p>
+                        </button>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt_32">
+                        <div class="font_14 fw_400 ln_20 global-dark-gray d-flex align-items-center gap-2">
+                            Already have an account?
+                            <a class="font_14 fw_600 ln_20 global-normal-blue text-decoration-none" href="https://qa.opentime.preachtech.com/join-as">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                      
+                </div> -->
+
+                <form id="signupForm" class="get_info_main_content">
+                    <div class="text-center text-md-start">
+                        <h2 class="font_36 fw_600 global-black">Sign up</h2>
+                        <p class="font_16 fw_400 global-gray mt_12">Start your 30-day free trial.</p>
+                    </div>
+                    <div>
+                        <div class="global_input mt_32">
+                            <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="f-name">First Name <span class="required_span">*</span></label>
+                            <input class="mt-2" type="text" name="name" id="name" placeholder="Enter first name" required>
+                        </div>
+                        <div class="global_input mt_20">
+                            <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="company-name">Email <span class="required_span">*</span></label>
+                            <input class="mt-2" type="email" name="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="global_input position-relative w-100 mt_20">
+                            <label for="password" class="font_14 fw_500 ln_20 w-100 global-dark-gray">Password <span class="required_span">*</span></label>
+                            <input id="password" class="mt-2" type="password" name="password" placeholder="Password" />
+                            <span toggle="#password" class="field-icon toggle-password absolute cursor-pointer"
+                                style="top: 40px; right: 13px; position: absolute;">
+                                <img src="assets/images/icons/close-eye.svg" alt="Toggle Password Visibility" class="eye-icon">
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="form_next_btn mt_24" id="next1">Create account</button>
+                    <div class="separator mt_24">
+                        <span class="font_14 fw_400 ln_20 global-dark-gray">or</span>
+                    </div>
+                    <div class="google_linkdin_btn mt-3">
+                        <button type="button" class="d-flex align-items-center gap-2 justify-content-center">
+                            <img width="24" height="24" src="./assets/images/icons/google-icon.svg" alt="google-icon">
+                            <p class="font_16 fw_600 ln_24 global-dark-gray">Sign in with Google</p>
+                        </button>
+                        <button type="button" class="d-flex align-items-center gap-2 justify-content-center mt-3">
+                            <img width="24" height="24" src="./assets/images/icons/linkedin-icon.svg" alt="linkedin-icon">
+                            <p class="font_16 fw_600 ln_24 global-dark-gray">Sign in with LinkedIn</p>
+                        </button>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt_32">
+                        <div class="font_14 fw_400 ln_20 global-dark-gray d-flex align-items-center gap-2">
+                            Already have an account?
+                            <a class="font_14 fw_600 ln_20 global-normal-blue text-decoration-none" href="./login.html">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="n_none_500"><img class="get_started_im h_50vh_sm" width="100%" src="./assets/images/get-started-sec.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Include jQuery and jQuery Validation Plugin -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.toggle-password')?.forEach(item => {
+                item.addEventListener('click', function () {
+                    let input = document.querySelector(this.getAttribute('toggle'));
+                    let icon = this.querySelector('.eye-icon');
+
+                    if (input?.getAttribute('type') === 'password') {
+                        input?.setAttribute('type', 'text'); // Show password
+                        icon?.setAttribute('src',
+                            'assets/images/icons/open-eye.svg'
+                        ); // Show open eye image
+                    } else {
+                        input?.setAttribute('type', 'password'); // Hide password
+                        icon?.setAttribute('src',
+                            'assets/images/icons/close-eye.svg'
+                        ); // Show closed eye image
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#signupForm").validate({
+                rules: {
+                    name: {
+                        required: true,
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    password: {
+                        required: true,
+                        minlength: 8
+                    }
+                },
+                messages: {
+                    name: {
+                        required: "Please enter your first name",
+                    },
+                    email: {
+                        required: "Please enter your email",
+                        email: "Please enter a valid email address"
+                    },
+                    password: {
+                        required: "Please enter a password",
+                        minlength: "Must be at least 8 characters."
+                    }
+                },
+                errorElement: "span",
+                errorClass: "text-danger",
+                highlight: function(element) {
+                    $(element).addClass("is-invalid");
+                },
+                unhighlight: function(element) {
+                    $(element).removeClass("is-invalid");
+                }
+            });
+        });
+        </script>
+</body>
+
+</html>
