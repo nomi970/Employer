@@ -200,10 +200,12 @@
   height: 19px !important;
   transition: width 0.5s ease-in-out;
 }
-#yourBusinessBar {
+#yourBusinessBar,
+#businessProgressBar {
   background-color: #43a047;
 }
-#availableListingBar {
+#availableListingBar,
+#listingSitesProgressBar {
   background-color: #3684a4;
 }
 .color_progress {
@@ -212,6 +214,19 @@
 .color_avaibale {
   color: #3684a4;
 }
+.view_more_btn{
+  padding: 11px 16px; 
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  background-color: transparent;
+
+}
+.social_main_info_bx{
+  text-align: center;
+  margin: 0 auto;
+  padding: 24px 0px;
+}
+
 
 @media screen and (max-width: 992px) {
   .main__over_scroe_info {
