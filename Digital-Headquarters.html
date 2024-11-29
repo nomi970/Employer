@@ -1307,9 +1307,60 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="border__wrapper mt_24"></div>
                                 </div>
                                 <div class="tab-pane fade" id="nav-e-commerce" role="tabpanel"
-                                    aria-labelledby="nav-e-commerce-tab">E-Commerce</div>
+                                    aria-labelledby="nav-e-commerce-tab">
+                                    <div class="mt_24">
+                                        <h2 class="fs_18 fw_600 global-black ln_28">E-Commerce</h2>
+                                    </div>
+                                    <div class="border__wrapper mt_24">
+                                        <div class="main__listing_video_wrapper align-items-center">
+                                            <div>
+                                                <div class="video-container" data-video-id="5">
+                                                    <video id="myVideo-2" width="261" height="230"
+                                                        poster="./assets/images/video_poster.png">
+                                                        <source src="./assets/images/demo_video.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                    <div class="main__playPauseButton">
+                                                        <button id="playPauseButton-2"
+                                                            class="play-pause-button play-icon"></button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div>
+                                                <p class="font_16 fw_400 global-gray ln_26 mx_695">More businesses than ever before are selling products and services online. Consumers see an online store as a sign of a reputable, established business.</p>
+                                                <button class="global__btn mt_32" type="button">Get Started</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border__wrapper mt_24">
+                                        <h2 class="fs_18 fw_600 global-black ln_28">Checklist</h2>
+                                        <div class="mt_24" id="myTabContent">
+                                            <div class="table-responsive">
+                                                <table class="appointment-listing-table nowrap w-100" data-table-id="5">
+                                                    <thead>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th>Found</th>
+                                                            <th>Why it Matters</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="d-flex align-items-center gap-2 flex-wrap justify-content-between mt_24">
+                                            <p class="font_16 fw_400 global-gray ln_26 mb-4 mt_24">Is your online store working for you? We can help optimize.</p>
+                                            <button class="view_more_btn font_14 fw_600 global-dark-gray"
+                                                type="button">Get in Touch</button>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="tab-pane fade" id="nav-advertising" role="tabpanel"
                                     aria-labelledby="nav-advertising-tab">Advertising</div>
                                 <div class="tab-pane fade" id="nav-seo" role="tabpanel" aria-labelledby="nav-seo-tab">
@@ -1566,6 +1617,28 @@
                         web_listing_business: '<img width="20px" height="20px" src="assets/images/icons/cencle.svg" alt="">',
                         web_industry_avg: '<img width="20px" height="20px" src="assets/images/icons/approved.svg" alt="">',
                     },
+                ],
+                5: [
+                    {
+                        commerce_listing_profile: '<img width="40px" height="40px" src="assets/images/employer-ease-pics/special-profile.jpg" alt=""> <span class="font_14 fw_500 family_Inter">Online Storefront</span>',
+                        commerce_found: 'None Found',
+                        commerce_matter: 'Online sales of products and services are up 110% year over year.',
+                    },
+                    {
+                        commerce_listing_profile: '<img width="40px" height="40px" src="assets/images/employer-ease-pics/special-profile.jpg" alt=""> <span class="font_14 fw_500 family_Inter">Online Payments</span>',
+                        commerce_found: 'None Found',
+                        commerce_matter: "As online transactions have increased by 140%, you'll want to make sure customers can pay you online."
+                    },
+                    {
+                        commerce_listing_profile: '<img width="40px" height="40px" src="assets/images/employer-ease-pics/special-profile.jpg" alt=""> <span class="font_14 fw_500 family_Inter">Lead Engagement</span>',
+                        commerce_found: 'None Found',
+                        commerce_matter: 'Engaging customers with relevant content can move them down the sales funnel.',
+                    },
+                    {
+                        commerce_listing_profile: '<img width="40px" height="40px" src="assets/images/employer-ease-pics/special-profile.jpg" alt=""> <span class="font_14 fw_500 family_Inter">Online Scheduler</span>',
+                        commerce_found: 'None Found',
+                        commerce_matter: 'Bring in more customer bookings in less time by automating your meeting and appointment scheduling.',
+                    },
                 ]
             };
 
@@ -1630,6 +1703,24 @@
                     { data: 'web_listing_profile', title: '' },
                     { data: 'web_listing_business', title: 'Your Business' },
                     { data: 'web_industry_avg', title: 'Industry Average' },
+
+
+
+                ],
+                paging: false,
+                searching: false,
+                ordering: false,
+                info: false,
+                scrollX: false,
+                autoWidth: false,
+            });
+             // Initialize DataTable for the second table (with data-table-id="5")
+             $('table[data-table-id="5"]').DataTable({
+                data: tableData[5], // Data for table 5
+                columns: [
+                    { data: 'commerce_listing_profile', title: '' },
+                    { data: 'commerce_found', title: 'Found' },
+                    { data: 'commerce_matter', title: 'Why it Matters' },
 
 
 
