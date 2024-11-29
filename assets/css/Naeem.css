@@ -894,7 +894,7 @@ th {
 
 /* -----------check switch end ------------ */
 input:focus {
-    border: 1px solid #D0D5DD !important;
+    /* border: 1px solid #D0D5DD !important; */
     outline: none !important;
     box-shadow: none !important;
 }
