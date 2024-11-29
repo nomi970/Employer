@@ -155,13 +155,25 @@ body {
     align-items: center;
     text-align: center;
     gap: 8px;
-    padding: 8px 16px;
+    padding: 8px 14px;
     border-radius: 6px;
 }
 
 .nav-item.active {
     background: rgba(54, 132, 164, 1);
 }
+.sub-menu-active .accordion-button:not(.collapsed)::after{
+    background-image:url('../images/employer-ease-pics/chevron-down.svg')!important;
+    width: 26px;
+    background-position: center left;
+    padding-right: 22px
+}
+.accordion-button:not(.collaped)::after{
+    background-image:url('../images/employer-ease-pics/chevron-down.svg')!important;
+    width: 20px;
+    background-position: center left;
+    margin-right: 5px;
+ }
 
 .sub-menu-active {
     padding-top: 8px !important;
@@ -248,9 +260,11 @@ body {
     color: #FFFFFF;
 }
 
-.dropdown-item:hover {
-    background-color: #A40A0A;
-    color: #FFFFFF;
+.naivgation-header .dropdown-item:hover {
+    background-color: #3684A4 !important;
+    color: #FFFFFF !important;
+    border-radius:6px;
+    transition: 0.5s ease;
 }
 
 .dashbord-2 .naivgation-header {
@@ -265,23 +279,16 @@ body {
     z-index: 100;
     height: 76px;
     margin: 24px 24px;
-    border-radius: 8px
+    border-radius: 8px;
+    transition:0.7s ease;
 }
 
-/* .navbar-scroll {
-    width: 100%;
-    background:  white;
-    box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, 0.08);
-    padding: 16px 33px;
-    position: fixed;
-    top: 20px;
-    right: 0;
-    width: calc(100% - 315px);
-    z-index: 100;
-    height: 76px;
-    margin: 24px 24px;
-    border-radius:8px
-} */
+.navbar-scroll .naivgation-header{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-top: 0px;
+    transition: 0.7s ease;
+    width: calc(100% - 308px);;
+}
 
 .header-title {
     color: #FFF;
