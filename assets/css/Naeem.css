@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
 
     margin: 0;
@@ -83,6 +84,7 @@ ul {
 .fs_32 {
     font-size: 32px;
 }
+
 .fs_36 {
     font-size: 36px;
 }
@@ -182,10 +184,12 @@ ul {
 .Nunito_family {
     font-family: Nunito;
 }
-.roboto-family{
+
+.roboto-family {
     font-family: Roboto;
 }
-.mulish-family{
+
+.mulish-family {
     font-family: Mulish;
 }
 
@@ -194,8 +198,9 @@ ul {
 .main_color {
     color: #3684A4;
 }
-.light-main-bg{
-    background-color:#E4F1F6 ;
+
+.light-main-bg {
+    background-color: #E4F1F6;
 }
 
 .main_bg {
@@ -249,10 +254,13 @@ ul {
 .button_bg {
     background-color: #EBF3F6 !important;
 }
-.light-green{
-    color:#536C73;
-}
 
+.light-green {
+    color: #536C73;
+}
+.th-bg{
+    background-color:#F9FAFB !important;
+}
 
 /* ----------------------------Main Padding---------------------------- */
 .p_80 {
@@ -279,9 +287,10 @@ ul {
 .border1 {
     border: 1.3px solid #D0D5DD !important;
 }
-.border-radius-rounded{
-    border:1.5px solid #079455;
-    border-radius:9999px;
+
+.border-radius-rounded {
+    border: 1.5px solid #079455;
+    border-radius: 9999px;
 }
 
 .table-bg {
@@ -905,9 +914,10 @@ input:focus {
     outline: none !important;
     box-shadow: none !important;
 }
-input{
+
+input {
     height: 44px;
-    background-color:#FCFCFD !important;
+    background-color: #FCFCFD !important;
 }
 
 .benefits-forms-inputs {
@@ -1093,36 +1103,40 @@ thead tr th:last-child {
 }
 
 /* ----------------------------------------User Profile--------------------------------------- */
-.user-profile-div{
+.user-profile-div {
     height: 140px;
     padding: 24px;
     background: linear-gradient(45deg, #3684A4 0%, #F4F4F4 100%);
 
 }
-.div-margin{
+
+.div-margin {
     margin-top: -40px;
     padding: 0 32px;
 }
-.user-profile-form input, select{
-background-color:#FCFCFD;
-border: 1px solid #D0D5DD;
-font-size: 14px;
-font-family: Plus Jakarta Sans;
-font-weight: 400;
-color:#344054;
-height: 44px !important;
+
+.user-profile-form input,
+select {
+    background-color: #FCFCFD;
+    border: 1px solid #D0D5DD;
+    font-size: 14px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    color: #344054;
+    height: 44px !important;
 }
-.user-profile-form input::placeholder{
-font-size: 14px;
-font-family: Plus Jakarta Sans;
-font-weight: 400;
-color:#344054;
+
+.user-profile-form input::placeholder {
+    font-size: 14px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    color: #344054;
 }
 
 
 .custom-label {
     border: 2px solid #ededed5f;
-   
+
 }
 
 .custom-label.border-blue {
@@ -1146,23 +1160,22 @@ color:#344054;
 .avatar-stack {
     display: flex;
     align-items: center;
-  }
+}
 
-  .avatar-stack img,
-  .avatar-stack .avatar-extra {
+.avatar-stack img,
+.avatar-stack .avatar-extra {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid #fff;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    border: 3px solid #fff;
     object-fit: cover;
-  }
+}
 
-  .avatar-stack img {
+.avatar-stack img {
     margin-left: -10px;
-  }
+}
 
-  .avatar-stack .avatar-extra {
+.avatar-stack .avatar-extra {
     margin-left: -10px;
     display: flex;
     justify-content: center;
@@ -1171,15 +1184,52 @@ color:#344054;
     font-weight: bold;
     color: #555;
     cursor: pointer;
-  }
+}
 
-  .avatar-stack .avatar-extra:hover {
+.avatar-stack .avatar-extra:hover {
     background-color: #e0e0e0;
-  }
+}
 
-  .hidden-input {
-    display: none;
-  }
+.user-profile-billing-table thead{
+border-collapse:collapse!important;
+}
+.user-profile-table-main{
+border:1.2px solid #EAECF0 !important;
+border-radius:12px!important;
+}
+.border-table{
+    border:1px solid #EAECF0 !important;
+    border-left:0px !important;
+    border-right:0px !important;
+}
+input[type="text"]{
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #344054;
+}
+input[type="text"]::placeholder{
+    font-family: Plus Jakarta Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color:#344054;
+}
+input[type=text]:focus{
+    border:1.7px solid #3684A4!important;
+    outline: 0px!important;
+    box-shadow: none!important;
+}
+table>:not(caption)>*>*{
+    background-color:transparent !important;
+}
 
 
 

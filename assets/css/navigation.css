@@ -245,7 +245,8 @@ body {
 .dropdown-menu.show {
     right: 0;
     left: auto;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: 2px 2px 16px 0px #00000012;
+    border:0px;
 }
 
 .dropdown-menu {
@@ -256,20 +257,26 @@ body {
     transform: translate3d(0px, 40px, 0px) !important;
 }
 
-.dropdown-item {
-    color: #FFFFFF;
+.naivgation-header .dropdown-item {
+    color: #6F7784;
     padding:7px  10px !important;
+    border-radius:6px;
+    font-weight: 500;
+    transition: 0.3s ease all;
+    font-family: Inter;
+    line-height: 26px;
 }
 
 .naivgation-header .dropdown-item:hover {
     background-color: #3684A4 !important;
     color: #FFFFFF !important;
     border-radius:6px;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
+    font-weight: 500;
 }
 .naivgation-header .dropdown-item:hover svg path {
    stroke: white!important;
-   transition: 0.5s ease;
+   transition:0.3s ease;
 }
 
 .dashbord-2 .naivgation-header {
