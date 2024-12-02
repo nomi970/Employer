@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, p {
     --global-light-gray: #EDEEF0;
     --global-white: #FFFFFF;
     --global-error: #C03744;
+    --global-warning:#C62828;
 
 }
 
@@ -51,6 +52,7 @@ h1, h2, h3, h4, h5, p {
 .global-light-gray-bg { background-color: var(--global-light-gray)}
 .global-bg-white { background-color: var(--global-white)}
 .global-error {color: var(--global-error)}
+.global-warning{color: var(--global-warning);}
 
 .h_100vh{height: 100vh;}
 .font_12{font-size: 12px;}

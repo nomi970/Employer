@@ -225,9 +225,33 @@
   text-align: center;
   margin: 0 auto;
   padding: 24px 0px;
+  max-width: 755px;
+  width: 100%;
 }
-
-
+.click_hospot{
+  padding: 16px;
+  background: #F9FAFB;
+  border-radius: 12px;
+}
+.doted_circle{
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #212121;
+}
+.separater{
+  border-top: 1px solid #0000001F;
+  margin: 16px 0px;
+   
+}
+.border_dashed{
+  border-bottom: 2px dashed #0000001F; 
+  width: 100%;  
+  margin: 16px 0px;
+  height: 5px;
+  border-top: 0;
+}
 @media screen and (max-width: 992px) {
   .main__over_scroe_info {
     grid-template-columns: 1fr;
