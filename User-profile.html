@@ -8,7 +8,11 @@
     <meta name="description"
         content="Discover top-notch appliances at Zero Tolerance. From kitchen essentials to smart gadgets, find everything you need for a modern lifestyle. Shop now for reliability and performance." />
     <meta name="title" content="Zero Tolerance: Your Destination for High-Quality Appliances" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet">
     <!---------------------- Bootstrap Cdn---------------------->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -25,7 +29,7 @@
 
     <!----------------------- CSS ------------------------------->
     <link rel="stylesheet" type="text/css" href="assets/css/navigation.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
     <link rel="stylesheet" href="assets/css/Naeem.css" />
     <link rel="stylesheet" href="assets/css/common.css" />
 
@@ -353,7 +357,7 @@
                                     <!-- <a href="#" class="text-decoration-none">
                                             <img width="30" height="30" src="assets/images/icons/back-btn.png" alt="back">
                                         </a> -->
-                                    <h2 class="header-title text-dark">Formation Centers</h2>
+                                    <h2 class="header-title text-dark">Account Settings</h2>
                                     <form action="">
                                         <div class="position-relative">
                                             <input class="header-input form-control bg-transparent" type="text"
@@ -459,7 +463,7 @@
                                                         stroke="#6F7784" stroke-width="2" stroke-linecap="round"
                                                         stroke-linejoin="round" />
                                                 </svg>
-                                               Account Settings</a>
+                                                Account Settings</a>
                                         </li>
                                         <li class="mt-2">
                                             <a class="dropdown-item" href="login.html"><svg width="24" height="24"
@@ -1629,6 +1633,7 @@
                                                         </div>
                                                     </form>
                                                 </div>
+                                                
                                                 <div class="col-12">
                                                     <div class="" style="height: 1.5px;background-color:#EFEFEF;"></div>
                                                 </div>
@@ -1646,386 +1651,517 @@
                                                 <div class="col-12 col-md-8 col-lg-8">
                                                     <div class="d-flex gap-2 flex-column">
                                                         <div class="position-relative">
-                                                            <input id="seatNumber" style="padding-left: 60px;"
-                                                                class="form-control" type="text"
+                                                            <input disabled style="padding-left: 50px;"
+                                                                class="py-3 h-100 form-control check-input" type="text"
                                                                 placeholder="Credit Card">
-                                                            <div style="left:13.67px; top: 7.67px;"
+                                                            <div style="left:13.67px; top: 11.67px;"
                                                                 class="position-absolute">
                                                                 <img src="assets/images/employer-ease-pics/debit-card2.svg"
                                                                     alt="">
                                                             </div>
                                                             <div style="right:13.67px; top: 7.67px;"
                                                                 class="position-absolute">
-                                                                <input type="checkbox">
+                                                                <input class="click-check" type="checkbox">
                                                             </div>
                                                         </div>
                                                         <div class="position-relative mt-1">
-                                                            <input id="seatNumber" style="padding-left: 60px;"
-                                                                class="form-control" type="text"
+                                                            <input disabled style="padding-left: 50px;"
+                                                                class="py-3 h-100 form-control check-input" type="text"
                                                                 placeholder="Select Bank">
-                                                            <div style="left:13.67px; top: 7px;"
+                                                            <div style="left:13.67px; top: 11.67px;"
                                                                 class="position-absolute">
                                                                 <img src="assets/images/employer-ease-pics/bank-icon.svg"
                                                                     alt="">
                                                             </div>
                                                             <div style="right:13.67px; top: 7.67px;"
                                                                 class="position-absolute">
-                                                                <input type="checkbox">
+                                                                <input class="click-check" type="checkbox">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-3 g-3">
+                                                        <div class="col-12 col-lg-9">
+                                                            <div class="d-flex flex-column gap-1">
+                                                                <label class="fs_14 fw_400 j_family tertiary-black"
+                                                                    for="NameCard">Name On Card</label>
+                                                                <input id="NameCard" class="form-control" type="text"
+                                                                    placeholder="Bill Sulivan">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-lg-3">
+                                                            <div class="d-flex flex-column gap-1">
+                                                                <label class="fs_14 fw_400 j_family tertiary-black"
+                                                                    for="month-year-picker">Expiry</label>
+                                                                <input class="form-control" type="text"
+                                                                    id="month-year-picker" placeholder="06/2024">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-lg-9">
+                                                            <div class="d-flex flex-column gap-1">
+                                                                <label class="fs_14 fw_400 j_family tertiary-black"
+                                                                    for="cNumber">Card Number</label>
+                                                                <div class="position-relative">
+                                                                    <input maxlength="12" pattern="\d*"
+                                                                        title="Only numbers are allowed"
+                                                                        style="padding-left: 36px;" id="cNumber"
+                                                                        class="form-control no-spinner" type="number"
+                                                                        placeholder="1234 1234 1234 1234">
+                                                                    <div class="position-absolute"
+                                                                        style="top: 8px;left: 15px;">
+                                                                        <img src="assets/images/employer-ease-pics/Mastercard.svg"
+                                                                            alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-lg-3">
+                                                            <div class="d-flex flex-column gap-1">
+                                                                <label class="fs_14 fw_400 j_family tertiary-black"
+                                                                    for="cvv">CVV</label>
+                                                                <input id="cvv" maxlength="3" class="form-control"
+                                                                    type="text" placeholder="•••">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="mt-4" style="height: 1.5px;background-color:#EFEFEF;"></div>
-                                            <div class="table-responsive user-profile-table-main mt-4 user-profile-table-main">
-                                                <table class="w-100 user-profile-billing-table">
-                                                    <thead class="w-100">
-                                                        <tr class="border-table">
-                                                            <th>
-                                                                <div class="d-flex gap-2 align-items-center">
-                                                                    <input type="checkbox">
-                                                                    <p class="fs_12 fw_500 Inter_family tertiary-gray">
-                                                                        Invoice
-                                                                    </p>
-                                                                </div>
-                                                            </th>
-                                                            <th></th>
-                                                            <th class="fs_12 fw_500 Inter_family tertiary-gray">
-                                                                Amount
-                                                            </th>
-                                                            <th class="fs_12 fw_500 Inter_family tertiary-gray">Date
-                                                            </th>
-                                                            <th class="fs_12 fw_500 Inter_family tertiary-gray">Status
-                                                            </th>
-                                                            <th class="fs_12 fw_500 Inter_family tertiary-gray">User on
-                                                                Plan</th>
-                                                            <th></th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr class="border-table">
-                                                            <td>
-                                                                <div class="d-flex gap-2 align-items-center">
-                                                                    <input type="checkbox">
-                                                                    <p class="fs_14 fw_500 primary-black Inter_family">
-                                                                        Basic Plan – Dec 2022
-                                                                    </p>
-                                                                </div>
-                                                            </td>
-                                                            <td></td>
-                                                            <td class="fs_14 fw_400 tertiary-gray Inter_family">
-                                                                USD $10.00
-                                                            </td>
-                                                            <td class="fs_14 fw_400 tertiary-gray Inter_family">Dec 1,
-                                                                2022</td>
-                                                            <td>
-                                                                <div
-                                                                    class="border-radius-rounded justify-content-center px-1 d-flex align-items-center gap-1">
-                                                                    <i class=" fa fa-check text-success"></i>
-                                                                    <p class="fs_14  fw_500 text-success Inter_family">
-                                                                        Paid</p>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="avatar-stack" id="avatarStack"> <img
-                                                                        src="assets/images/employer-ease-pics/special-profile.jpg"
-                                                                        alt="Avatar 3">
-                                                                    <img src="assets/images/employer-ease-pics/square-profile.svg"
-                                                                        alt="Avatar 1">
-                                                                    <img src="assets/images/employer-ease-pics/attendace-profile.svg"
-                                                                        alt="Avatar 2">
-
-                                                                    <img src="assets/images/employer-ease-pics/user-profile.svg"
-                                                                        alt="Avatar 4">
-                                                                    <div class="avatar-extra" id="extraAvatar"
-                                                                        data-count="5">+5</div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <img src="assets/images/employer-ease-pics/cloud-download.svg"
-                                                                    alt="">
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="border-table">
-                                                            <td>
-                                                                <div class="d-flex gap-2 align-items-center">
-                                                                    <input type="checkbox">
-                                                                    <p class="fs_14 fw_500 primary-black Inter_family">
-                                                                        Basic Plan –Nov 2022
-                                                                    </p>
-                                                                </div>
-                                                            </td>
-                                                            <td></td>
-                                                            <td class="fs_14 fw_400 tertiary-gray Inter_family">
-                                                                USD $10.00
-                                                            </td>
-                                                            <td class="fs_14 fw_400 tertiary-gray Inter_family">Nov 1,
-                                                                2022</td>
-                                                            <td>
-                                                                <div
-                                                                    class="border-radius-rounded justify-content-center px-1 d-flex align-items-center gap-1">
-                                                                    <i class=" fa fa-check text-success"></i>
-                                                                    <p class="fs_14  fw_500 text-success Inter_family">
-                                                                        Paid</p>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="avatar-stack" id="avatarStack"> <img
-                                                                        src="assets/images/employer-ease-pics/special-profile.jpg"
-                                                                        alt="Avatar 3">
-                                                                    <img src="assets/images/employer-ease-pics/square-profile.svg"
-                                                                        alt="Avatar 1">
-                                                                    <img src="assets/images/employer-ease-pics/attendace-profile.svg"
-                                                                        alt="Avatar 2">
-
-                                                                    <img src="assets/images/employer-ease-pics/user-profile.svg"
-                                                                        alt="Avatar 4">
-                                                                    <div class="avatar-extra" id="extraAvatar"
-                                                                        data-count="5">+5</div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <img src="assets/images/employer-ease-pics/cloud-download.svg"
-                                                                    alt="">
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="border-table">
-                                                            <td>
-                                                                <div class="d-flex gap-2 align-items-center">
-                                                                    <input type="checkbox">
-                                                                    <p class="fs_14 fw_500 primary-black Inter_family">
-                                                                        Basic Plan – Oct 2022
-                                                                    </p>
-                                                                </div>
-                                                            </td>
-                                                            <td></td>
-                                                            <td class="fs_14 fw_400 tertiary-gray Inter_family">
-                                                                USD $10.00
-                                                            </td>
-                                                            <td class="fs_14 fw_400 tertiary-gray Inter_family">Oct 1,
-                                                                2022</td>
-                                                            <td>
-                                                                <div
-                                                                    class="border-radius-rounded justify-content-center px-1 d-flex align-items-center gap-1">
-                                                                    <i class=" fa fa-check text-success"></i>
-                                                                    <p class="fs_14  fw_500 text-success Inter_family">
-                                                                        Paid</p>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="avatar-stack" id="avatarStack"> <img
-                                                                        src="assets/images/employer-ease-pics/special-profile.jpg"
-                                                                        alt="Avatar 3">
-                                                                    <img src="assets/images/employer-ease-pics/square-profile.svg"
-                                                                        alt="Avatar 1">
-                                                                    <img src="assets/images/employer-ease-pics/attendace-profile.svg"
-                                                                        alt="Avatar 2">
-
-                                                                    <img src="assets/images/employer-ease-pics/user-profile.svg"
-                                                                        alt="Avatar 4">
-                                                                    <div class="avatar-extra" id="extraAvatar"
-                                                                        data-count="5">+5</div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <img src="assets/images/employer-ease-pics/cloud-download.svg"
-                                                                    alt="">
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="border-table">
-                                                            <td>
-                                                                <div class="d-flex gap-2 align-items-center">
-                                                                    <input type="checkbox">
-                                                                    <p class="fs_14 fw_500 primary-black Inter_family">
-                                                                        Basic Plan – Sept 2022
-                                                                    </p>
-                                                                </div>
-                                                            </td>
-                                                            <td></td>
-                                                            <td class="fs_14 fw_400 tertiary-gray Inter_family">
-                                                                USD $10.00
-                                                            </td>
-                                                            <td class="fs_14 fw_400 tertiary-gray Inter_family">Sep 1,
-                                                                2022</td>
-                                                            <td>
-                                                                <div
-                                                                    class="border-radius-rounded justify-content-center px-1 d-flex align-items-center gap-1">
-                                                                    <i class=" fa fa-check text-success"></i>
-                                                                    <p class="fs_14  fw_500 text-success Inter_family">
-                                                                        Paid</p>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="avatar-stack" id="avatarStack"> <img
-                                                                        src="assets/images/employer-ease-pics/special-profile.jpg"
-                                                                        alt="Avatar 3">
-                                                                    <img src="assets/images/employer-ease-pics/square-profile.svg"
-                                                                        alt="Avatar 1">
-                                                                    <img src="assets/images/employer-ease-pics/attendace-profile.svg"
-                                                                        alt="Avatar 2">
-
-                                                                    <img src="assets/images/employer-ease-pics/user-profile.svg"
-                                                                        alt="Avatar 4">
-                                                                    <div class="avatar-extra" id="extraAvatar"
-                                                                        data-count="5">+5</div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <img src="assets/images/employer-ease-pics/cloud-download.svg"
-                                                                    alt="">
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="border-table">
-                                                            <td>
-                                                                <div class="d-flex gap-2 align-items-center">
-                                                                    <input type="checkbox">
-                                                                    <p class="fs_14 fw_500 primary-black Inter_family">
-                                                                        Basic Plan –Aug 2022
-                                                                    </p>
-                                                                </div>
-                                                            </td>
-                                                            <td></td>
-                                                            <td class="fs_14 fw_400 tertiary-gray Inter_family">
-                                                                USD $10.00
-                                                            </td>
-                                                            <td class="fs_14 fw_400 tertiary-gray Inter_family">Aug 1,
-                                                                2022</td>
-                                                            <td>
-                                                                <div
-                                                                    class="border-radius-rounded justify-content-center px-1 d-flex align-items-center gap-1">
-                                                                    <i class=" fa fa-check text-success"></i>
-                                                                    <p class="fs_14  fw_500 text-success Inter_family">
-                                                                        Paid</p>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="avatar-stack" id="avatarStack"> <img
-                                                                        src="assets/images/employer-ease-pics/special-profile.jpg"
-                                                                        alt="Avatar 3">
-                                                                    <img src="assets/images/employer-ease-pics/square-profile.svg"
-                                                                        alt="Avatar 1">
-                                                                    <img src="assets/images/employer-ease-pics/attendace-profile.svg"
-                                                                        alt="Avatar 2">
-
-                                                                    <img src="assets/images/employer-ease-pics/user-profile.svg"
-                                                                        alt="Avatar 4">
-                                                                    <div class="avatar-extra" id="extraAvatar"
-                                                                        data-count="5">+5</div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <img src="assets/images/employer-ease-pics/cloud-download.svg"
-                                                                    alt="">
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="border-table">
-                                                            <td>
-                                                                <div class="d-flex gap-2 align-items-center">
-                                                                    <input type="checkbox">
-                                                                    <p class="fs_14 fw_500 primary-black Inter_family">
-                                                                        Basic Plan – Jul 2022
-                                                                    </p>
-                                                                </div>
-                                                            </td>
-                                                            <td></td>
-                                                            <td class="fs_14 fw_400 tertiary-gray Inter_family">
-                                                                USD $10.00
-                                                            </td>
-                                                            <td class="fs_14 fw_400 tertiary-gray Inter_family">Jul 1,
-                                                                2022</td>
-                                                            <td>
-                                                                <div
-                                                                    class="border-radius-rounded justify-content-center px-1 d-flex align-items-center gap-1">
-                                                                    <i class=" fa fa-check text-success"></i>
-                                                                    <p class="fs_14  fw_500 text-success Inter_family">
-                                                                        Paid</p>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="avatar-stack" id="avatarStack"> <img
-                                                                        src="assets/images/employer-ease-pics/special-profile.jpg"
-                                                                        alt="Avatar 3">
-                                                                    <img src="assets/images/employer-ease-pics/square-profile.svg"
-                                                                        alt="Avatar 1">
-                                                                    <img src="assets/images/employer-ease-pics/attendace-profile.svg"
-                                                                        alt="Avatar 2">
-
-                                                                    <img src="assets/images/employer-ease-pics/user-profile.svg"
-                                                                        alt="Avatar 4">
-                                                                    <div class="avatar-extra" id="extraAvatar"
-                                                                        data-count="5">+5</div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <img src="assets/images/employer-ease-pics/cloud-download.svg"
-                                                                    alt="">
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="border-table">
-                                                            <td>
-                                                                <div class="d-flex gap-2 align-items-center">
-                                                                    <input type="checkbox">
-                                                                    <p class="fs_14 fw_500 primary-black Inter_family">
-                                                                        Basic Plan –Jun 2022
-                                                                    </p>
-                                                                </div>
-                                                            </td>
-                                                            <td></td>
-                                                            <td class="fs_14 fw_400 tertiary-gray Inter_family">
-                                                                USD $10.00
-                                                            </td>
-                                                            <td class="fs_14 fw_400 tertiary-gray Inter_family">Jun 1,
-                                                                2022</td>
-                                                            <td>
-                                                                <div
-                                                                    class="border-radius-rounded justify-content-center px-1 d-flex align-items-center gap-1">
-                                                                    <i class=" fa fa-check text-success"></i>
-                                                                    <p class="fs_14  fw_500 text-success Inter_family">
-                                                                        Paid</p>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="avatar-stack" id="avatarStack"> <img
-                                                                        src="assets/images/employer-ease-pics/special-profile.jpg"
-                                                                        alt="Avatar 3">
-                                                                    <img src="assets/images/employer-ease-pics/square-profile.svg"
-                                                                        alt="Avatar 1">
-                                                                    <img src="assets/images/employer-ease-pics/attendace-profile.svg"
-                                                                        alt="Avatar 2">
-
-                                                                    <img src="assets/images/employer-ease-pics/user-profile.svg"
-                                                                        alt="Avatar 4">
-                                                                    <div class="avatar-extra" id="extraAvatar"
-                                                                        data-count="5">+5
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <img src="assets/images/employer-ease-pics/cloud-download.svg"
-                                                                    alt="">
-                                                            </td>
-                                                        </tr>
-
-                                                    </tbody>
-                                                </table>
+                                            <div class="d-flex justify-content-end mt-4">
+                                                <button type="submit" class="whole_button text-white fw_700"><i class="fa fa-refresh me-2 text-white"></i> Change Card Details</button>
                                             </div>
+                                        </div>
+                                        <div class="mt-4" style="height: 1.5px;background-color:#EFEFEF;"></div>
+                                        <div class="mt-4 d-flex justify-content-between align-items-center">
+                                            <h4 class="fs_18 fw_600 j_family">Billing History</h4>
+                                            <button class="whole_button bg-transparent tertiary-black border1"><img class="me-2" src="assets/images/employer-ease-pics/cloud-download.svg" alt=""> Download All</button>
+                                        </div>
+                                        <div
+                                            class="table-responsive user-profile-table-main mt-4 user-profile-table-main">
+                                            <table class="w-100 user-profile-billing-table">
+                                                <thead class="w-100 th-bg">
+                                                    <tr class="border-table">
+                                                        <th>
+                                                            <div class="d-flex gap-2 align-items-center">
+                                                                <input type="checkbox">
+                                                                <p class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                                    Invoice
+                                                                </p>
+                                                            </div>
+                                                        </th>
+                                                        <th></th>
+                                                        <th class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                            Amount
+                                                        </th>
+                                                        <th class="fs_12 fw_500 Inter_family tertiary-gray">Date
+                                                        </th>
+                                                        <th class="fs_12 fw_500 Inter_family tertiary-gray">Status
+                                                        </th>
+                                                        <th class="fs_12 fw_500 Inter_family tertiary-gray">User on
+                                                            Plan</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="border-table">
+                                                        <td>
+                                                            <div class="d-flex gap-2 align-items-center">
+                                                                <input type="checkbox">
+                                                                <p class="fs_14 fw_500 primary-black Inter_family">
+                                                                    Basic Plan – Dec 2022
+                                                                </p>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                            USD $10.00
+                                                        </td>
+                                                        <td class="fs_14 fw_400 tertiary-gray Inter_family">Dec 1,
+                                                            2022</td>
+                                                        <td>
+                                                            <div
+                                                                class="border-radius-rounded justify-content-center px-1 d-flex align-items-center gap-1">
+                                                                <i class=" fa fa-check text-success"></i>
+                                                                <p class="fs_14  fw_500 text-success Inter_family">
+                                                                    Paid</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="avatar-group">
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/special-profile.jpg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/attendace-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/user-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/attendance-profile-2.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/employer-ease-pics/cloud-download.svg"
+                                                                alt="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border-table">
+                                                        <td>
+                                                            <div class="d-flex gap-2 align-items-center">
+                                                                <input type="checkbox">
+                                                                <p class="fs_14 fw_500 primary-black Inter_family">
+                                                                    Basic Plan –Nov 2022
+                                                                </p>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                            USD $10.00
+                                                        </td>
+                                                        <td class="fs_14 fw_400 tertiary-gray Inter_family">Nov 1,
+                                                            2022</td>
+                                                        <td>
+                                                            <div
+                                                                class="border-radius-rounded justify-content-center px-1 d-flex align-items-center gap-1">
+                                                                <i class=" fa fa-check text-success"></i>
+                                                                <p class="fs_14  fw_500 text-success Inter_family">
+                                                                    Paid</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="avatar-group">
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/special-profile.jpg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/attendace-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/user-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/attendance-profile-2.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/employer-ease-pics/cloud-download.svg"
+                                                                alt="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border-table">
+                                                        <td>
+                                                            <div class="d-flex gap-2 align-items-center">
+                                                                <input type="checkbox">
+                                                                <p class="fs_14 fw_500 primary-black Inter_family">
+                                                                    Basic Plan – Oct 2022
+                                                                </p>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                            USD $10.00
+                                                        </td>
+                                                        <td class="fs_14 fw_400 tertiary-gray Inter_family">Oct 1,
+                                                            2022</td>
+                                                        <td>
+                                                            <div
+                                                                class="border-radius-rounded justify-content-center px-1 d-flex align-items-center gap-1">
+                                                                <i class=" fa fa-check text-success"></i>
+                                                                <p class="fs_14  fw_500 text-success Inter_family">
+                                                                    Paid</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="avatar-group">
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/special-profile.jpg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/attendace-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/user-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/attendance-profile-2.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/employer-ease-pics/cloud-download.svg"
+                                                                alt="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border-table">
+                                                        <td>
+                                                            <div class="d-flex gap-2 align-items-center">
+                                                                <input type="checkbox">
+                                                                <p class="fs_14 fw_500 primary-black Inter_family">
+                                                                    Basic Plan – Sept 2022
+                                                                </p>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                            USD $10.00
+                                                        </td>
+                                                        <td class="fs_14 fw_400 tertiary-gray Inter_family">Sep 1,
+                                                            2022</td>
+                                                        <td>
+                                                            <div
+                                                                class="border-radius-rounded justify-content-center px-1 d-flex align-items-center gap-1">
+                                                                <i class=" fa fa-check text-success"></i>
+                                                                <p class="fs_14  fw_500 text-success Inter_family">
+                                                                    Paid</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="avatar-group">
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/special-profile.jpg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/attendace-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/user-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/attendance-profile-2.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/employer-ease-pics/cloud-download.svg"
+                                                                alt="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border-table">
+                                                        <td>
+                                                            <div class="d-flex gap-2 align-items-center">
+                                                                <input type="checkbox">
+                                                                <p class="fs_14 fw_500 primary-black Inter_family">
+                                                                    Basic Plan –Aug 2022
+                                                                </p>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                            USD $10.00
+                                                        </td>
+                                                        <td class="fs_14 fw_400 tertiary-gray Inter_family">Aug 1,
+                                                            2022</td>
+                                                        <td>
+                                                            <div
+                                                                class="border-radius-rounded justify-content-center px-1 d-flex align-items-center gap-1">
+                                                                <i class=" fa fa-check text-success"></i>
+                                                                <p class="fs_14  fw_500 text-success Inter_family">
+                                                                    Paid</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="avatar-group">
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/special-profile.jpg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/attendace-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/user-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/attendance-profile-2.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/employer-ease-pics/cloud-download.svg"
+                                                                alt="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border-table">
+                                                        <td>
+                                                            <div class="d-flex gap-2 align-items-center">
+                                                                <input type="checkbox">
+                                                                <p class="fs_14 fw_500 primary-black Inter_family">
+                                                                    Basic Plan – Jul 2022
+                                                                </p>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                            USD $10.00
+                                                        </td>
+                                                        <td class="fs_14 fw_400 tertiary-gray Inter_family">Jul 1,
+                                                            2022</td>
+                                                        <td>
+                                                            <div
+                                                                class="border-radius-rounded justify-content-center px-1 d-flex align-items-center gap-1">
+                                                                <i class=" fa fa-check text-success"></i>
+                                                                <p class="fs_14  fw_500 text-success Inter_family">
+                                                                    Paid</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="avatar-group">
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/special-profile.jpg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/attendace-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/user-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/attendance-profile-2.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/employer-ease-pics/cloud-download.svg"
+                                                                alt="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border-table">
+                                                        <td>
+                                                            <div class="d-flex gap-2 align-items-center">
+                                                                <input type="checkbox">
+                                                                <p class="fs_14 fw_500 primary-black Inter_family">
+                                                                    Basic Plan –Jun 2022
+                                                                </p>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                            USD $10.00
+                                                        </td>
+                                                        <td class="fs_14 fw_400 tertiary-gray Inter_family">Jun 1,
+                                                            2022</td>
+                                                        <td>
+                                                            <div
+                                                                class="border-radius-rounded justify-content-center px-1 d-flex align-items-center gap-1">
+                                                                <i class=" fa fa-check text-success"></i>
+                                                                <p class="fs_14  fw_500 text-success Inter_family">
+                                                                    Paid</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="avatar-group">
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/special-profile.jpg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/attendace-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/user-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/square-profile.svg"
+                                                                        alt=""></div>
+                                                                <div class="avatar"><img width="36px" height="36px"
+                                                                        src="assets/images/employer-ease-pics/attendance-profile-2.svg"
+                                                                        alt=""></div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/employer-ease-pics/cloud-download.svg"
+                                                                alt="">
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                         </section>
-
-
 
                         <!-------------------------- ********** Section 1 ********** ------------------------->
 
                         <!-- ************************Scripts Start Here*********************************-->
                         <script src="assets/js/script.js "></script>
                         <!--------------------------------- Jquery --------------------------->
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-                            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-                            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-                        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-                            rel="stylesheet">
+                       
                         <!-------------------------------- Jquery Ends------------------------------->
 
                         <!-- ------------------------------- Popper Js ----------------------------- -->
@@ -2037,7 +2173,11 @@
 
 
                         <script src="assets/js/script.js"></script>
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+                        <!-- Include Flatpickr CSS -->
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+                        <!-- Include Flatpickr JS -->
+                        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
                         <!--------------------------------- Script to check the whole box----------------------------->
                         <script>
 
@@ -2064,6 +2204,95 @@
                                 });
                             });
                         </script>
+                        <script>
+                            const input_check = document.querySelectorAll('.check-input');
+                            const click_check = document.querySelectorAll('.click-check');
+
+                            click_check.forEach((checkbox, index) => {
+                                checkbox.addEventListener('change', function () {
+
+                                    click_check.forEach((otherCheckbox, otherIndex) => {
+                                        if (otherCheckbox !== checkbox) {
+                                            otherCheckbox.checked = false;
+                                            input_check[otherIndex].classList.remove('border-added');
+                                        }
+                                    });
+
+
+                                    if (checkbox.checked) {
+                                        input_check[index].classList.add('border-added');
+                                    } else {
+                                        input_check[index].classList.remove('border-added');
+                                    }
+                                });
+                            });
+                        </script>
+                        <script>
+                            document.querySelectorAll('table').forEach((table) => {
+
+                                const headerCheckbox = table.querySelector('thead input[type="checkbox"]');
+
+                                if (headerCheckbox) {
+
+                                    headerCheckbox.addEventListener('change', function () {
+                                        const isChecked = this.checked;
+
+
+                                        table.querySelectorAll('tbody input[type="checkbox"]').forEach((checkbox) => {
+                                            checkbox.checked = isChecked;
+                                        });
+                                    });
+                                }
+                            });
+                        </script>
+                        <script>
+                            const navbar = document.getElementById('dashboard-2')
+                            window.addEventListener('scroll', () => {
+                                if (window.scrollY > 0) {
+                                    navbar.classList.add('navbar-scroll')
+                                }
+                                else {
+                                    navbar.classList.remove('navbar-scroll')
+                                }
+                            })
+                        </script>
+
+                        <script>
+                            window.addEventListener("load", function () {
+
+                                const avatarGroups = document.querySelectorAll('.avatar-group');
+
+                                avatarGroups.forEach((avatarGroup, index) => {
+                                    const avatars = avatarGroup.querySelectorAll('.avatar');
+
+
+                                    if (avatars.length > 5) {
+
+                                        for (let i = 5; i < avatars.length; i++) {
+                                            avatars[i].style.display = 'none';
+                                        }
+
+
+                                        const moreAvatar = document.createElement('div');
+                                        moreAvatar.classList.add('avatar', 'more');
+                                        moreAvatar.textContent = '5+';
+                                        avatarGroup.appendChild(moreAvatar);
+                                    }
+                                });
+                            });
+                        </script>
+                        <!-- ------------------------date picker to accept the expiry date-------------------------- -->
+                        <script>
+                            flatpickr("#month-year-picker", {
+                                mode: "single",
+                                dateFormat: "m/Y",
+                                minDate: "1900-01",
+                                maxDate: new Date().fp_incr(0),
+                                allowInput: true,
+                                disableMobile: true,
+                            });
+                        </script>
+
 
 </body>
 
