@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!---------------------- Bootstrap Cdn---------------------->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- <link rel="icon" type="short icon" href="assets/images/icons/favicon.svg"> -->
+
+  <!----------------------- CSS ------------------------------->
+  <link rel="stylesheet" type="text/css" href="assets/css/navigation.css" />
+  <link rel="stylesheet" href="assets/css/Naeem.css" />
+  <link rel="stylesheet" href="assets/css/common.css" />
+  <link rel="stylesheet" href="./assets/css/numan.css">
+    <title>customer-service-details</title>
+    <style>
+        .chat-wrapper {
+            width: 100%;
+            background-color: white;
+            border: 1px solid #E8E8E8;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            margin: 20px auto;
+            padding: 24px;
+        }
+    
+        .chat-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 0px;
+            justify-content: space-between
+        }
+    
+        .message-row {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            gap: 10px;
+        }
+    
+        .message-row.user-message {
+            justify-content: flex-start;
+        }
+    
+        .message-row.support-message {
+            justify-content: flex-end;
+        }
+    
+        .message-content {
+            max-width: 70%;
+            border-radius: 12px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: left;
+            color: #5A7184;
+            position: relative;
+            word-wrap: break-word;
+        }
+    
+        .user-message .message-content {
+            background-color: #DCEBFF;
+        }
+    
+        .support-message .message-content {
+            background-color: #F3F3F3;
+        }
+    
+        .profile-pic {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+    
+        .timestamp {
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 10.26px;
+            text-align: left;
+            color: #707070;
+        }
+    
+        .chat-footer {
+            display: flex;
+            align-items: center;
+            padding: 12px 14px;
+            border-radius: 16px;
+            border: 1px solid #DCDCDE;
+        }
+    
+        .chat-footer .plus-button {
+            background-color: white !important;
+            color: #1779FF !important;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: -4px;
+        }
+    
+        .chat-footer input {
+            flex: 1;
+            outline: none;
+            border: 0;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: left;
+            color: #5E5E62;
+        }
+    
+        .chat-footer input::placeholder {
+            color: #5E5E62;
+        }
+    
+        .chat-footer button {
+            width: 36px;
+            height: 36px;
+            border-radius: 50px;
+            border: none;
+            border-radius: 20px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+    
+        .file-link {
+            display: inline-block;
+            margin-left: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+    
+        .file-thumbnail {
+            width: 100%;
+            max-height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 5px;
+            object-fit: fill
+        }
+    
+        .pdf-thumbnail {
+            width: 100px;
+            height: 100px;
+            background-color: #f2f2f2;
+            color: #000;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 8px;
+        }
+    
+        .message-content iframe {
+            width: 100%;
+            object-fit: fill;
+            height: 50px;
+            background-color: #f2f2f2;
+            color: #000;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+    
+        .pdf-embed {
+            height: 150px !important;
+            border: none !important;
+            overflow: hidden !important;
+            display: block;
+            background-color: #f4f4f4;
+            margin-top: 10px;
+            width: 100px;
+        }
+    
+        .file-name {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333 !important;
+            display: block;
+            max-width: 200px;
+        }
+    
+        .pdf-embed {
+            border: none;
+            overflow: hidden;
+        }
+    
+        .file-thumbnail {
+            display: block;
+            margin: 0 auto;
+        }
+    
+        .profile-pic {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    
+        .message-content {
+            max-width: 45%;
+            padding: 12px;
+        }
+    
+        .main-header-center .btn {
+            position: absolute;
+            right: 9px;
+            top: 8px;
+        }
+    
+        .chat_title {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin: 36px 0px;
+        }
+    
+        .chat-body {
+            overflow-y: auto;
+            height: 60vh;
+        }
+    
+        .gpps {
+            display: flex;
+            flex-direction: column;
+        }
+        .request__bx{
+            padding: 7px 14px;
+            background: #F4F3F3;
+            border-radius: 20px;
+        }
+    
+        @media(max-width: 650px) {
+            .flx_wrap_700 {
+                flex-wrap: wrap;
+                margin-top: 20px;
+                gap: 12px !important;
+            }
+    
+            .pd_none {
+                padding: 0 !important;
+            }
+    
+            .message-content img {
+                width: 100% !important;
+            }
+    
+            .message-content canvas {
+                width: 100% !important;
+            }
+        }
+    
+        @media only screen and (max-width: 500px) {
+            .main-header-center .btn {
+                top: 5px
+            }
+    
+            .message-content {
+                max-width: 85%;
+            }
+    
+            .message-content {
+                font-size: 14px
+            }
+    
+            .chat-wrapper {
+                padding: 14px
+            }
+    
+            .timestamp {
+                font-size: 11px
+            }
+    
+            .profile-pic {
+                width: 34px;
+                height: 34px;
+            }
+    
+            .chat_title{
+                margin: 15px 0px;
+            }
+        }
+    
+    
+    
+        .separator::before, 
+        .separator::after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid #87745733;
+        margin: 0 10px;
+    }
+    .separator {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .ori__reguest::before, 
+    .ori__reguest::after{
+        margin: 0 !important;
+    }
+    .status{
+        padding: 2px 8px;
+        border-radius: 16px;
+        width: fit-content;
+    }
+    .in-progress{
+        background-color: #FFF1F3;
+        color: #C01048 !important;
+    }
+    </style>
+</head>
+<body>
+
+
+    
+    
+    
+       
+        <div class="chat-wrapper">
+            <!-- Chat Header -->
+            <div class="chat-header">
+                <div class="d-flex align-items-center gap-3">
+                    <div>
+                        <img src="assets/images/icons/support_ticket_profile.png" alt="User Profile"
+                                class="profile-pic">
+                    </div>
+                    <div class="chat-header-content">
+                        <h3 class="font_16 fw_600 app-body-font app-black-dark">Aaqib</h3>
+                        <p class="font_12 fw_500 app-body-font app-color-light app-x-gray mt_8">Last Reply: 24 min ago</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="status in-progress font_12 app-body-font ln_18">Closed</p>
+                </div>
+            </div>
+            
+    
+            <!-- Chat Body -->
+            <div class="chat-body" id="chatBody">
+                <div class="ori__reguest separator mt_24">
+                    <span class="font_12 fw_400 app-navy-blue request__bx app-body-font">Original request</span>
+                </div>
+                <p class="font_14 fw_400 app-body-font mt_20 app-medium-gray">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. Lorem ipsum is a placeholder.</p>
+                <div class="separator mt_20">
+                    <span class="font_16 fw_500 app-navy-blue app-body-font">Today</span>
+                </div>
+                <!-- Sample Message 1 (Sender) -->
+                <div class="message-row user-message mt_20">
+                    <div class="d-flex flex-column align-items-center justify-content-center gap-2">
+                        <img src="assets/images/icons/support_ticket_profile.png" alt="User Profile"
+                            class="profile-pic">
+                        <span class="timestamp">6:21 PM</span>
+                    </div>
+                    <div class="message-content app-body-font">Hello, how can I get support?</div>
+    
+                </div>
+    
+                <!-- Sample Message 2 (Receiver) -->
+                <div class="message-row support-message">
+                    <div class="message-content app-body-font">Hi! How can I assist you today?</div>
+                    <div class="d-flex flex-column align-items-center justify-content-center gap-2">
+                        <img src="assets/images/icons/listing-item1.png" alt="Support Profile" class="profile-pic">
+                        <span class="timestamp app-body-font">6:22 PM</span>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <!-- Chat Footer -->
+            <!-- <div class="chat-footer">
+                <button id="plusButton" class="plus-button">+</button>
+                <input type="file" id="fileInput" style="display: none;" accept="image/*,application/pdf">
+                <input type="text" id="messageInput" placeholder="Type a message...">
+                <button id="sendMessageBtn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.5 10.7708L3.66667 16.1875C3.38889 16.2986 3.125 16.2743 2.875 16.1146C2.625 15.9549 2.5 15.7222 2.5 15.4167V4.58335C2.5 4.27779 2.625 4.04516 2.875 3.88543C3.125 3.72571 3.38889 3.70141 3.66667 3.81252L16.5 9.22918C16.8472 9.38196 17.0208 9.63891 17.0208 10C17.0208 10.3611 16.8472 10.6181 16.5 10.7708ZM4.16667 14.1667L14.0417 10L4.16667 5.83335V8.75002L9.16667 10L4.16667 11.25V14.1667Z"
+                            fill="white" />
+                    </svg>
+                </button>
+            </div> -->
+            <!-- Chat Footer -->
+<div class="chat-footer">
+    <button id="emojiButton" class="emoji-button">😀</button>
+    <div id="emojiPicker" class="emoji-picker" style="display: none;">
+        <!-- Emoji options -->
+        😀 😃 😄 😁 😆 😅 😂 🤣 😊 😇 🙂 🙃 😉 😌 😍 🥰 😘 😗 😙 😚 😋 😛 😝 😜 🤪
+    </div>
+    <button id="plusButton" class="plus-button">+</button>
+    <input type="file" id="fileInput" style="display: none;" accept="image/*,application/pdf">
+    <input type="text" id="messageInput" placeholder="Type a message...">
+    <button id="voiceNoteButton" class="voice-note-button">🎤</button>
+    <button id="sendMessageBtn">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M16.5 10.7708L3.66667 16.1875C3.38889 16.2986 3.125 16.2743 2.875 16.1146C2.625 15.9549 2.5 15.7222 2.5 15.4167V4.58335C2.5 4.27779 2.625 4.04516 2.875 3.88543C3.125 3.72571 3.38889 3.70141 3.66667 3.81252L16.5 9.22918"
+                fill="white" />
+        </svg>
+    </button>
+</div>
+
+        </div>
+        
+    <script>
+        // Show or hide the emoji picker
+document.getElementById('emojiButton').addEventListener('click', () => {
+    const emojiPicker = document.getElementById('emojiPicker');
+    emojiPicker.style.display = emojiPicker.style.display === 'none' ? 'block' : 'none';
+});
+
+// Add emoji to the input field
+document.getElementById('emojiPicker').addEventListener('click', (e) => {
+    if (e.target.tagName === 'SPAN' || e.target.textContent) {
+        const emoji = e.target.textContent;
+        const messageInput = document.getElementById('messageInput');
+        messageInput.value += emoji; // Append emoji to the input field
+    }
+});
+
+// Close emoji picker when clicking outside
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.chat-footer')) {
+        document.getElementById('emojiPicker').style.display = 'none';
+    }
+});
+
+    </script>
+        <!-- ************************Scripts Start Here*********************************-->
+
+    <!--------------------------------- Jquery --------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-------------------------------- Jquery Ends------------------------------->
+
+    <!-- ------------------------------- Popper Js ----------------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script>
+        let isSender = true;
+    
+        function getTime() {
+            const now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12 || 12;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            return `${hours}:${minutes} ${ampm}`;
+        }
+    
+        function handleSendMessage() {
+            const messageInput = document.getElementById('messageInput');
+            const chatBody = document.getElementById('chatBody');
+            const messageText = messageInput.value.trim();
+    
+            if (messageText) {
+    
+                const messageRow = document.createElement('div');
+                messageRow.classList.add('message-row', isSender ? 'user-message' : 'support-message');
+    
+                const profileSection = document.createElement('div');
+                profileSection.classList.add('gap-2');
+                profileSection.classList.add('gpps');
+    
+                const profilePic = document.createElement('img');
+                profilePic.src = isSender ? 'assets/images/icons/support_ticket_profile.png' :
+                    'assets/images/icons/listing-item1.png';
+                profilePic.alt = isSender ? 'User Profile' : 'Support Profile';
+                profilePic.classList.add('profile-pic');
+    
+                const timestamp = document.createElement('span');
+                timestamp.classList.add('timestamp');
+                timestamp.textContent = getTime();
+    
+                profileSection.appendChild(profilePic);
+                profileSection.appendChild(timestamp);
+    
+                const messageContent = document.createElement('div');
+                messageContent.classList.add('message-content');
+                messageContent.textContent = messageText;
+    
+                if (isSender) {
+                    messageRow.appendChild(profileSection);
+                    messageRow.appendChild(messageContent);
+                } else {
+                    messageRow.appendChild(messageContent);
+                    messageRow.appendChild(profileSection);
+                }
+    
+                chatBody.appendChild(messageRow);
+                chatBody.scrollTop = chatBody.scrollHeight;
+    
+                messageInput.value = '';
+                isSender = !isSender;
+            }
+        }
+    
+        function handleFileUpload() {
+            const fileInput = document.getElementById('fileInput');
+            fileInput.click();
+    
+            fileInput.onchange = () => {
+                const file = fileInput.files[0];
+                if (file) {
+                    const chatBody = document.getElementById('chatBody');
+                    const messageRow = document.createElement('div');
+                    messageRow.classList.add('message-row', isSender ? 'user-message' : 'support-message');
+    
+                    const profileSection = document.createElement('div');
+                    profileSection.classList.add('gap-2', 'gpps');
+    
+                    const profilePic = document.createElement('img');
+                    profilePic.src = isSender ? 'assets/images/icons/support_ticket_profile.png' :
+                        'assets/images/icons/listing-item1.png';
+                    profilePic.alt = isSender ? 'User Profile' : 'Support Profile';
+                    profilePic.classList.add('profile-pic');
+    
+                    const timestamp = document.createElement('span');
+                    timestamp.classList.add('timestamp');
+                    timestamp.textContent = getTime();
+    
+                    profileSection.appendChild(profilePic);
+                    profileSection.appendChild(timestamp);
+    
+                    const messageContent = document.createElement('div');
+                    messageContent.classList.add('message-content');
+    
+                    if (file.type.startsWith('image/')) {
+                        const img = document.createElement('img');
+                        img.src = URL.createObjectURL(file);
+                        img.alt = 'Uploaded Image';
+                        img.style.maxWidth = '200px';
+                        img.style.borderRadius = '8px';
+                        messageContent.appendChild(img);
+    
+                        const fileName = document.createElement('div');
+                        fileName.classList.add('file-name');
+                        fileName.style.fontSize = '12px';
+                        fileName.style.color = '#888';
+                        fileName.style.marginTop = '4px';
+    
+                        fileName.textContent = file.name;
+                        messageContent.appendChild(fileName);
+                    } else if (file.type === 'application/pdf') {
+                        const canvas = document.createElement('canvas');
+                        canvas.style.maxWidth = '200px';
+                        canvas.style.borderRadius = '8px';
+    
+                        const fileReader = new FileReader();
+                        fileReader.onload = function() {
+                            const pdfData = new Uint8Array(this.result);
+                            pdfjsLib.getDocument(pdfData).promise.then(pdf => {
+                                pdf.getPage(1).then(page => {
+                                    const viewport = page.getViewport({
+                                        scale: 0.5
+                                    });
+                                    canvas.width = viewport.width;
+                                    canvas.height = viewport.height;
+    
+                                    const context = canvas.getContext('2d');
+                                    const renderContext = {
+                                        canvasContext: context,
+                                        viewport: viewport,
+                                    };
+                                    page.render(renderContext).promise.then(() => {
+                                        messageContent.appendChild(canvas);
+    
+                                        const fileName = document.createElement('div');
+                                        fileName.classList.add('file-name');
+                                        fileName.style.fontSize = '12px';
+                                        fileName.style.color = '#888';
+                                        fileName.style.marginTop = '4px';
+    
+                                        const fileLink = document.createElement('a');
+                                        fileLink.href = URL.createObjectURL(file);
+                                        fileLink.textContent = file.name;
+                                        fileLink.target = '_blank';
+                                        fileLink.style.textDecoration = 'none';
+                                        fileName.appendChild(fileLink);
+                                        messageContent.appendChild(fileName);
+                                    });
+                                });
+                            });
+                        };
+                        fileReader.readAsArrayBuffer(file);
+                    } else {
+                        const fileIcon = document.createElement('div');
+                        fileIcon.textContent = '📁';
+                        messageContent.appendChild(fileIcon);
+    
+                        const fileName = document.createElement('div');
+                        fileName.classList.add('file-name');
+                        fileName.style.fontSize = '12px';
+                        fileName.style.color = '#888';
+                        fileName.style.marginTop = '4px';
+    
+                        const fileLink = document.createElement('a');
+                        fileLink.href = URL.createObjectURL(file);
+                        fileLink.textContent = file.name;
+                        fileLink.target = '_blank';
+                        fileLink.style.textDecoration = 'none';
+    
+                        fileName.appendChild(fileLink);
+                        messageContent.appendChild(fileName);
+                    }
+    
+                    if (isSender) {
+                        messageRow.appendChild(profileSection);
+                        messageRow.appendChild(messageContent);
+                    } else {
+                        messageRow.appendChild(messageContent);
+                        messageRow.appendChild(profileSection);
+                    }
+    
+                    chatBody.appendChild(messageRow);
+                    chatBody.scrollTop = chatBody.scrollHeight;
+                    isSender = !isSender;
+                }
+            };
+        }
+    
+        document.getElementById('sendMessageBtn').addEventListener('click', handleSendMessage);
+        document.getElementById('messageInput').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') handleSendMessage();
+        });
+        document.getElementById('plusButton').addEventListener('click', handleFileUpload);
+    </script>
+</body>
+</html>
