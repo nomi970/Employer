@@ -652,6 +652,9 @@ th {
     text-decoration-skip-ink: none;
     color: black !important;
 }
+.flatpickr-current-month{
+    padding: 0 !important;
+}
 
 .flatpickr-day.inRange {
     font-family: Inter !important;
@@ -1222,13 +1225,54 @@ text-underline-position: from-font;
 text-decoration-skip-ink: none;
 color:#344054;
 }
-input[type=text]:focus{
+input:is([type="text"], [type="password"], [type="number"], [type="date"]):focus{
     border:1.7px solid #3684A4!important;
     outline: 0px!important;
     box-shadow: none!important;
 }
 table>:not(caption)>*>*{
     background-color:transparent !important;
+}
+.border-added{
+    border:2px solid #3684A4!important;
+}
+
+input[type="number"].no-spinner::-webkit-outer-spin-button,
+input[type="number"].no-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* ----------------------------avatars----------------------------- */
+.avatar-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.avatar {
+    border-radius: 50%;
+    text-align: center;
+    margin-right: -8px;  
+
+}
+.avatar img{
+    border:2px solid rgb(255, 255, 255);
+    border-radius:50%;
+}
+
+.avatar-group .more {
+    background-color: #F2F4F7;
+    font-size: 12px;
+    font-weight: 600;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 36px;
+    width: 36px;
+    border: 1px solid #00000014;
+    padding: 2px;
+    
 }
 
 
