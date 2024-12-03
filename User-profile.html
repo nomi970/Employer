@@ -9,10 +9,9 @@
         content="Discover top-notch appliances at Zero Tolerance. From kitchen essentials to smart gadgets, find everything you need for a modern lifestyle. Shop now for reliability and performance." />
     <meta name="title" content="Zero Tolerance: Your Destination for High-Quality Appliances" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet">
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!---------------------- Bootstrap Cdn---------------------->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -29,7 +28,6 @@
 
     <!----------------------- CSS ------------------------------->
     <link rel="stylesheet" type="text/css" href="assets/css/navigation.css" />
-
     <link rel="stylesheet" href="assets/css/Naeem.css" />
     <link rel="stylesheet" href="assets/css/common.css" />
 
@@ -1633,7 +1631,7 @@
                                                         </div>
                                                     </form>
                                                 </div>
-                                                
+
                                                 <div class="col-12">
                                                     <div class="" style="height: 1.5px;background-color:#EFEFEF;"></div>
                                                 </div>
@@ -1729,13 +1727,18 @@
                                                 </div>
                                             </div>
                                             <div class="d-flex justify-content-end mt-4">
-                                                <button type="submit" class="whole_button text-white fw_700"><i class="fa fa-refresh me-2 text-white"></i> Change Card Details</button>
+                                                <button type="submit" class="whole_button text-white fw_700"><i
+                                                        class="fa fa-refresh me-2 text-white"></i> Change Card
+                                                    Details</button>
                                             </div>
                                         </div>
                                         <div class="mt-4" style="height: 1.5px;background-color:#EFEFEF;"></div>
                                         <div class="mt-4 d-flex justify-content-between align-items-center">
                                             <h4 class="fs_18 fw_600 j_family">Billing History</h4>
-                                            <button class="whole_button bg-transparent tertiary-black border1"><img class="me-2" src="assets/images/employer-ease-pics/cloud-download.svg" alt=""> Download All</button>
+                                            <button class="whole_button bg-transparent tertiary-black border1"><img
+                                                    class="me-2"
+                                                    src="assets/images/employer-ease-pics/cloud-download.svg" alt="">
+                                                Download All</button>
                                         </div>
                                         <div
                                             class="table-responsive user-profile-table-main mt-4 user-profile-table-main">
@@ -2161,7 +2164,7 @@
                         <!-- ************************Scripts Start Here*********************************-->
                         <script src="assets/js/script.js "></script>
                         <!--------------------------------- Jquery --------------------------->
-                       
+
                         <!-------------------------------- Jquery Ends------------------------------->
 
                         <!-- ------------------------------- Popper Js ----------------------------- -->
@@ -2203,8 +2206,9 @@
                                     }
                                 });
                             });
-                        </script>
-                        <script>
+
+                            //<!-- ---------------------------check the checkbox--------------------------- -->
+
                             const input_check = document.querySelectorAll('.check-input');
                             const click_check = document.querySelectorAll('.click-check');
 
@@ -2226,8 +2230,9 @@
                                     }
                                 });
                             });
-                        </script>
-                        <script>
+
+                            //-- -------------------------table select all------------------------>
+
                             document.querySelectorAll('table').forEach((table) => {
 
                                 const headerCheckbox = table.querySelector('thead input[type="checkbox"]');
@@ -2244,8 +2249,9 @@
                                     });
                                 }
                             });
-                        </script>
-                        <script>
+
+                            //<!-- ---------------------navbar scroll-------------------- -->
+
                             const navbar = document.getElementById('dashboard-2')
                             window.addEventListener('scroll', () => {
                                 if (window.scrollY > 0) {
@@ -2255,9 +2261,10 @@
                                     navbar.classList.remove('navbar-scroll')
                                 }
                             })
-                        </script>
+                            </script>
 
-                        <script>
+                             <!-- ------------------------Avatar group-------------------------- -->
+<script>
                             window.addEventListener("load", function () {
 
                                 const avatarGroups = document.querySelectorAll('.avatar-group');
@@ -2280,13 +2287,13 @@
                                     }
                                 });
                             });
-                        </script>
-                        <!-- ------------------------date picker to accept the expiry date-------------------------- -->
-                        <script>
+
+                            //<!-- ------------------------date picker to accept the expiry date-------------------------- -->
+
                             flatpickr("#month-year-picker", {
                                 mode: "single",
                                 dateFormat: "m/Y",
-                                minDate: "1900-01",
+                                minDate: "01/1900",
                                 maxDate: new Date().fp_incr(0),
                                 allowInput: true,
                                 disableMobile: true,

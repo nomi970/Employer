@@ -28,6 +28,7 @@
 
     <link rel="stylesheet" href="assets/css/Naeem.css" />
     <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/tables-css.css" />
 
     <title>Sales & CRM | Employer Ease</title>
 
@@ -527,62 +528,79 @@
                                                     class="fa fa-plus pe-2 text-white"></i>Create Contact</button>
                                         </div>
                                     </div>
-                                    <div class="table-responsive user-profile-table-main mt-4 crm-table-1 h-100" style>
-                                        <table class="h-100 w-100">
+                                    <div class="table-responsive mt-4 crm-table-1 h-100 user-profile-table-main" style>
+                                        <table id="dataTable">
                                             <thead class="th-bg">
-                                                <tr class="">
+                                                <tr class="border-table">
                                                     <th>
-                                                        <div class="d-flex gap-2">
+                                                        <div class="d-flex align-items-center gap-2">
                                                             <input type="checkbox">
                                                             <p class="name">Name</p>
                                                         </div>
-
+                                                        </th>
+                                                    <th class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                        Primary Company Name
                                                     </th>
-                                                    <th>
-                                                        Privacy Company Name
-                                                    </th>
-                                                    <th>
+                                                    <th class="fs_12 fw_500 Inter_family tertiary-gray">
                                                         Phone Number
                                                     </th>
-                                                    <th>
+                                                    <th class="fs_12 fw_500 Inter_family tertiary-gray">
                                                         Email
                                                     </th>
-                                                    <th>
-                                                        Tags
+                                                    <th class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                       Tags 
                                                     </th>
-                                                    <th>
+                                                    <th class="fs_12 fw_500 Inter_family tertiary-gray">
                                                         Record Source
                                                     </th>
-                                                    <th>
-                                                        Created Date
+                                                    <th class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                       Created Dated
                                                     </th>
-                                                    <th>
-                                                        Sales Person ID
+                                                    <th class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                        Salesperson ID
                                                     </th>
-                                                    <th>
+                                                    <th></th>
 
-                                                    </th>
+                                                   
                                                 </tr>
                                             </thead>
-                                            <tbody class="border">
-                                                <tr class="border">
-                                                    <td>
-                                                        <div class="d-flex gap-2">
+                                            <tbody>
+                                                <tr class="w-100 h-100">
+                                                    <td class="w-100 h-100">
+                                                        <div class="d-flex align-items-center gap-2">
                                                             <input type="checkbox">
-                                                            <p class="fs_14 fw_500">Bill Sullivan</p>
+                                                            <p class="fs_14 fw_500 Inter_family">Bill Sulivan</p>
                                                         </div>
                                                     </td>
-                                                    <td>Employer Ease, LLC</td>
-                                                    <td>_</td>
-                                                    <td>_</td>
-                                                    <td>_</td>
-                                                    <td>Legacy Contact</td>
-                                                    <td>August 2, 2024</td>
-                                                    <td>_</td>
+                                                    <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                        Employer Ease, LLC
+                                                    </td>
+                                                    <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                       __
+                                                    </td>
+
+                                                    <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                        __
+                                                     </td>
+
+                                                     <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                        __
+                                                     </td>
+
+                                                     <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                        Legacy Contact
+                                                     </td>
+
+                                                     <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                        Aug 2, 2024
+                                                     </td>
+
+                                                     <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                        __
+                                                     </td>
                                                     <td>
                                                         <div class="dropdown table-dropdown">
-                                                            <button type="menu"
-                                                                class="border-0 bg-transparent action__btn"
+                                                            <button type="menu" class="border-0 bg-transparent action__btn"
                                                                 type="button" data-bs-toggle="dropdown"
                                                                 aria-expanded="false">
                                                                 <img class="object-fit-cover"
@@ -603,48 +621,68 @@
                                                                         Delete</a></li>
                                                             </ul>
                                                         </div>
-                                                    </td>
+                                                     </td>
                                                 </tr>
-                                                <tr class="">
-                                                    <td></td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td></td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td></td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td></td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td></td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td></td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td></td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td></td>
-                                                </tr>
-                                                <tr class="">
+                                                <tr>
                                                     <td></td>
                                                 </tr>
 
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                               
                                             </tbody>
                                         </table>
+                                        <div
+                                            class="w-100 pagination-container border border-start-0 border-end-0 border-bottom-0">
+                                            <div class="items-per-page d-flex align-items-center">
+                                                <div class="w-100">
+                                                    <p class="fs_14 fw_400 j_family light_gray">Items per page:</p>
+                                                </div>
+                                                <select class="border-0 w-50 bg-transparent" id="itemsPerPage">
+                                                    <option value="5">5</option>
+                                                    <option value="10">10</option>
+                                                    <option value="25" selected>25</option>
+                                                </select>
+                                            </div>
+                                            <div class="pagination-controls">
+                                                <span class="w-100 fs_14 fw_400 j_family tertiary-gray" id="pageInfo">0
+                                                    of 0</span>
+                                                <button id="prevPage" disabled><i
+                                                        class="fa fa-chevron-left dark_gray"></i></button>
+                                                <button id="nextPage" disabled><i
+                                                        class="fa fa-chevron-right dark_gray"></i></button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div
-                                        class="d-flex gap-3 justify-content-end align-items-center py-3 border rounded px-3">
-                                        <p class="fs_14 fw_400 color_gray j_family">items-per-page:</p>
-                                        <p>25<i class="fa fa-chevron-down"></i></p>
-                                        <p class="j_family">1 of 25</p>
-                                        <i class="fa fa-chevron-left color_gray"></i>
-                                        <i class="fa fa-chevron-right color_gray"></i>
-                                    </div>
-
                                 </div>
                                 <!-- --------------------------------------Tab Content Ended------------------------------------- -->
                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel"
@@ -665,56 +703,61 @@
                                                     class="fa fa-plus pe-2 text-white"></i>Create Contact</button>
                                         </div>
                                     </div>
-                                    <div class="table-responsive mt-4 crm-table-1 h-100" style>
-                                        <table class="h-100 user-profile-table-main w-100">
-                                            <thead class="w-100 th-bg">
-                                                <tr class="">
+                                    <div class="table-responsive mt-4 crm-table-1 h-100 user-profile-table-main" style>
+                                        <table id="dataTable">
+                                            <thead class="th-bg w-100">
+                                                <tr class="border-table w-100">
                                                     <th>
-                                                        <div class="d-flex gap-2">
+                                                        <div class="d-flex align-items-center gap-2">
                                                             <input type="checkbox">
                                                             <p class="name">Company Name</p>
                                                         </div>
-
+                                                        </th>
+                                                    <th class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                       Address
                                                     </th>
-                                                    <th>
-                                                        Address
+                                                    <th class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                        Sales Person
                                                     </th>
-                                                    <th>
-                                                        Salesperson
+                                                    <th class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                        Tags
                                                     </th>
-                                                    <th>
-                                                        Tag
+                                                    <th class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                       Group ID
                                                     </th>
-                                                    <th>
-                                                        Group ID
-                                                    </th>
-                                                    <th>
-
-                                                    </th>
+                                                    <th></th>
                                                 </tr>
                                             </thead>
-                                            <tbody class="border">
-                                                <tr class="border">
-                                                    <td>
-                                                        <div class="d-flex gap-2">
-                                                            <input type="checkbox">
-                                                            <p class="fs_14 fw_500">Employer Ease, LLC</p>
-                                                        </div>
-                                                    </td>
-                                                    <td>23074 East Pummelos Road, Queen Creek, AZ, US, 85142 </td>
-                                                    <td>
+                                            <tbody>
+                                                <tr class="w-100 h-100">
+                                                    <td class="w-100 h-100">
                                                         <div class="d-flex align-items-center gap-2">
-                                                            <img src="assets/images/employer-ease-pics/square-profile.svg"
-                                                                alt="">
-                                                            <p class="fs_14 fw_500">Bill Sullivan</p>
+                                                            <input type="checkbox">
+                                                            <p class="fs_14 fw_500 Inter_family">Employer Ease, LLC</p>
                                                         </div>
                                                     </td>
-                                                    <td>_</td>
-                                                    <td>Default</td>
+                                                    
+                                                    <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                        23074 East Pummelos Road, Queen Creek, AZ, US, 85142 
+                                                    </td>
+
+                                                    <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <img src="assets/images/employer-ease-pics/user-profile.svg" alt="">
+                                                            <p class="fs_14 fw_500 tertiary-black Inter_family">Bill Sullivan</p>
+                                                        </div>
+                                                     </td>
+
+                                                     <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                        __
+                                                     </td>
+
+                                                     <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                        Legacy Contact
+                                                     </td>
                                                     <td>
                                                         <div class="dropdown table-dropdown">
-                                                            <button type="menu"
-                                                                class="border-0 bg-transparent action__btn"
+                                                            <button type="menu" class="border-0 bg-transparent action__btn"
                                                                 type="button" data-bs-toggle="dropdown"
                                                                 aria-expanded="false">
                                                                 <img class="object-fit-cover"
@@ -735,47 +778,69 @@
                                                                         Delete</a></li>
                                                             </ul>
                                                         </div>
-                                                    </td>
+                                                     </td>
                                                 </tr>
-                                                <tr class="">
-                                                    <td></td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td></td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td></td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td></td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td></td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td></td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td></td>
-                                                </tr>
-                                                <tr class="">
-                                                    <td></td>
-                                                </tr>
-                                                <tr class="">
+                                                <tr>
                                                     <td></td>
                                                 </tr>
 
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                               
                                             </tbody>
                                         </table>
+                                        <div
+                                            class="w-100 pagination-container border border-start-0 border-end-0 border-bottom-0">
+                                            <div class="items-per-page d-flex align-items-center">
+                                                <div class="w-100">
+                                                    <p class="fs_14 fw_400 j_family light_gray">Items per page:</p>
+                                                </div>
+                                                <select class="border-0 w-50 bg-transparent" id="itemsPerPage">
+                                                    <option value="5">5</option>
+                                                    <option value="10">10</option>
+                                                    <option value="25" selected>25</option>
+                                                </select>
+                                            </div>
+                                            <div class="pagination-controls">
+                                                <span class="w-100 fs_14 fw_400 j_family tertiary-gray" id="pageInfo">0
+                                                    of 0</span>
+                                                <button id="prevPage" disabled><i
+                                                        class="fa fa-chevron-left dark_gray"></i></button>
+                                                <button id="nextPage" disabled><i
+                                                        class="fa fa-chevron-right dark_gray"></i></button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div
-                                        class="d-flex gap-3 justify-content-end align-items-center py-3 border rounded px-3">
-                                        <p class="fs_14 fw_400 color_gray j_family">items-per-page:</p>
-                                        <p>25<i class="fa fa-chevron-down"></i></p>
-                                        <p class="j_family">1 of 25</p>
-                                        <i class="fa fa-chevron-left color_gray"></i>
-                                        <i class="fa fa-chevron-right color_gray"></i>
-                                    </div>
+                                   
                                 </div>
                                 <!-- --------------------------------------Tab Content Ended------------------------------------- -->
                                 <div class="tab-pane fade" id="nav-contact" role="tabpanel"
@@ -796,54 +861,69 @@
                                                     class="fa fa-plus pe-2 text-white"></i>Create Contact</button>
                                         </div>
                                     </div>
-                                    <div class="table-responsive user-profile-table-main  mt-4 crm-table-1 h-100" style>
-                                        <table class="h-100 w-100">
-                                            <thead class="w-100 th-bg">
-                                                <tr class="">
+                                    <div class="table-responsive mt-4 crm-table-1 h-100 user-profile-table-main" style>
+                                        <table id="dataTable">
+                                            <thead class="th-bg">
+                                                <tr class="border-table">
                                                     <th>
-                                                        <div class="d-flex gap-2">
-                                                            <input type="checkbox">
-                                                            <p class="name">Activity Name</p>
+                                                        <div
+                                                            class="d-flex gap-2 justify-content-between align-items-center">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <input type="checkbox">
+                                                                <p class="name">Name</p>
+                                                            </div>
+                                                            <div class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                                Task Type
+                                                            </div>
+                                                            <div class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                                Task Status
+                                                            </div>
+                                                            <div class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                                Asssigned
+                                                            </div>
+                                                            <div class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                                Associated Contact
+                                                            </div>
+                                                            <div class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                                Associated Company
+                                                            </div>
                                                         </div>
 
-                                                    </th>
-                                                    <th>
-                                                        Participants
-                                                    </th>
-                                                    <th>
-                                                        Duration
-                                                    </th>
-                                                    <th>
-                                                        Status
-                                                    </th>
-                                                    <th>
-                                                        Tags
-                                                    </th>
-                                                    <th>
-                                                        Created Date
-                                                    </th>
-                                                    <th>
-                                                        End Date
-                                                    </th>
-                                                    <th>
-                                                        Salesperson ID
                                                     </th>
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                <tr class="w-100 h-100">
+                                                    <td class="w-100 h-100">
+                                                        <div class="w-100 d-flex justify-content-center align-items-center"
+                                                            style="padding: 94px 0;">
+                                                            <img class=""
+                                                                src="assets/images/employer-ease-pics/clipboard.svg"
+                                                                alt="">
+                                                        </div>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
-                                        <div class="border d-flex justify-content-center align-items-center p_80 w-100">
-                                            <img src="assets/images/employer-ease-pics/clipboard.svg" alt="">
+                                        <div
+                                            class="pagination-container border border-start-0 border-end-0 border-bottom-0">
+                                            <div class="items-per-page d-flex align-items-center">
+                                                <div class="w-100">
+                                                    <p class="fs_14 fw_400 j_family light_gray">Items per page:</p>
+                                                </div>
+                                                <select class="border-0 w-50 bg-transparent" id="itemsPerPage">
+                                                    <option value="5">5</option>
+                                                    <option value="10">10</option>
+                                                    <option value="25" selected>25</option>
+                                                </select>
+                                            </div>
+                                            <div class="pagination-controls">
+                                                <span class="w-100 fs_14 fw_400 j_family tertiary-gray" id="pageInfo">0 of 0</span>
+                                                <button id="prevPage" disabled><i class="fa fa-chevron-left dark_gray"></i></button>
+                                                <button id="nextPage" disabled><i class="fa fa-chevron-right dark_gray"></i></button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div
-                                        class="d-flex gap-3 justify-content-end align-items-center py-3 border rounded px-3">
-                                        <p class="fs_14 fw_400 color_gray j_family">items-per-page:</p>
-                                        <p>25<i class="fa fa-chevron-down"></i></p>
-                                        <p class="j_family">1 of 25</p>
-                                        <i class="fa fa-chevron-left color_gray"></i>
-                                        <i class="fa fa-chevron-right color_gray"></i>
+
                                     </div>
                                 </div>
                                 <!-- --------------------------------------Tab Content Ended------------------------------------- -->
@@ -865,52 +945,51 @@
                                                     class="fa fa-plus pe-2 text-white"></i>Create Contact</button>
                                         </div>
                                     </div>
-                                    <div class="table-responsive user-profile-table-main  mt-4 crm-table-1 h-100" style>
-                                        <table class="h-100 w-100">
-                                            <thead class="w-100 th-bg">
-                                                <tr class="">
+                                    <div class="table-responsive mt-4 crm-table-1 h-100 user-profile-table-main" style>
+                                        <table id="dataTable w-100">
+                                            <thead class="th-bg w-100">
+                                                <tr class="border-table ">
                                                     <th>
-                                                        <div class="d-flex gap-2">
+                                                        <div class="d-flex align-items-center gap-2">
                                                             <input type="checkbox">
                                                             <p class="name">Lead</p>
                                                         </div>
-
+                                                        </th>
+                                                    <th class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                       Contact
                                                     </th>
-                                                    <th>
-                                                        Contact
+                                                    <th class="fs_12 fw_500 Inter_family tertiary-gray">
+                                                       Qualified
                                                     </th>
-                                                    <th>
-                                                        Qualified
-                                                    </th>
-                                                    <th>
+                                                    <th class="fs_12 fw_500 Inter_family tertiary-gray">
                                                         Proposal
                                                     </th>
-                                                    <th>
-
-                                                    </th>
+                                                    <th></th>
                                                 </tr>
                                             </thead>
-                                            <tbody class="border">
-                                                <tr class="border">
-                                                    <td>
-                                                        <div class="d-flex gap-2">
+                                            <tbody>
+                                                <tr class="">
+                                                    <td class="">
+                                                        <div class="d-flex align-items-center gap-2">
                                                             <input type="checkbox">
-                                                            <p class="fs_14 fw_500">$0.00</p>
+                                                            <p class="fs_14 fw_500 Inter_family">$0.00</p>
                                                         </div>
                                                     </td>
-                                                    <td>
+                                                    
+                                                    <td class="fs_14 fw_400 tertiary-gray Inter_family">
                                                         $0.00
                                                     </td>
-                                                    <td>
+
+                                                    <td class="fs_14 fw_400 tertiary-gray Inter_family">
+                                                            $0.00
+                                                     </td>
+
+                                                     <td class="fs_14 fw_400 tertiary-gray Inter_family">
                                                         $0.00
-                                                    </td>
-                                                    <td>
-                                                        $0.00
-                                                    </td>
+                                                     </td>
                                                     <td>
                                                         <div class="dropdown table-dropdown">
-                                                            <button type="menu"
-                                                                class="border-0 bg-transparent action__btn"
+                                                            <button type="menu" class="border-0 bg-transparent action__btn"
                                                                 type="button" data-bs-toggle="dropdown"
                                                                 aria-expanded="false">
                                                                 <img class="object-fit-cover"
@@ -928,39 +1007,71 @@
                                                                         Select</a></li>
                                                                 <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray absolute-aligntable-drop-down"
                                                                         href="#" data-bs-toggle="modal">
+                                                                        <img src="" alt="">
                                                                         Delete</a></li>
                                                             </ul>
                                                         </div>
-                                                    </td>
+                                                     </td>
                                                 </tr>
-                                                <tr class="">
+                                                <tr>
                                                     <td></td>
                                                 </tr>
-                                                <tr class="">
+
+                                                <tr>
                                                     <td></td>
                                                 </tr>
-                                                <tr class="">
+
+                                                <tr>
                                                     <td></td>
                                                 </tr>
-                                                <tr class="">
+
+                                                <tr>
                                                     <td></td>
                                                 </tr>
-                                                <tr class="">
+
+                                                <tr>
                                                     <td></td>
                                                 </tr>
-                                                <tr class="">
+
+                                                <tr>
                                                     <td></td>
                                                 </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                               
                                             </tbody>
                                         </table>
-                                    </div>
-                                    <div
-                                        class="d-flex gap-3 justify-content-end align-items-center py-3 border border-t-0 rounded px-3">
-                                        <p class="fs_14 fw_400 color_gray j_family">items-per-page:</p>
-                                        <p>25<i class="fa fa-chevron-down"></i></p>
-                                        <p class="j_family">1 of 25</p>
-                                        <i class="fa fa-chevron-left color_gray"></i>
-                                        <i class="fa fa-chevron-right color_gray"></i>
+                                        <div
+                                            class="w-100 pagination-container border border-start-0 border-end-0 border-bottom-0">
+                                            <div class="items-per-page d-flex align-items-center">
+                                                <div class="w-100">
+                                                    <p class="fs_14 fw_400 j_family light_gray">Items per page:</p>
+                                                </div>
+                                                <select class="border-0 w-50 bg-transparent" id="itemsPerPage">
+                                                    <option value="5">5</option>
+                                                    <option value="10">10</option>
+                                                    <option value="25" selected>25</option>
+                                                </select>
+                                            </div>
+                                            <div class="pagination-controls">
+                                                <span class="w-100 fs_14 fw_400 j_family tertiary-gray" id="pageInfo">0
+                                                    of 0</span>
+                                                <button id="prevPage" disabled><i
+                                                        class="fa fa-chevron-left dark_gray"></i></button>
+                                                <button id="nextPage" disabled><i
+                                                        class="fa fa-chevron-right dark_gray"></i></button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- --------------------------------------Tab Contpent Ended------------------------------------- -->
@@ -989,7 +1100,7 @@
                                                             <h4 class="fs_16 fw_600 lh_28 j_family">Manage</h4>
                                                         </div>
                                                         <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox"
+                                                              <input class="form-check-input global-switch" type="checkbox"
                                                                 role="switch" id="flexSwitchCheckDefault">
                                                         </div>
                                                     </div>
@@ -1013,7 +1124,7 @@
                                                             <h4 class="fs_16 fw_600 lh_28 j_family">Manage</h4>
                                                         </div>
                                                         <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox"
+                                                            <input class="form-check-input global-switch" type="checkbox"
                                                                 role="switch" id="flexSwitchCheckDefault">
                                                         </div>
                                                     </div>
@@ -1107,6 +1218,74 @@
                 });
             }
         });
+    </script>
+    <!-- ----------==============table Pagination ================------------- -->
+    <script>
+
+        let currentPage = 1;
+        let rowsPerPage = 25;
+
+        function renderTable(data, page = 1) {
+            const tbody = document.querySelector("#dataTable tbody");
+            tbody.innerHTML = "";
+
+            const startIndex = (page - 1) * rowsPerPage;
+            const endIndex = startIndex + rowsPerPage;
+            const paginatedData = data.slice(startIndex, endIndex);
+
+            paginatedData.forEach(item => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                <td>${item.id}</td>
+                <td>${item.name}</td>
+                <td>${item.email}</td>
+            `;
+                tbody.appendChild(row);
+            });
+
+            updatePaginationInfo(data);
+        }
+
+        function updatePaginationInfo(data) {
+            const totalPages = Math.ceil(data.length / rowsPerPage);
+            const pageInfo = document.getElementById("pageInfo");
+            pageInfo.textContent = `${currentPage} of ${totalPages}`;
+
+            document.getElementById("prevPage").disabled = currentPage === 1;
+            document.getElementById("nextPage").disabled = currentPage === totalPages;
+        }
+
+        function setupPagination(data) {
+            const prevButton = document.getElementById("prevPage");
+            const nextButton = document.getElementById("nextPage");
+            const itemsPerPageSelect = document.getElementById("itemsPerPage");
+
+            prevButton.addEventListener("click", () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderTable(data, currentPage);
+                }
+            });
+
+            nextButton.addEventListener("click", () => {
+                const totalPages = Math.ceil(data.length / rowsPerPage);
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderTable(data, currentPage);
+                }
+            });
+
+            itemsPerPageSelect.addEventListener("change", (event) => {
+                rowsPerPage = parseInt(event.target.value, 10);
+                currentPage = 1;
+                renderTable(data, currentPage);
+            });
+        }
+
+
+        renderTable(data, currentPage);
+        setupPagination(data);
+
     </script>
 
 </body>
