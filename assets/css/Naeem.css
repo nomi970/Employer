@@ -258,8 +258,9 @@ ul {
 .light-green {
     color: #536C73;
 }
-.th-bg{
-    background-color:#F9FAFB !important;
+
+.th-bg {
+    background-color: #F9FAFB !important;
 }
 
 /* ----------------------------Main Padding---------------------------- */
@@ -652,7 +653,8 @@ th {
     text-decoration-skip-ink: none;
     color: black !important;
 }
-.flatpickr-current-month{
+
+.flatpickr-current-month {
     padding: 0 !important;
 }
 
@@ -877,7 +879,7 @@ th {
 
 
 /* -----------check switch ------------ */
-.form-check-input {
+.global-switch {
     -webkit-appearance: none;
     appearance: none;
     width: 48px;
@@ -890,7 +892,7 @@ th {
     transition: background-color 0.42 ease-in-out;
 }
 
-.form-check-input::before {
+.global-switch::before {
     content: '';
     position: absolute;
     top: 2px;
@@ -903,11 +905,11 @@ th {
 }
 
 
-.form-check-input:checked {
-    background-color: #0d6efd;
+.global-switch:checked {
+    background-color: #092550 !important;
 }
 
-.form-check-input:checked::before {
+.global-switch:checked::before {
     transform: translateX(15px);
 }
 
@@ -1138,12 +1140,12 @@ select {
 
 
 .custom-label {
-    border: 2px solid #ededed5f;
+    border: 1.5px solid #D0D5DD;
 
 }
 
 .custom-label.border-blue {
-    border: 2px solid #3684A4;
+    border: 1.5px solid #3684A4;
 }
 
 /* input[type='checkbox']{
@@ -1193,19 +1195,22 @@ select {
     background-color: #e0e0e0;
 }
 
-.user-profile-billing-table thead{
-border-collapse:collapse!important;
+.user-profile-billing-table thead {
+    border-collapse: collapse !important;
 }
-.user-profile-table-main{
-border:1.2px solid #EAECF0 !important;
-border-radius:12px!important;
+
+.user-profile-table-main {
+    border: 1.2px solid #EAECF0 !important;
+    border-radius: 12px !important;
 }
-.border-table{
-    border:1px solid #EAECF0 !important;
-    border-left:0px !important;
-    border-right:0px !important;
+
+.border-table {
+    border: 1px solid #EAECF0 !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
 }
-input[type="text"]{
+
+input[type="text"] {
     font-family: Plus Jakarta Sans;
     font-size: 16px;
     font-weight: 400;
@@ -1215,26 +1220,30 @@ input[type="text"]{
     text-decoration-skip-ink: none;
     color: #344054;
 }
-input[type="text"]::placeholder{
+
+input[type="text"]::placeholder {
     font-family: Plus Jakarta Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color:#344054;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #344054;
 }
-input:is([type="text"], [type="password"], [type="number"], [type="date"]):focus{
-    border:1.7px solid #3684A4!important;
-    outline: 0px!important;
-    box-shadow: none!important;
+
+input:is([type="text"], [type="password"], [type="number"], [type="date"]):focus {
+    border: 1.7px solid #3684A4 !important;
+    outline: 0px !important;
+    box-shadow: none !important;
 }
-table>:not(caption)>*>*{
-    background-color:transparent !important;
+
+table>:not(caption)>*>* {
+    background-color: transparent !important;
 }
-.border-added{
-    border:2px solid #3684A4!important;
+
+.border-added {
+    border: 2px solid #3684A4 !important;
 }
 
 input[type="number"].no-spinner::-webkit-outer-spin-button,
@@ -1242,6 +1251,7 @@ input[type="number"].no-spinner::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 /* ----------------------------avatars----------------------------- */
 .avatar-group {
     display: flex;
@@ -1252,12 +1262,13 @@ input[type="number"].no-spinner::-webkit-inner-spin-button {
 .avatar {
     border-radius: 50%;
     text-align: center;
-    margin-right: -8px;  
+    margin-right: -8px;
 
 }
-.avatar img{
-    border:2px solid rgb(255, 255, 255);
-    border-radius:50%;
+
+.avatar img {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
 }
 
 .avatar-group .more {
@@ -1267,12 +1278,12 @@ input[type="number"].no-spinner::-webkit-inner-spin-button {
     font-weight: bold;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     height: 36px;
     width: 36px;
     border: 1px solid #00000014;
     padding: 2px;
-    
+
 }
 
 
@@ -1301,5 +1312,36 @@ input[type="number"].no-spinner::-webkit-inner-spin-button {
     .laptop-img {
         width: 100%;
         height: auto;
+    }
+
+    .flate-picker-wrapper {
+        overflow: auto;
+    }
+
+    .flatpickr-day {
+        width: 34px !important;
+        height: 34px !important;
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        border-radius: 50% !important;
+        max-width: 34px !important;
+    }
+    .div-margin{
+        padding: 0px;
+    }
+    .user-profile-wrapper{
+        padding-left:  2px !important;
+        padding-right:  2px !important;
+    }
+    .billing-wrapper{
+        padding-left:  2px !important;
+        padding-right:  2px !important;
+    }
+    .whole_button{
+        padding: 8px 10px;
+    }
+    .global-check[type="checkbox"]{
+        Width:37px !important;
     }
 }

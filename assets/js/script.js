@@ -1,3 +1,18 @@
+// ----------------------===============Jquery Form Validation===============-----------------------
+
+// ----------------------===============Jquery Form Validation===============-----------------------
+
+const navbar = document.getElementById('dashboard-2')
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    navbar.classList.add('navbar-scroll')
+  }
+  else {
+    navbar.classList.remove('navbar-scroll')
+  }
+});
+
+
 $(document).ready(function () {
   $("#right-arrow").click(function () {
     $(".dashbord-1").removeClass("show");
@@ -64,8 +79,8 @@ fileInput.addEventListener('change', () => {
 ////////////////////////////////share and  like buttons////////////////////////////////
 const liked = document.getElementById('like-icon');
 liked.addEventListener('click', () => {
-  liked.classList.toggle('fa-heart');
-  liked.classList.toggle('fa-heart-crack');
+  liked.classList.toggle('text-primary');
+  liked.classList.toggle('text-success');
 });
 
 
@@ -177,12 +192,3 @@ document.getElementById('cNumber').addEventListener('input', function (e) {
   e.target.value = value;
 });
 // -------------------------------Navbar scroll up --------------------------------
-const navbar = document.getElementById('dashboard-2')
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 0) {
-    navbar.classList.add('navbar-scroll')
-  }
-  else {
-    navbar.classList.remove('navbar-scroll')
-  }
-})

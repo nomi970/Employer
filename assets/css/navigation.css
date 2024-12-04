@@ -276,8 +276,12 @@ body {
 }
 .naivgation-header .dropdown-item:hover svg path {
    stroke: white!important;
-   transition:0.3s ease;
+   transition:0.1s ease;
 }
+ .dropdown-item:hover svg path {
+    stroke: white!important;
+    transition:0.3s ease;
+ }
 
 .dashbord-2 .naivgation-header {
     width: 100%;
@@ -446,7 +450,10 @@ body {
 
     .dashboard-content,
     .dashbord-2 .naivgation-header {
-        padding: 16px;
+        padding: 8px;
+    }
+    .dashboard-content{
+        margin-top: 78px;
     }
 }
 
