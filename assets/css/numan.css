@@ -19,9 +19,9 @@
   text-align: left;
   color: #667085;
 }
-.nav.nav-tabs {
+/* .nav.nav-tabs {
   height: 56px;
-}
+} */
 .info_btn {
   width: 40px;
   height: 40px;
@@ -288,7 +288,8 @@
   height: 10px;
   background-color: #9E9E9E;
 }
-.speed_info_bx p,span{
+.speed_info_bx p,
+.speed_info_bx span{
   font-family: Open Sans;
   font-size: 10px;
   font-weight: 400;
@@ -333,6 +334,9 @@
   border: 1px solid #D0D5DD !important;
   box-shadow: none !important;
   padding: 12px 19px !important;
+}
+table thead{
+  background-color: #F9FAFB;
 }
 @media screen and (max-width: 992px) {
   .main__over_scroe_info {
