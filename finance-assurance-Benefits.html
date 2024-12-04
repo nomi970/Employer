@@ -334,7 +334,7 @@
                 </div>
             </aside>
             <div class="dashbord-2" id="dashboard-2">
-                <div class="naivgation-header">
+                  <div class="naivgation-header">
                     <div class="d-flex align-items-center justify-content-between gap-2 w-100">
                         <div class="main-search-bar">
                             <div class="d-flex align-items-center gap-3">
@@ -349,12 +349,12 @@
                                         <div class="position-relative">
                                             <input class="header-input form-control bg-transparent" type="text"
                                                 placeholder="Search" />
-                                            <div class="position-absolute" style="top: 5px; left: 16px;">
+                                            <div class="position-absolute" style="top: 8px; left: 16px;">
                                                 <img class="h-100 w-100"
                                                     src="assets/images/employer-ease-pics/magnifying-glass.svg"
                                                     alt="magnifying-glass">
                                             </div>
-                                            <div class="position-absolute" style="top: 5px; right: 16px;">
+                                            <div class="position-absolute" style="top: 8px; right: 16px;">
                                                 <a href="#"> <img class="h-100 w-100"
                                                         src="assets/images/employer-ease-pics/filter-icon.svg"
                                                         alt="magnifying-glass"></a>
@@ -365,7 +365,8 @@
                             </div>
                         </div>
 
-                        <div class="d-flex align-items-center gap-1">
+                        <!-- --------------------------------content show on tab and hide on mobile-------------------------------- -->
+                        <div class="d-flex align-items-center gap-1 d-none d-md-block">
                             <div class="d-flex align-items-center" style="gap: 16px">
                                 <div class="dropdown">
                                     <button class="d-block border-0 bg-transparent" data-bs-toggle="dropdown"
@@ -436,10 +437,10 @@
                                                         1.0</span></p>
                                             </div> -->
                                     </button>
-                                                                         <ul class="dropdown-menu language-dropdown">
-                                       <li>
-                                            <a class="dropdown-item" href="User-profile.html"><svg class="me-1" width="24"
-                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                    <ul class="dropdown-menu language-dropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="User-profile.html"><svg class="me-1"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
                                                         d="M9.3951 19.3711L9.97955 20.6856C10.1533 21.0768 10.4368 21.4093 10.7958 21.6426C11.1547 21.8759 11.5737 22.0001 12.0018 22C12.4299 22.0001 12.8488 21.8759 13.2078 21.6426C13.5667 21.4093 13.8503 21.0768 14.024 20.6856L14.6084 19.3711C14.8165 18.9047 15.1664 18.5159 15.6084 18.26C16.0532 18.0034 16.5678 17.8941 17.0784 17.9478L18.5084 18.1C18.9341 18.145 19.3637 18.0656 19.7451 17.8713C20.1265 17.6771 20.4434 17.3763 20.6573 17.0056C20.8715 16.635 20.9735 16.2103 20.9511 15.7829C20.9286 15.3555 20.7825 14.9438 20.5307 14.5978L19.684 13.4344C19.3825 13.0171 19.2214 12.5148 19.224 12C19.2239 11.4866 19.3865 10.9864 19.6884 10.5711L20.5351 9.40778C20.787 9.06175 20.933 8.65007 20.9555 8.22267C20.978 7.79528 20.8759 7.37054 20.6618 7C20.4479 6.62923 20.131 6.32849 19.7496 6.13423C19.3681 5.93997 18.9386 5.86053 18.5129 5.90556L17.0829 6.05778C16.5722 6.11141 16.0577 6.00212 15.6129 5.74556C15.17 5.48825 14.82 5.09736 14.6129 4.62889L14.024 3.31444C13.8503 2.92317 13.5667 2.59072 13.2078 2.3574C12.8488 2.12408 12.4299 1.99993 12.0018 2C11.5737 1.99993 11.1547 2.12408 10.7958 2.3574C10.4368 2.59072 10.1533 2.92317 9.97955 3.31444L9.3951 4.62889C9.18803 5.09736 8.83798 5.48825 8.3951 5.74556C7.95032 6.00212 7.43577 6.11141 6.9251 6.05778L5.49066 5.90556C5.06499 5.86053 4.6354 5.93997 4.25397 6.13423C3.87255 6.32849 3.55567 6.62923 3.34177 7C3.12759 7.37054 3.02555 7.79528 3.04804 8.22267C3.07052 8.65007 3.21656 9.06175 3.46844 9.40778L4.3151 10.5711C4.61704 10.9864 4.77964 11.4866 4.77955 12C4.77964 12.5134 4.61704 13.0137 4.3151 13.4289L3.46844 14.5922C3.21656 14.9382 3.07052 15.3499 3.04804 15.7773C3.02555 16.2047 3.12759 16.6295 3.34177 17C3.55589 17.3706 3.8728 17.6712 4.25417 17.8654C4.63554 18.0596 5.06502 18.1392 5.49066 18.0944L6.92066 17.9422C7.43133 17.8886 7.94587 17.9979 8.39066 18.2544C8.83519 18.511 9.18687 18.902 9.3951 19.3711Z"
@@ -450,11 +451,12 @@
                                                         stroke="#6F7784" stroke-width="2" stroke-linecap="round"
                                                         stroke-linejoin="round" />
                                                 </svg>
-                                               Account Settings</a>
+                                                Account Settings</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="login.html"><svg class="me-2" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <a class="dropdown-item" href="login.html"><svg class="me-2" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
                                                     <path
                                                         d="M16 17L21 12M21 12L16 7M21 12H9M9 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21H9"
                                                         stroke="#6F7784" stroke-width="2" stroke-linecap="round"
@@ -473,6 +475,95 @@
                                     </svg> -->
                             </div>
                         </div>
+                        <!-- -------------------------------------================Off convas for mobile small screen===============------------------------------------ -->
+                        <div class="d-block d-md-none">
+                            <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRightUnique" aria-controls="offcanvasRightUnique">
+                                <img src="assets/images/employer-ease-pics/user-profile.svg" alt="">
+                            </button>
+                        
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightUnique" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="">
+                                        <div class="w-100" style="gap: 16px">
+                                            <div class="dropdown">
+                                                <button class="d-flex align-items-center border-0 bg-transparent" data-bs-toggle="dropdown"
+                                                    aria-expanded="false" type="button" style="gap: 8px">
+                                                    <div
+                                                        class="icon-placeholder rounded-circle d-flex align-items-center justify-content-center">
+                                                        <img src="assets/images/employer-ease-pics/header-profile.svg" alt="">
+                                                    </div>
+                                                    <i class="fa fa-chevron-down text-dark" style="font-size: 14px;"></i>
+                                                </button>
+                                                <ul class="dropdown-menu language-dropdown">
+                                                    <li>
+                                                        <a class="dropdown-item" href="User-profile.html">
+                                                            <!-- SVG content -->
+                                                            Account Settings
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="login.html">
+                                                            <!-- SVG content -->
+                                                            Sign out
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                        
+                                            <hr>
+                        
+                                            <div class="dropdown">
+                                                <button class="d-block border-0 bg-transparent dropdown-toggle" data-bs-toggle="dropdown"
+                                                    aria-expanded="false" type="button">
+                                                    <span class="">
+                                                        <img class="me-2"
+                                                            src="assets/images/employer-ease-pics/language-switch.svg" alt="" />Eng<sub>
+                                                            (US)</sub>
+                                                    </span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Urdu</a></li>
+                                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column gap-3 mt-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="dropdown">
+                                                <button class="d-block border-0 bg-transparent" data-bs-toggle="dropdown"
+                                                    aria-expanded="false" type="button">
+                                                    <img class="mt-2" src="assets/images/employer-ease-pics/cart.svg" alt="" />
+                                                    <span class="dot active"></span>
+                                                </button>
+                                            </div>
+                                            <label class="mt-2 fs_14 fw_500 tertiary-black j_family" for="">Cart</label>
+                                        </div>
+                        
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="dropdown ms-1">
+                                                <button class="d-block border-0 bg-transparent" data-bs-toggle="dropdown"
+                                                    aria-expanded="false" type="button">
+                                                    <img src="assets/images/employer-ease-pics/calendar.svg" alt="" />
+                                                    <span class="dot active"></span>
+                                                </button>
+                                            </div>
+                                            <label class="fs_14 fw_500 tertiary-black j_family" for="Cart">Calendar</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- -------------------------------------================Off convas for mobile small screen===============------------------------------------ -->
+
+
+
+
                     </div>
                 </div>
                 <!-- Content Section -->
@@ -503,7 +594,7 @@
                                                 <div class="position-relative">
                                                     <input class="form-control" id="dateBirth" type="text"
                                                         placeholder="28 February, 1998">
-                                                    <div class="position-absolute" style="right: 10px; top:4px;"><a
+                                                    <div class="position-absolute" style="right: 10px; top:7px;"><a
                                                             id="calnedarIcon" href="#"><img
                                                                 src="assets/images/employer-ease-pics/calendar-gray.svg"
                                                                 alt=""></a>
