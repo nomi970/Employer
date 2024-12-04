@@ -454,6 +454,14 @@ input[type="checkbox"]:checked {
         padding: 20px;
     }
 }
+@media screen and (max-width: 992px) {
+    #myVideo-2{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
 @media screen and (max-width: 600) {
     .h_50vh_sm{
         height: 50vh !important;
