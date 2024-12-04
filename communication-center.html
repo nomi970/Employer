@@ -355,12 +355,12 @@
                                         <div class="position-relative">
                                             <input class="header-input form-control bg-transparent" type="text"
                                                 placeholder="Search" />
-                                            <div class="position-absolute" style="top: 5px; left: 16px;">
+                                            <div class="position-absolute" style="top: 8px; left: 16px;">
                                                 <img class="h-100 w-100"
                                                     src="assets/images/employer-ease-pics/magnifying-glass.svg"
                                                     alt="magnifying-glass">
                                             </div>
-                                            <div class="position-absolute" style="top: 5px; right: 16px;">
+                                            <div class="position-absolute" style="top: 8px; right: 16px;">
                                                 <a href="#"> <img class="h-100 w-100"
                                                         src="assets/images/employer-ease-pics/filter-icon.svg"
                                                         alt="magnifying-glass"></a>
@@ -371,12 +371,13 @@
                             </div>
                         </div>
 
-                        <div class="d-flex align-items-center gap-1">
+                        <!-- --------------------------------content show on tab and hide on mobile-------------------------------- -->
+                        <div class="d-flex align-items-center gap-1 d-none d-md-block">
                             <div class="d-flex align-items-center" style="gap: 16px">
                                 <div class="dropdown">
                                     <button class="d-block border-0 bg-transparent" data-bs-toggle="dropdown"
                                         aria-expanded="false" type="button">
-                                        <img src="assets/images/employer-ease-pics/calendar.svg" alt="image" />
+                                        <img src="assets/images/employer-ease-pics/calendar.svg" alt="" />
                                         <span class="dot active"></span>
                                     </button>
                                     <!-- <ul class="dropdown-menu">
@@ -393,7 +394,7 @@
                                 <div class="dropdown">
                                     <button class="d-block border-0 bg-transparent" data-bs-toggle="dropdown"
                                         aria-expanded="false" type="button">
-                                        <img src="assets/images/employer-ease-pics/cart.svg" alt="image" />
+                                        <img src="assets/images/employer-ease-pics/cart.svg" alt="" />
                                         <span class="dot active"></span>
                                     </button>
                                     <!-- <ul class="dropdown-menu">
@@ -412,7 +413,7 @@
                                         data-bs-toggle="dropdown" aria-expanded="false" type="button">
                                         <span class=""><img class="me-2"
                                                 src="assets/images/employer-ease-pics/language-switch.svg"
-                                                alt="image" />Eng<sub> (US)</sub></span>
+                                                alt="" />Eng<sub> (US)</sub></span>
                                     </button>
                                     <ul class="dropdown-menu ">
                                         <li>
@@ -442,10 +443,10 @@
                                                         1.0</span></p>
                                             </div> -->
                                     </button>
-                                                                         <ul class="dropdown-menu language-dropdown">
-                                       <li>
-                                            <a class="dropdown-item" href="User-profile.html"><svg class="me-1" width="24"
-                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                    <ul class="dropdown-menu language-dropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="User-profile.html"><svg class="me-1"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
                                                         d="M9.3951 19.3711L9.97955 20.6856C10.1533 21.0768 10.4368 21.4093 10.7958 21.6426C11.1547 21.8759 11.5737 22.0001 12.0018 22C12.4299 22.0001 12.8488 21.8759 13.2078 21.6426C13.5667 21.4093 13.8503 21.0768 14.024 20.6856L14.6084 19.3711C14.8165 18.9047 15.1664 18.5159 15.6084 18.26C16.0532 18.0034 16.5678 17.8941 17.0784 17.9478L18.5084 18.1C18.9341 18.145 19.3637 18.0656 19.7451 17.8713C20.1265 17.6771 20.4434 17.3763 20.6573 17.0056C20.8715 16.635 20.9735 16.2103 20.9511 15.7829C20.9286 15.3555 20.7825 14.9438 20.5307 14.5978L19.684 13.4344C19.3825 13.0171 19.2214 12.5148 19.224 12C19.2239 11.4866 19.3865 10.9864 19.6884 10.5711L20.5351 9.40778C20.787 9.06175 20.933 8.65007 20.9555 8.22267C20.978 7.79528 20.8759 7.37054 20.6618 7C20.4479 6.62923 20.131 6.32849 19.7496 6.13423C19.3681 5.93997 18.9386 5.86053 18.5129 5.90556L17.0829 6.05778C16.5722 6.11141 16.0577 6.00212 15.6129 5.74556C15.17 5.48825 14.82 5.09736 14.6129 4.62889L14.024 3.31444C13.8503 2.92317 13.5667 2.59072 13.2078 2.3574C12.8488 2.12408 12.4299 1.99993 12.0018 2C11.5737 1.99993 11.1547 2.12408 10.7958 2.3574C10.4368 2.59072 10.1533 2.92317 9.97955 3.31444L9.3951 4.62889C9.18803 5.09736 8.83798 5.48825 8.3951 5.74556C7.95032 6.00212 7.43577 6.11141 6.9251 6.05778L5.49066 5.90556C5.06499 5.86053 4.6354 5.93997 4.25397 6.13423C3.87255 6.32849 3.55567 6.62923 3.34177 7C3.12759 7.37054 3.02555 7.79528 3.04804 8.22267C3.07052 8.65007 3.21656 9.06175 3.46844 9.40778L4.3151 10.5711C4.61704 10.9864 4.77964 11.4866 4.77955 12C4.77964 12.5134 4.61704 13.0137 4.3151 13.4289L3.46844 14.5922C3.21656 14.9382 3.07052 15.3499 3.04804 15.7773C3.02555 16.2047 3.12759 16.6295 3.34177 17C3.55589 17.3706 3.8728 17.6712 4.25417 17.8654C4.63554 18.0596 5.06502 18.1392 5.49066 18.0944L6.92066 17.9422C7.43133 17.8886 7.94587 17.9979 8.39066 18.2544C8.83519 18.511 9.18687 18.902 9.3951 19.3711Z"
@@ -456,11 +457,12 @@
                                                         stroke="#6F7784" stroke-width="2" stroke-linecap="round"
                                                         stroke-linejoin="round" />
                                                 </svg>
-                                               Account Settings</a>
+                                                Account Settings</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="login.html"><svg class="me-2" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <a class="dropdown-item" href="login.html"><svg class="me-2" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
                                                     <path
                                                         d="M16 17L21 12M21 12L16 7M21 12H9M9 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21H9"
                                                         stroke="#6F7784" stroke-width="2" stroke-linecap="round"
@@ -479,6 +481,95 @@
                                     </svg> -->
                             </div>
                         </div>
+                        <!-- -------------------------------------================Off convas for mobile small screen===============------------------------------------ -->
+                        <div class="d-block d-md-none">
+                            <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRightUnique" aria-controls="offcanvasRightUnique">
+                                <img src="assets/images/employer-ease-pics/user-profile.svg" alt="">
+                            </button>
+                        
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightUnique" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="">
+                                        <div class="w-100" style="gap: 16px">
+                                            <div class="dropdown">
+                                                <button class="d-flex align-items-center border-0 bg-transparent" data-bs-toggle="dropdown"
+                                                    aria-expanded="false" type="button" style="gap: 8px">
+                                                    <div
+                                                        class="icon-placeholder rounded-circle d-flex align-items-center justify-content-center">
+                                                        <img src="assets/images/employer-ease-pics/header-profile.svg" alt="">
+                                                    </div>
+                                                    <i class="fa fa-chevron-down text-dark" style="font-size: 14px;"></i>
+                                                </button>
+                                                <ul class="dropdown-menu language-dropdown">
+                                                    <li>
+                                                        <a class="dropdown-item" href="User-profile.html">
+                                                            <!-- SVG content -->
+                                                            Account Settings
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="login.html">
+                                                            <!-- SVG content -->
+                                                            Sign out
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                        
+                                            <hr>
+                        
+                                            <div class="dropdown">
+                                                <button class="d-block border-0 bg-transparent dropdown-toggle" data-bs-toggle="dropdown"
+                                                    aria-expanded="false" type="button">
+                                                    <span class="">
+                                                        <img class="me-2"
+                                                            src="assets/images/employer-ease-pics/language-switch.svg" alt="" />Eng<sub>
+                                                            (US)</sub>
+                                                    </span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Urdu</a></li>
+                                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column gap-3 mt-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="dropdown">
+                                                <button class="d-block border-0 bg-transparent" data-bs-toggle="dropdown"
+                                                    aria-expanded="false" type="button">
+                                                    <img class="mt-2" src="assets/images/employer-ease-pics/cart.svg" alt="" />
+                                                    <span class="dot active"></span>
+                                                </button>
+                                            </div>
+                                            <label class="mt-2 fs_14 fw_500 tertiary-black j_family" for="">Cart</label>
+                                        </div>
+                        
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="dropdown ms-1">
+                                                <button class="d-block border-0 bg-transparent" data-bs-toggle="dropdown"
+                                                    aria-expanded="false" type="button">
+                                                    <img src="assets/images/employer-ease-pics/calendar.svg" alt="" />
+                                                    <span class="dot active"></span>
+                                                </button>
+                                            </div>
+                                            <label class="fs_14 fw_500 tertiary-black j_family" for="Cart">Calendar</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- -------------------------------------================Off convas for mobile small screen===============------------------------------------ -->
+
+
+
+
                     </div>
                 </div>
                 <!-- Content Section -->
@@ -521,7 +612,7 @@
                                         </div>
                                     </div>
                                     <!-- --------------------------Sub tabs------------------------ -->
-                                    <div>
+                                    <div mt-2>
                                         <ul class="nav crm-tabs px-0  nav-tabs" id="myTab1" role="tablist">
                                             <li class="nav-item " role="presentation">
                                                 <button class="nav-link px-2 active border-0" id="home-tab"
@@ -560,12 +651,13 @@
                                                 <div class="bg-white border-r-12 border1 p_16 mt-4">
                                                     <h3 class="fs_18 fw_600 lh_28 j_family">Inbox(4)</h3>
                                                     <!-- <div class="mt-4 border-r-12 p_16 border1"> -->
-                                                    <div class="table-responsive user-profile-table-main mt-4 user-profile-billing-table">
+                                                    <div
+                                                        class="table-responsive user-profile-table-main mt-4 user-profile-billing-table">
                                                         <table class="inbox-table w-100  p_16 ">
                                                             <tr class="border">
                                                                 <td class="">
                                                                     <div class="d-flex gap-2 align-items-center">
-                                                                        <input type="checkbox">
+                                                                        <input class="global-check"  type="checkbox">
                                                                         <img width="40px" height="40px"
                                                                             src="assets/images/employer-ease-pics/special-profile.jpg"
                                                                             alt="">
@@ -596,17 +688,63 @@
                                                                                 src="assets/images/employer-ease-pics/3-dot-line.svg"
                                                                                 alt="menu" loading="lazy">
                                                                         </button>
-                                                                        <ul class="dropdown-menu p-0">
-                                                                            <li><button type="button"
-                                                                                    class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                        <ul class="dropdown-menu py-2">
+                                                                            <li class="rounded"><button type="button"
+                                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     data-bs-toggle="modal"
                                                                                     data-bs-target="#Withdraw__amount">
+
+                                                                                    <svg class="me-1" width="20"
+                                                                                        height="14" viewBox="0 0 20 14"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
+                                                                                            stroke="#475467"
+                                                                                            stroke-width="1.66667"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                        <path
+                                                                                            d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
+                                                                                            stroke="#475467"
+                                                                                            stroke-width="1.66667"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                    </svg>
                                                                                     View</button></li>
-                                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                            <li class="rounded"><a
+                                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     href="#" data-bs-toggle="modal">
-                                                                                    Select</a></li>
-                                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray absolute-aligntable-drop-down"
+
+                                                                                    <svg class="me-1" width="24"
+                                                                                        height="24" viewBox="0 0 24 24"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
+                                                                                            stroke="#6F7784"
+                                                                                            stroke-width="2" />
+                                                                                    </svg>
+
+                                                                                    Share</a></li>
+                                                                            <li class="rounded"><a
+                                                                                    class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     href="#" data-bs-toggle="modal">
+
+
+                                                                                    <svg class="ms-1" width="24"
+                                                                                        height="24" viewBox="0 0 24 24"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
+                                                                                            stroke="#6F7784"
+                                                                                            stroke-width="2"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                    </svg>
+
+
                                                                                     Delete</a></li>
                                                                         </ul>
                                                                     </div>
@@ -615,7 +753,7 @@
                                                             <tr class="border">
                                                                 <td class="">
                                                                     <div class="d-flex gap-2 align-items-center">
-                                                                        <input type="checkbox">
+                                                                        <input class="global-check"  type="checkbox">
                                                                         <img width="40px" height="40px"
                                                                             src="assets/images/employer-ease-pics/special-profile.jpg"
                                                                             alt="">
@@ -646,17 +784,63 @@
                                                                                 src="assets/images/employer-ease-pics/3-dot-line.svg"
                                                                                 alt="menu" loading="lazy">
                                                                         </button>
-                                                                        <ul class="dropdown-menu p-0">
-                                                                            <li><button type="button"
-                                                                                    class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                        <ul class="dropdown-menu py-2">
+                                                                            <li class="rounded"><button type="button"
+                                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     data-bs-toggle="modal"
                                                                                     data-bs-target="#Withdraw__amount">
+
+                                                                                    <svg class="me-1" width="20"
+                                                                                        height="14" viewBox="0 0 20 14"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
+                                                                                            stroke="#475467"
+                                                                                            stroke-width="1.66667"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                        <path
+                                                                                            d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
+                                                                                            stroke="#475467"
+                                                                                            stroke-width="1.66667"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                    </svg>
                                                                                     View</button></li>
-                                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                            <li class="rounded"><a
+                                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     href="#" data-bs-toggle="modal">
-                                                                                    Reply</a></li>
-                                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray absolute-aligntable-drop-down"
+
+                                                                                    <svg class="me-1" width="24"
+                                                                                        height="24" viewBox="0 0 24 24"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
+                                                                                            stroke="#6F7784"
+                                                                                            stroke-width="2" />
+                                                                                    </svg>
+
+                                                                                    Share</a></li>
+                                                                            <li class="rounded"><a
+                                                                                    class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     href="#" data-bs-toggle="modal">
+
+
+                                                                                    <svg class="ms-1" width="24"
+                                                                                        height="24" viewBox="0 0 24 24"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
+                                                                                            stroke="#6F7784"
+                                                                                            stroke-width="2"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                    </svg>
+
+
                                                                                     Delete</a></li>
                                                                         </ul>
                                                                     </div>
@@ -665,7 +849,7 @@
                                                             <tr class="border">
                                                                 <td class="">
                                                                     <div class="d-flex gap-2 align-items-center">
-                                                                        <input type="checkbox">
+                                                                        <input class="global-check"  type="checkbox">
                                                                         <img width="40px" height="40px"
                                                                             src="assets/images/employer-ease-pics/special-profile.jpg"
                                                                             alt="">
@@ -689,24 +873,70 @@
                                                                 <td class="">
                                                                     <div class="dropdown table-dropdown">
                                                                         <button type="menu"
-                                                                            class="border-0 bg-transparen action__btnt"
+                                                                            class="border-0 bg-transparent action__btn"
                                                                             type="button" data-bs-toggle="dropdown"
                                                                             aria-expanded="false">
                                                                             <img class="object-fit-cover"
                                                                                 src="assets/images/employer-ease-pics/3-dot-line.svg"
                                                                                 alt="menu" loading="lazy">
                                                                         </button>
-                                                                        <ul class="dropdown-menu p-0">
-                                                                            <li><button type="button"
-                                                                                    class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                        <ul class="dropdown-menu py-2">
+                                                                            <li class="rounded"><button type="button"
+                                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     data-bs-toggle="modal"
                                                                                     data-bs-target="#Withdraw__amount">
+
+                                                                                    <svg class="me-1" width="20"
+                                                                                        height="14" viewBox="0 0 20 14"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
+                                                                                            stroke="#475467"
+                                                                                            stroke-width="1.66667"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                        <path
+                                                                                            d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
+                                                                                            stroke="#475467"
+                                                                                            stroke-width="1.66667"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                    </svg>
                                                                                     View</button></li>
-                                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                            <li class="rounded"><a
+                                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     href="#" data-bs-toggle="modal">
-                                                                                    Select</a></li>
-                                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray absolute-aligntable-drop-down"
+
+                                                                                    <svg class="me-1" width="24"
+                                                                                        height="24" viewBox="0 0 24 24"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
+                                                                                            stroke="#6F7784"
+                                                                                            stroke-width="2" />
+                                                                                    </svg>
+
+                                                                                    Share</a></li>
+                                                                            <li class="rounded"><a
+                                                                                    class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     href="#" data-bs-toggle="modal">
+
+
+                                                                                    <svg class="ms-1" width="24"
+                                                                                        height="24" viewBox="0 0 24 24"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
+                                                                                            stroke="#6F7784"
+                                                                                            stroke-width="2"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                    </svg>
+
+
                                                                                     Delete</a></li>
                                                                         </ul>
                                                                     </div>
@@ -737,7 +967,7 @@
                                                             <tr class="border">
                                                                 <td class="">
                                                                     <div class="d-flex gap-2 align-items-center">
-                                                                        <input type="checkbox">
+                                                                        <input class="global-check"  type="checkbox">
                                                                         <img width="40px" height="40px"
                                                                             src="assets/images/employer-ease-pics/special-profile.jpg"
                                                                             alt="">
@@ -768,17 +998,63 @@
                                                                                 src="assets/images/employer-ease-pics/3-dot-line.svg"
                                                                                 alt="menu" loading="lazy">
                                                                         </button>
-                                                                        <ul class="dropdown-menu p-0">
-                                                                            <li><button type="button"
-                                                                                    class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                        <ul class="dropdown-menu py-2">
+                                                                            <li class="rounded"><button type="button"
+                                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     data-bs-toggle="modal"
                                                                                     data-bs-target="#Withdraw__amount">
+
+                                                                                    <svg class="me-1" width="20"
+                                                                                        height="14" viewBox="0 0 20 14"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
+                                                                                            stroke="#475467"
+                                                                                            stroke-width="1.66667"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                        <path
+                                                                                            d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
+                                                                                            stroke="#475467"
+                                                                                            stroke-width="1.66667"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                    </svg>
                                                                                     View</button></li>
-                                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                            <li class="rounded"><a
+                                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     href="#" data-bs-toggle="modal">
-                                                                                    Select</a></li>
-                                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray absolute-aligntable-drop-down"
+
+                                                                                    <svg class="me-1" width="24"
+                                                                                        height="24" viewBox="0 0 24 24"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
+                                                                                            stroke="#6F7784"
+                                                                                            stroke-width="2" />
+                                                                                    </svg>
+
+                                                                                    Share</a></li>
+                                                                            <li class="rounded"><a
+                                                                                    class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     href="#" data-bs-toggle="modal">
+
+
+                                                                                    <svg class="ms-1" width="24"
+                                                                                        height="24" viewBox="0 0 24 24"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
+                                                                                            stroke="#6F7784"
+                                                                                            stroke-width="2"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                    </svg>
+
+
                                                                                     Delete</a></li>
                                                                         </ul>
                                                                     </div>
@@ -787,7 +1063,7 @@
                                                             <tr class="border">
                                                                 <td class="">
                                                                     <div class="d-flex gap-2 align-items-center">
-                                                                        <input type="checkbox">
+                                                                        <input class="global-check"  type="checkbox">
                                                                         <img width="40px" height="40px"
                                                                             src="assets/images/employer-ease-pics/special-profile.jpg"
                                                                             alt="">
@@ -837,7 +1113,7 @@
                                                             <tr class="border">
                                                                 <td class="">
                                                                     <div class="d-flex gap-2 align-items-center">
-                                                                        <input type="checkbox">
+                                                                        <input class="global-check"  type="checkbox">
                                                                         <img width="40px" height="40px"
                                                                             src="assets/images/employer-ease-pics/special-profile.jpg"
                                                                             alt="">
@@ -868,17 +1144,63 @@
                                                                                 src="assets/images/employer-ease-pics/3-dot-line.svg"
                                                                                 alt="menu" loading="lazy">
                                                                         </button>
-                                                                        <ul class="dropdown-menu p-0">
-                                                                            <li><button type="button"
-                                                                                    class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                        <ul class="dropdown-menu py-2">
+                                                                            <li class="rounded"><button type="button"
+                                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     data-bs-toggle="modal"
                                                                                     data-bs-target="#Withdraw__amount">
+
+                                                                                    <svg class="me-1" width="20"
+                                                                                        height="14" viewBox="0 0 20 14"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
+                                                                                            stroke="#475467"
+                                                                                            stroke-width="1.66667"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                        <path
+                                                                                            d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
+                                                                                            stroke="#475467"
+                                                                                            stroke-width="1.66667"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                    </svg>
                                                                                     View</button></li>
-                                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                            <li class="rounded"><a
+                                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     href="#" data-bs-toggle="modal">
-                                                                                    Select</a></li>
-                                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray absolute-aligntable-drop-down"
+
+                                                                                    <svg class="me-1" width="24"
+                                                                                        height="24" viewBox="0 0 24 24"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
+                                                                                            stroke="#6F7784"
+                                                                                            stroke-width="2" />
+                                                                                    </svg>
+
+                                                                                    Share</a></li>
+                                                                            <li class="rounded"><a
+                                                                                    class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     href="#" data-bs-toggle="modal">
+
+
+                                                                                    <svg class="ms-1" width="24"
+                                                                                        height="24" viewBox="0 0 24 24"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
+                                                                                            stroke="#6F7784"
+                                                                                            stroke-width="2"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                    </svg>
+
+
                                                                                     Delete</a></li>
                                                                         </ul>
                                                                     </div>
@@ -909,7 +1231,7 @@
                                                             <tr class="border">
                                                                 <td class="">
                                                                     <div class="d-flex gap-2 align-items-center">
-                                                                        <input type="checkbox">
+                                                                        <input class="global-check"  type="checkbox">
                                                                         <img width="40px" height="40px"
                                                                             src="assets/images/employer-ease-pics/special-profile.jpg"
                                                                             alt="">
@@ -940,17 +1262,63 @@
                                                                                 src="assets/images/employer-ease-pics/3-dot-line.svg"
                                                                                 alt="menu" loading="lazy">
                                                                         </button>
-                                                                        <ul class="dropdown-menu p-0">
-                                                                            <li><button type="button"
-                                                                                    class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                        <ul class="dropdown-menu py-2">
+                                                                            <li class="rounded"><button type="button"
+                                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     data-bs-toggle="modal"
                                                                                     data-bs-target="#Withdraw__amount">
+
+                                                                                    <svg class="me-1" width="20"
+                                                                                        height="14" viewBox="0 0 20 14"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
+                                                                                            stroke="#475467"
+                                                                                            stroke-width="1.66667"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                        <path
+                                                                                            d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
+                                                                                            stroke="#475467"
+                                                                                            stroke-width="1.66667"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                    </svg>
                                                                                     View</button></li>
-                                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                            <li class="rounded"><a
+                                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     href="#" data-bs-toggle="modal">
-                                                                                    Select</a></li>
-                                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray absolute-aligntable-drop-down"
+
+                                                                                    <svg class="me-1" width="24"
+                                                                                        height="24" viewBox="0 0 24 24"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
+                                                                                            stroke="#6F7784"
+                                                                                            stroke-width="2" />
+                                                                                    </svg>
+
+                                                                                    Share</a></li>
+                                                                            <li class="rounded"><a
+                                                                                    class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                                     href="#" data-bs-toggle="modal">
+
+
+                                                                                    <svg class="ms-1" width="24"
+                                                                                        height="24" viewBox="0 0 24 24"
+                                                                                        fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path
+                                                                                            d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
+                                                                                            stroke="#6F7784"
+                                                                                            stroke-width="2"
+                                                                                            stroke-linecap="round"
+                                                                                            stroke-linejoin="round" />
+                                                                                    </svg>
+
+
                                                                                     Delete</a></li>
                                                                         </ul>
                                                                     </div>
@@ -996,7 +1364,7 @@
                                         <div>
                                             <h3 class="fs_18 fw_600 j_family">Calendar</h3>
                                         </div>
-                                        <div class="d-flex gap-2 flex-wrap flex-md-nowrap">
+                                        <div class="d-flex gap-3 flex-wrap flex-md-nowrap">
                                             <button class="whole_button main_color fw_600 border-0 button_bg"><i
                                                     class="fa fa-user me-2 main_color"></i> Join with an ID</button>
                                             <button
@@ -1040,7 +1408,7 @@
                                     </div>
                                     <div class="mt-4 border1 border-r-12 p-4">
                                         <p
-                                            class="fs_16 fw_400 tertiary-black j_family d-flex align-items-center justify-content-center">
+                                            class="fs_16 fw_400 tertiary-black j_family flex-wrap flex-md-nowrap gap-2 d-flex align-items-center justify-content-center">
                                             You don't have any meetings today. <a href=""
                                                 class="fs_16 fw_700 main_color j_family text-decoration-none">Schedule a
                                                 Meeting?</a></p>
@@ -1115,7 +1483,7 @@
                                                                 alt=""></button>
                                                         <p class="fs_16 fw_500 j_family">Copy Link</p>
                                                     </div>
-                                                    <div class="dropdown table-dropdown">
+                                                    <div class="rounded dropdown table-dropdown">
                                                         <button type="menu" class="border-0 bg-transparent action__btn"
                                                             type="button" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
@@ -1123,17 +1491,56 @@
                                                                 src="assets/images/employer-ease-pics/3-dot-line.svg"
                                                                 alt="menu" loading="lazy">
                                                         </button>
-                                                        <ul class="dropdown-menu p-0">
-                                                            <li><button type="button"
-                                                                    class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                        <ul class="dropdown-menu py-2">
+                                                            <li class="rounded"><button type="button"
+                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#Withdraw__amount">
+
+                                                                    <svg class="me-1" width="20" height="14"
+                                                                        viewBox="0 0 20 14" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
+                                                                            stroke="#475467" stroke-width="1.66667"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <path
+                                                                            d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
+                                                                            stroke="#475467" stroke-width="1.66667"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </svg>
                                                                     View</button></li>
-                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                            <li class="rounded"><a
+                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                     href="#" data-bs-toggle="modal">
-                                                                    Select</a></li>
-                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray absolute-aligntable-drop-down"
+
+                                                                    <svg class="me-1" width="24" height="24"
+                                                                        viewBox="0 0 24 24" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
+                                                                            stroke="#6F7784" stroke-width="2" />
+                                                                    </svg>
+
+                                                                    Share</a></li>
+                                                            <li class="rounded"><a
+                                                                    class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                     href="#" data-bs-toggle="modal">
+
+
+                                                                    <svg class="ms-1" width="24" height="24"
+                                                                        viewBox="0 0 24 24" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
+                                                                            stroke="#6F7784" stroke-width="2"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </svg>
+
+
                                                                     Delete</a></li>
                                                         </ul>
                                                     </div>
@@ -1164,17 +1571,56 @@
                                                                 src="assets/images/employer-ease-pics/3-dot-line.svg"
                                                                 alt="menu" loading="lazy">
                                                         </button>
-                                                        <ul class="dropdown-menu p-0">
-                                                            <li><button type="button"
-                                                                    class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                        <ul class="dropdown-menu py-2">
+                                                            <li class="rounded"><button type="button"
+                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#Withdraw__amount">
+
+                                                                    <svg class="me-1" width="20" height="14"
+                                                                        viewBox="0 0 20 14" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
+                                                                            stroke="#475467" stroke-width="1.66667"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <path
+                                                                            d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
+                                                                            stroke="#475467" stroke-width="1.66667"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </svg>
                                                                     View</button></li>
-                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                            <li class="rounded"><a
+                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                     href="#" data-bs-toggle="modal">
-                                                                    Select</a></li>
-                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray absolute-aligntable-drop-down"
+
+                                                                    <svg class="me-1" width="24" height="24"
+                                                                        viewBox="0 0 24 24" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
+                                                                            stroke="#6F7784" stroke-width="2" />
+                                                                    </svg>
+
+                                                                    Share</a></li>
+                                                            <li class="rounded"><a
+                                                                    class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                     href="#" data-bs-toggle="modal">
+
+
+                                                                    <svg class="ms-1" width="24" height="24"
+                                                                        viewBox="0 0 24 24" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
+                                                                            stroke="#6F7784" stroke-width="2"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </svg>
+
+
                                                                     Delete</a></li>
                                                         </ul>
                                                     </div>
@@ -1205,17 +1651,56 @@
                                                                 src="assets/images/employer-ease-pics/3-dot-line.svg"
                                                                 alt="menu" loading="lazy">
                                                         </button>
-                                                        <ul class="dropdown-menu p-0">
-                                                            <li><button type="button"
-                                                                    class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                        <ul class="dropdown-menu py-2">
+                                                            <li class="rounded"><button type="button"
+                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#Withdraw__amount">
+
+                                                                    <svg class="me-1" width="20" height="14"
+                                                                        viewBox="0 0 20 14" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
+                                                                            stroke="#475467" stroke-width="1.66667"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <path
+                                                                            d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
+                                                                            stroke="#475467" stroke-width="1.66667"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </svg>
                                                                     View</button></li>
-                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                            <li class="rounded"><a
+                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                     href="#" data-bs-toggle="modal">
-                                                                    Select</a></li>
-                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray absolute-aligntable-drop-down"
+
+                                                                    <svg class="me-1" width="24" height="24"
+                                                                        viewBox="0 0 24 24" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
+                                                                            stroke="#6F7784" stroke-width="2" />
+                                                                    </svg>
+
+                                                                    Share</a></li>
+                                                            <li class="rounded"><a
+                                                                    class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                     href="#" data-bs-toggle="modal">
+
+
+                                                                    <svg class="ms-1" width="24" height="24"
+                                                                        viewBox="0 0 24 24" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
+                                                                            stroke="#6F7784" stroke-width="2"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </svg>
+
+
                                                                     Delete</a></li>
                                                         </ul>
                                                     </div>
@@ -1246,17 +1731,56 @@
                                                                 src="assets/images/employer-ease-pics/3-dot-line.svg"
                                                                 alt="menu" loading="lazy">
                                                         </button>
-                                                        <ul class="dropdown-menu p-0">
-                                                            <li><button type="button"
-                                                                    class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                        <ul class="dropdown-menu py-2">
+                                                            <li class="rounded"><button type="button"
+                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#Withdraw__amount">
+
+                                                                    <svg class="me-1" width="20" height="14"
+                                                                        viewBox="0 0 20 14" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
+                                                                            stroke="#475467" stroke-width="1.66667"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <path
+                                                                            d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
+                                                                            stroke="#475467" stroke-width="1.66667"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </svg>
                                                                     View</button></li>
-                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                            <li class="rounded"><a
+                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                     href="#" data-bs-toggle="modal">
-                                                                    Select</a></li>
-                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray absolute-aligntable-drop-down"
+
+                                                                    <svg class="me-1" width="24" height="24"
+                                                                        viewBox="0 0 24 24" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
+                                                                            stroke="#6F7784" stroke-width="2" />
+                                                                    </svg>
+
+                                                                    Share</a></li>
+                                                            <li class="rounded"><a
+                                                                    class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                     href="#" data-bs-toggle="modal">
+
+
+                                                                    <svg class="ms-1" width="24" height="24"
+                                                                        viewBox="0 0 24 24" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
+                                                                            stroke="#6F7784" stroke-width="2"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </svg>
+
+
                                                                     Delete</a></li>
                                                         </ul>
                                                     </div>
@@ -1288,17 +1812,56 @@
                                                                 src="assets/images/employer-ease-pics/3-dot-line.svg"
                                                                 alt="menu" loading="lazy">
                                                         </button>
-                                                        <ul class="dropdown-menu p-0">
-                                                            <li><button type="button"
-                                                                    class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                        <ul class="dropdown-menu py-2">
+                                                            <li class="rounded"><button type="button"
+                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#Withdraw__amount">
+
+                                                                    <svg class="me-1" width="20" height="14"
+                                                                        viewBox="0 0 20 14" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
+                                                                            stroke="#475467" stroke-width="1.66667"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <path
+                                                                            d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
+                                                                            stroke="#475467" stroke-width="1.66667"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </svg>
                                                                     View</button></li>
-                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                            <li class="rounded"><a
+                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                     href="#" data-bs-toggle="modal">
-                                                                    Select</a></li>
-                                                            <li><a class="dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray absolute-aligntable-drop-down"
+
+                                                                    <svg class="me-1" width="24" height="24"
+                                                                        viewBox="0 0 24 24" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
+                                                                            stroke="#6F7784" stroke-width="2" />
+                                                                    </svg>
+
+                                                                    Share</a></li>
+                                                            <li class="rounded"><a
+                                                                    class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
                                                                     href="#" data-bs-toggle="modal">
+
+
+                                                                    <svg class="ms-1" width="24" height="24"
+                                                                        viewBox="0 0 24 24" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
+                                                                            stroke="#6F7784" stroke-width="2"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </svg>
+
+
                                                                     Delete</a></li>
                                                         </ul>
                                                     </div>
@@ -1309,7 +1872,7 @@
                                     <!-- --------------------------------------Tab have two tabs------------------------------------- -->
                                     <div class="p_16 mt-4 border1 border-r-12">
                                         <div
-                                            class="d-flex flex-wrap flex-md-nowrap justify-content-between align-items-center">
+                                            class="d-flex flex-wrap flex-md-nowrap justify-content-between gap-3 align-items-center">
                                             <h4 class="fs_18 fw_600 j_family">Your Scheduled Events</h4>
                                             <button class="border-0 whole_button button_bg main_color"><img class="me-2"
                                                     src="assets/images/employer-ease-pics/filter-lines.svg" alt="">
@@ -1332,14 +1895,14 @@
                                             <div class="tab-pane fade show active" id="upcoming-tab-pane"
                                                 role="tabpanel" aria-labelledby="upcoming-tab" tabindex="0">
                                                 <div class="p_16 border1 border-r-12 mt-4">
-                                                    <div class="d-flex align-items-center">
+                                                    <div class="d-flex flex-wrap flex-md-nowrap align-items-center justify-content-center">
                                                         <img src="assets/images/employer-ease-pics/calendar-with-bg.svg"
                                                             alt="">
                                                         <div class="d-flex flex-column gap-1 ps-2">
-                                                            <p class="fs_18 fw_500 j_family ">
+                                                            <p class="fs_18 fw_500 j_family text-center text-lg-start">
                                                                 You don’t have any meetings coming up
                                                             </p>
-                                                            <p class="fs_14 fw_400 j_family tertiary-black">
+                                                            <p class="fs_14 fw_400 j_family tertiary-black text-center text-lg-start">
                                                                 Prospects can schedule meetings with you using your
                                                                 meeting link
                                                             </p>
@@ -1382,8 +1945,9 @@
                                                             <h4 class="fs_16 fw_600 lh_28 j_family">Manage</h4>
                                                         </div>
                                                         <div class="form-check form-switch">
-                                                              <input class="form-check-input global-switch" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckDefault">
+                                                            <input class="form-check-input global-switch"
+                                                                type="checkbox" role="switch"
+                                                                id="flexSwitchCheckDefault">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1407,8 +1971,9 @@
                                                             <h4 class="fs_16 fw_600 lh_28 j_family">Manage</h4>
                                                         </div>
                                                         <div class="form-check form-switch">
-                                                              <input class="form-check-input global-switch" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckDefault">
+                                                            <input class="form-check-input global-switch"
+                                                                type="checkbox" role="switch"
+                                                                id="flexSwitchCheckDefault">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1432,8 +1997,9 @@
                                                             <h4 class="fs_16 fw_600 lh_28 j_family">Manage</h4>
                                                         </div>
                                                         <div class="form-check form-switch">
-                                                              <input class="form-check-input global-switch" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckDefault">
+                                                            <input class="form-check-input global-switch"
+                                                                type="checkbox" role="switch"
+                                                                id="flexSwitchCheckDefault">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1457,8 +2023,9 @@
                                                             <h4 class="fs_16 fw_600 lh_28 j_family">Manage</h4>
                                                         </div>
                                                         <div class="form-check form-switch">
-                                                              <input class="form-check-input global-switch" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckDefault">
+                                                            <input class="form-check-input global-switch"
+                                                                type="checkbox" role="switch"
+                                                                id="flexSwitchCheckDefault">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1482,8 +2049,9 @@
                                                             <h4 class="fs_16 fw_600 lh_28 j_family">Manage</h4>
                                                         </div>
                                                         <div class="form-check form-switch">
-                                                              <input class="form-check-input global-switch" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckDefault">
+                                                            <input class="form-check-input global-switch"
+                                                                type="checkbox" role="switch"
+                                                                id="flexSwitchCheckDefault">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1507,8 +2075,9 @@
                                                             <h4 class="fs_16 fw_600 lh_28 j_family">Manage</h4>
                                                         </div>
                                                         <div class="form-check form-switch">
-                                                              <input class="form-check-input global-switch" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckDefault">
+                                                            <input class="form-check-input global-switch"
+                                                                type="checkbox" role="switch"
+                                                                id="flexSwitchCheckDefault">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1532,8 +2101,9 @@
                                                             <h4 class="fs_16 fw_600 lh_28 j_family">Manage</h4>
                                                         </div>
                                                         <div class="form-check form-switch">
-                                                              <input class="form-check-input global-switch" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckDefault">
+                                                            <input class="form-check-input global-switch"
+                                                                type="checkbox" role="switch"
+                                                                id="flexSwitchCheckDefault">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1557,8 +2127,9 @@
                                                             <h4 class="fs_16 fw_600 lh_28 j_family">Manage</h4>
                                                         </div>
                                                         <div class="form-check form-switch">
-                                                              <input class="form-check-input global-switch" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckDefault">
+                                                            <input class="form-check-input global-switch"
+                                                                type="checkbox" role="switch"
+                                                                id="flexSwitchCheckDefault">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1705,26 +2276,26 @@
             })
         })
     </script>
-        <!-- --------------------------check all checkbox of table----------------------------- -->
-        <script>
-            // Select all tables in the document
-            document.querySelectorAll('table').forEach((table) => {
-    
-                const headerCheckbox = table.querySelector('thead input[type="checkbox"]');
-    
-                if (headerCheckbox) {
-    
-                    headerCheckbox.addEventListener('change', function () {
-                        const isChecked = this.checked;
-    
-    
-                        table.querySelectorAll('tbody input[type="checkbox"]').forEach((checkbox) => {
-                            checkbox.checked = isChecked;
-                        });
+    <!-- --------------------------check all checkbox of table----------------------------- -->
+    <script>
+        // Select all tables in the document
+        document.querySelectorAll('table').forEach((table) => {
+
+            const headerCheckbox = table.querySelector('thead input[type="checkbox"]');
+
+            if (headerCheckbox) {
+
+                headerCheckbox.addEventListener('change', function () {
+                    const isChecked = this.checked;
+
+
+                    table.querySelectorAll('tbody input[type="checkbox"]').forEach((checkbox) => {
+                        checkbox.checked = isChecked;
                     });
-                }
-            });
-        </script>
+                });
+            }
+        });
+    </script>
 
 </body>
 

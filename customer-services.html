@@ -353,12 +353,12 @@
                                         <div class="position-relative">
                                             <input class="header-input form-control bg-transparent" type="text"
                                                 placeholder="Search" />
-                                            <div class="position-absolute" style="top: 5px; left: 16px;">
+                                            <div class="position-absolute" style="top: 8px; left: 16px;">
                                                 <img class="h-100 w-100"
                                                     src="assets/images/employer-ease-pics/magnifying-glass.svg"
                                                     alt="magnifying-glass">
                                             </div>
-                                            <div class="position-absolute" style="top: 5px; right: 16px;">
+                                            <div class="position-absolute" style="top: 8px; right: 16px;">
                                                 <a href="#"> <img class="h-100 w-100"
                                                         src="assets/images/employer-ease-pics/filter-icon.svg"
                                                         alt="magnifying-glass"></a>
@@ -369,12 +369,13 @@
                             </div>
                         </div>
 
-                        <div class="d-flex align-items-center gap-1">
+                        <!-- --------------------------------content show on tab and hide on mobile-------------------------------- -->
+                        <div class="d-flex align-items-center gap-1 d-none d-md-block">
                             <div class="d-flex align-items-center" style="gap: 16px">
                                 <div class="dropdown">
                                     <button class="d-block border-0 bg-transparent" data-bs-toggle="dropdown"
                                         aria-expanded="false" type="button">
-                                        <img src="assets/images/employer-ease-pics/calendar.svg" alt="image" />
+                                        <img src="assets/images/employer-ease-pics/calendar.svg" alt="" />
                                         <span class="dot active"></span>
                                     </button>
                                     <!-- <ul class="dropdown-menu">
@@ -391,7 +392,7 @@
                                 <div class="dropdown">
                                     <button class="d-block border-0 bg-transparent" data-bs-toggle="dropdown"
                                         aria-expanded="false" type="button">
-                                        <img src="assets/images/employer-ease-pics/cart.svg" alt="image" />
+                                        <img src="assets/images/employer-ease-pics/cart.svg" alt="" />
                                         <span class="dot active"></span>
                                     </button>
                                     <!-- <ul class="dropdown-menu">
@@ -410,7 +411,7 @@
                                         data-bs-toggle="dropdown" aria-expanded="false" type="button">
                                         <span class=""><img class="me-2"
                                                 src="assets/images/employer-ease-pics/language-switch.svg"
-                                                alt="image" />Eng<sub> (US)</sub></span>
+                                                alt="" />Eng<sub> (US)</sub></span>
                                     </button>
                                     <ul class="dropdown-menu ">
                                         <li>
@@ -478,6 +479,95 @@
                                     </svg> -->
                             </div>
                         </div>
+                        <!-- -------------------------------------================Off convas for mobile small screen===============------------------------------------ -->
+                        <div class="d-block d-md-none">
+                            <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRightUnique" aria-controls="offcanvasRightUnique">
+                                <img src="assets/images/employer-ease-pics/user-profile.svg" alt="">
+                            </button>
+                        
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightUnique" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="">
+                                        <div class="w-100" style="gap: 16px">
+                                            <div class="dropdown">
+                                                <button class="d-flex align-items-center border-0 bg-transparent" data-bs-toggle="dropdown"
+                                                    aria-expanded="false" type="button" style="gap: 8px">
+                                                    <div
+                                                        class="icon-placeholder rounded-circle d-flex align-items-center justify-content-center">
+                                                        <img src="assets/images/employer-ease-pics/header-profile.svg" alt="">
+                                                    </div>
+                                                    <i class="fa fa-chevron-down text-dark" style="font-size: 14px;"></i>
+                                                </button>
+                                                <ul class="dropdown-menu language-dropdown">
+                                                    <li>
+                                                        <a class="dropdown-item" href="User-profile.html">
+                                                            <!-- SVG content -->
+                                                            Account Settings
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="login.html">
+                                                            <!-- SVG content -->
+                                                            Sign out
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                        
+                                            <hr>
+                        
+                                            <div class="dropdown">
+                                                <button class="d-block border-0 bg-transparent dropdown-toggle" data-bs-toggle="dropdown"
+                                                    aria-expanded="false" type="button">
+                                                    <span class="">
+                                                        <img class="me-2"
+                                                            src="assets/images/employer-ease-pics/language-switch.svg" alt="" />Eng<sub>
+                                                            (US)</sub>
+                                                    </span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Urdu</a></li>
+                                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column gap-3 mt-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="dropdown">
+                                                <button class="d-block border-0 bg-transparent" data-bs-toggle="dropdown"
+                                                    aria-expanded="false" type="button">
+                                                    <img class="mt-2" src="assets/images/employer-ease-pics/cart.svg" alt="" />
+                                                    <span class="dot active"></span>
+                                                </button>
+                                            </div>
+                                            <label class="mt-2 fs_14 fw_500 tertiary-black j_family" for="">Cart</label>
+                                        </div>
+                        
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="dropdown ms-1">
+                                                <button class="d-block border-0 bg-transparent" data-bs-toggle="dropdown"
+                                                    aria-expanded="false" type="button">
+                                                    <img src="assets/images/employer-ease-pics/calendar.svg" alt="" />
+                                                    <span class="dot active"></span>
+                                                </button>
+                                            </div>
+                                            <label class="fs_14 fw_500 tertiary-black j_family" for="Cart">Calendar</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- -------------------------------------================Off convas for mobile small screen===============------------------------------------ -->
+
+
+
+
                     </div>
                 </div>
                 <!-- Content Section -->
@@ -485,7 +575,7 @@
                     <div class="position-relative">
                         <!-- -------------------------------Customer Services---------------------------- -->
                         <div class="bg-white border-r-12 p_16">
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-wrap flex-md-nowrap gap-3 justify-content-between align-items-center">
                                 <div>
                                     <h2 class="fs_18 fw_600 j_family">Services</h2>
                                     <p class="fs_16 fw_400 Nunito_family color_gray pt-2">You can see support tickets
@@ -593,7 +683,7 @@
                                 <table class="table bg-transparent mb-0">
                                     <thead class="th-bg">
                                         <tr class="border-table border-top-0">
-                                            <th><input type="checkbox"></th>
+                                            <th><input class="global-check" type="checkbox"></th>
                                             <th>Ticket ID <i class="fa fa-arrow-down ms-1  tertiary-gray"></i></th>
                                             <th>Username</th>
                                             <th>Email</th>
@@ -604,7 +694,7 @@
                                     </thead>
                                     <tbody>
                                         <tr class="border-table">
-                                            <td><input type="checkbox"></td>
+                                            <td><input class="global-check" type="checkbox"></td>
                                             <td class="number-style">4600</td>
                                             <td>Bill Sullivan</td>
                                             <td>Bill@employerease.com</td>
@@ -615,7 +705,7 @@
                                             </td>
                                         </tr>
                                         <tr class="border-table">
-                                            <td><input type="checkbox"></td>
+                                            <td><input class="global-check" type="checkbox"></td>
                                             <td class="number-style">4600</td>
                                             <td>Bill Sullivan</td>
                                             <td>Bill@employerease.com</td>
@@ -626,7 +716,7 @@
                                             </td>
                                         </tr>
                                         <tr class="border-table">
-                                            <td><input type="checkbox"></td>
+                                            <td><input class="global-check" type="checkbox"></td>
                                             <td class="number-style">4600</td>
                                             <td>Bill Sullivan</td>
                                             <td>Bill@employerease.com</td>
@@ -639,7 +729,7 @@
                                             </td>
                                         </tr>
                                         <tr class="border-table">
-                                            <td><input type="checkbox"></td>
+                                            <td><input class="global-check" type="checkbox"></td>
                                             <td class="number-style">4600</td>
                                             <td>Bill Sullivan</td>
                                             <td>Bill@employerease.com</td>
@@ -650,7 +740,7 @@
                                             </td>
                                         </tr>
                                         <tr class="">
-                                            <td><input type="checkbox"></td>
+                                            <td><input class="global-check" type="checkbox"></td>
                                             <td class="number-style">4600</td>
                                             <td>Bill Sullivan</td>
                                             <td>Bill@employerease.com</td>
