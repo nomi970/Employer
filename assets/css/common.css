@@ -365,7 +365,8 @@ input[type="radio"]:checked {
     font-size: 14px;
 }
 .over__flow {
-    max-height: 650px;
+    /* max-height: 650px; */
+    max-height: 450px;
     overflow-y: auto;
     overflow-x: hidden;
     padding-right: 5px;
@@ -455,11 +456,17 @@ input[type="radio"]:checked {
         padding: 20px;
     }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 900px) {
     #myVideo-2{
         display: flex;
         justify-content: center;
         margin: 0 auto;
+    }
+    .get_started_im{
+        display: none;
+    }
+    .over__flow{
+        max-height: unset;
     }
 }
 
