@@ -9,26 +9,22 @@ table {
     font-size: 14px;
     gap: 10px;
 }
-
 .pagination-controls {
     display: flex;
     align-items: center;
     gap: 1px;
     justify-content: end;
 }
-
 .pagination-controls button {
     padding: 5px 10px;
     border: none;
     background-color: #fff;
     cursor: pointer;
 }
-
 .pagination-controls button:disabled {
     cursor: not-allowed;
     opacity: 0.6;
 }
-
 select {
     padding: 1px;
 }

@@ -6,7 +6,6 @@
 }
 .digital_headquater__tabs .nav-tabs .nav-link.active {
   border-bottom: 2px solid #3684a4;
-
   color: #3684a4;
 }
 .digital_headquater__tabs .nav-tabs .nav-link {
@@ -104,7 +103,6 @@
   text-align: left;
   color: #344054;
 }
-
 .main__listing_video_wrapper {
   display: grid;
   gap: 44px;
@@ -115,7 +113,6 @@
   width: 261px;
   height: 100%;
 }
-
 #myVideo {
   width: 100%;
   max-width: 261px;
@@ -124,7 +121,6 @@
   object-fit: fill;
   border-radius: 12px;
 }
-
 .play-pause-button {
   position: absolute;
   top: 50%;
@@ -139,12 +135,10 @@
   outline: none;
   z-index: 100;
 }
-
 .play-pause-button.pause-icon {
   background: url("../images/pause-solid.svg") no-repeat center center;
   background-size: contain;
 }
-
 .main__playPauseButton {
   background-color: white;
   border-radius: 50px;
@@ -160,17 +154,14 @@
   opacity: 1;
   transition: opacity 0.5s ease;
 }
-
 .main__playPauseButton.hidden {
   opacity: 0;
   pointer-events: none;
 }
-
 .video-container:hover .main__playPauseButton {
   opacity: 1;
   pointer-events: all;
 }
-
 .bar__main {
   display: flex;
   width: 100%;
@@ -219,7 +210,6 @@
   border: 1px solid #D0D5DD;
   border-radius: 8px;
   background-color: transparent;
-
 }
 .social_main_info_bx{
   text-align: center;
@@ -243,7 +233,6 @@
 .separater{
   border-top: 1px solid #0000001F;
   margin: 16px 0px;
-   
 }
 .border_dashed{
   border-bottom: 2px dashed #0000001F; 
