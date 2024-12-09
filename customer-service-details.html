@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!---------------------- Bootstrap Cdn---------------------->
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- <link rel="icon" type="short icon" href="assets/images/icons/favicon.svg"> -->
-  <!----------------------- CSS ------------------------------->
-  <link rel="stylesheet" type="text/css" href="assets/css/navigation.css" />
-  <link rel="stylesheet" href="assets/css/Naeem.css" />
-  <link rel="stylesheet" href="assets/css/common.css" />
-  <link rel="stylesheet" href="./assets/css/numan.css">
+    <!---------------------- Bootstrap Cdn---------------------->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="icon" type="short icon" href="assets/images/icons/favicon.svg"> -->
+    <!----------------------- CSS ------------------------------->
+    <link rel="stylesheet" type="text/css" href="assets/css/navigation.css" />
+    <link rel="stylesheet" href="assets/css/Naeem.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/numan.css">
     <title>customer-service-details</title>
     <style>
         .chat-wrapper {
@@ -215,18 +215,16 @@
             display: flex;
             flex-direction: column;
         }
-        .request__bx{
+        .request__bx {
             padding: 7px 14px;
             background: #F4F3F3;
             border-radius: 20px;
         }
-
         @media(max-width: 991px) {
-            #emojiPicker{
+            #emojiPicker {
                 top: -130px !important;
             }
         }
-
         @media(max-width: 650px) {
             .flx_wrap_700 {
                 flex-wrap: wrap;
@@ -242,10 +240,9 @@
             .message-content canvas {
                 width: 100% !important;
             }
-            #emojiPicker{
+            #emojiPicker {
                 top: -200px !important;
             }
-           
         }
         @media only screen and (max-width: 500px) {
             .main-header-center .btn {
@@ -267,112 +264,110 @@
                 width: 34px;
                 height: 34px;
             }
-            .chat_title{
+            .chat_title {
                 margin: 15px 0px;
             }
-            #emojiPicker{
+            #emojiPicker {
                 top: -230px !important;
             }
-         
-
         }
-        .separator::before, 
+        .separator::before,
         .separator::after {
-        content: "";
-        flex: 1;
-        border-bottom: 1px solid #87745733;
-        margin: 0 10px;
-    }
-    .separator {
-        display: flex;
-        align-items: center;
-        text-align: center;
-    }
-    .ori__reguest::before, 
-    .ori__reguest::after{
-        margin: 0 !important;
-    }
-    .status{
-        padding: 2px 8px;
-        border-radius: 16px;
-        width: fit-content;
-    }
-    .in-progress{
-        background-color: #FFF1F3;
-        color: #C01048 !important;
-    }
-    #emojiPicker{
-        position: absolute;
-        top: -100px;
-        left: 0px;
-        z-index: 999;
-        background-color:white !important;
-        max-width: 1000px;
-        height: auto;
-        padding: 16px;
-        border-radius:20px;
-        border-top-right-radius:0px;
-        border-top-left-radius:0px;
-        cursor:pointer;
-    }
-    #messageInput:focus{
-        border:none !important;
-        outline: none !important;
-        box-shadow:none !important;
-    }
-    .chat-footer{
-        position: relative;
-    }
-
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid #87745733;
+            margin: 0 10px;
+        }
+        .separator {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .ori__reguest::before,
+        .ori__reguest::after {
+            margin: 0 !important;
+        }
+        .status {
+            padding: 2px 8px;
+            border-radius: 16px;
+            width: fit-content;
+        }
+        .in-progress {
+            background-color: #FFF1F3;
+            color: #C01048 !important;
+        }
+        #emojiPicker {
+            position: absolute;
+            top: -100px;
+            left: 0px;
+            z-index: 999;
+            background-color: white !important;
+            max-width: 1000px;
+            height: auto;
+            padding: 16px;
+            border-radius: 20px;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+            cursor: pointer;
+        }
+        #messageInput:focus {
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        .chat-footer {
+            position: relative;
+        }
     </style>
 </head>
 <body>
-        <div class="chat-wrapper">
-            <!-- Chat Header -->
-            <div class="chat-header">
-                <div class="d-flex align-items-center gap-3">
-                    <div>
-                        <img src="assets/images/icons/support_ticket_profile.png" alt="User Profile"
-                                class="profile-pic">
-                    </div>
-                    <div class="chat-header-content">
-                        <h3 class="font_16 fw_600 app-body-font app-black-dark">Aaqib</h3>
-                        <p class="font_12 fw_500 app-body-font app-color-light app-x-gray mt_8">Last Reply: 24 min ago</p>
-                    </div>
-                </div>
+    <div class="chat-wrapper">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <div class="d-flex align-items-center gap-3">
                 <div>
-                    <p class="status in-progress font_12 app-body-font ln_18">Closed</p>
+                    <img src="assets/images/icons/support_ticket_profile.png" alt="User Profile" class="profile-pic">
+                </div>
+                <div class="chat-header-content">
+                    <h3 class="font_16 fw_600 app-body-font app-black-dark">Aaqib</h3>
+                    <p class="font_12 fw_500 app-body-font app-color-light app-x-gray mt_8">Last Reply: 24 min ago</p>
                 </div>
             </div>
-            <!-- Chat Body -->
-            <div class="chat-body" id="chatBody">
-                <div class="ori__reguest separator mt_24">
-                    <span class="font_12 fw_400 app-navy-blue request__bx app-body-font">Original request</span>
+            <div>
+                <p class="status in-progress font_12 app-body-font ln_18">Closed</p>
+            </div>
+        </div>
+        <!-- Chat Body -->
+        <div class="chat-body" id="chatBody">
+            <div class="ori__reguest separator mt_24">
+                <span class="font_12 fw_400 app-navy-blue request__bx app-body-font">Original request</span>
+            </div>
+            <p class="font_14 fw_400 app-body-font mt_20 app-medium-gray">Lorem ipsum is a placeholder text commonly
+                used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                Lorem ipsum may be used as a placeholder before final copy is available. Lorem ipsum is a placeholder.
+            </p>
+            <div class="separator mt_20">
+                <span class="font_16 fw_500 app-navy-blue app-body-font">Today</span>
+            </div>
+            <!-- Sample Message 1 (Sender) -->
+            <div class="message-row user-message mt_20">
+                <div class="d-flex flex-column align-items-center justify-content-center gap-2">
+                    <img src="assets/images/icons/support_ticket_profile.png" alt="User Profile" class="profile-pic">
+                    <span class="timestamp">6:21 PM</span>
                 </div>
-                <p class="font_14 fw_400 app-body-font mt_20 app-medium-gray">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. Lorem ipsum is a placeholder.</p>
-                <div class="separator mt_20">
-                    <span class="font_16 fw_500 app-navy-blue app-body-font">Today</span>
-                </div>
-                <!-- Sample Message 1 (Sender) -->
-                <div class="message-row user-message mt_20">
-                    <div class="d-flex flex-column align-items-center justify-content-center gap-2">
-                        <img src="assets/images/icons/support_ticket_profile.png" alt="User Profile"
-                            class="profile-pic">
-                        <span class="timestamp">6:21 PM</span>
-                    </div>
-                    <div class="message-content app-body-font emoji-wrapper">Hello, how can I get support?</div>
-                </div>
-                <!-- Sample Message 2 (Receiver) -->
-                <div class="message-row support-message">
-                    <div class="message-content app-body-font">Hi! How can I assist you today?</div>
-                    <div class="d-flex flex-column align-items-center justify-content-center gap-2">
-                        <img src="assets/images/icons/listing-item1.png" alt="Support Profile" class="profile-pic">
-                        <span class="timestamp app-body-font">6:22 PM</span>
-                    </div>
+                <div class="message-content app-body-font emoji-wrapper">Hello, how can I get support?</div>
+            </div>
+            <!-- Sample Message 2 (Receiver) -->
+            <div class="message-row support-message">
+                <div class="message-content app-body-font">Hi! How can I assist you today?</div>
+                <div class="d-flex flex-column align-items-center justify-content-center gap-2">
+                    <img src="assets/images/icons/listing-item1.png" alt="Support Profile" class="profile-pic">
+                    <span class="timestamp app-body-font">6:22 PM</span>
                 </div>
             </div>
-            <!-- Chat Footer -->
-            <!-- <div class="chat-footer">
+        </div>
+        <!-- Chat Footer -->
+        <!-- <div class="chat-footer">
                 <button id="plusButton" class="plus-button">+</button>
                 <input type="file" id="fileInput" style="display: none;" accept="image/*,application/pdf">
                 <input type="text" id="messageInput" placeholder="Type a message...">
@@ -385,55 +380,50 @@
                     </svg>
                 </button>
             </div> -->
-            <!-- Chat Footer -->
-<div class="chat-footer">
-    <!-- <button id="emojiButton" class="emoji-button">😀</button>
+        <!-- Chat Footer -->
+        <div class="chat-footer">
+            <!-- <button id="emojiButton" class="emoji-button">😀</button>
     <div id="emojiPicker" class="emoji-picker" style="display: none;">
         😀 😃 😄 😁 😆 😅 😂 🤣 😊 😇 🙂 🙃 😉 😌 😍 🥰 😘 😗 😙 😚 😋 😛 😝 😜 🤪
     </div> -->
-
-    <!-- ---------------------------------------------------- -->
-    <div class="chat-container">
-        <button id="emojiToggle">😊</button>
-        <div id="emojiPicker" class="hidden"></div>
-    </div>
-     <!-- ---------------------------------------------------- -->
-    <button id="plusButton" class="plus-button">+</button>
-    <input type="file" id="fileInput" style="display: none;" accept="image/*,application/pdf">
-    <input class="ps-3" type="text" id="messageInput" placeholder="Type a message...">
-    <button id="voiceNoteButton" class="voice-note-button">🎤</button>
-    <button id="sendMessageBtn">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M16.5 10.7708L3.66667 16.1875C3.38889 16.2986 3.125 16.2743 2.875 16.1146C2.625 15.9549 2.5 15.7222 2.5 15.4167V4.58335C2.5 4.27779 2.625 4.04516 2.875 3.88543C3.125 3.72571 3.38889 3.70141 3.66667 3.81252L16.5 9.22918"
-                fill="white" />
-        </svg>
-    </button>
-</div>
+            <!-- ---------------------------------------------------- -->
+            <div class="chat-container">
+                <button id="emojiToggle">😊</button>
+                <div id="emojiPicker" class="hidden"></div>
+            </div>
+            <!-- ---------------------------------------------------- -->
+            <button id="plusButton" class="plus-button">+</button>
+            <input type="file" id="fileInput" style="display: none;" accept="image/*,application/pdf">
+            <input class="ps-3" type="text" id="messageInput" placeholder="Type a message...">
+            <button id="voiceNoteButton" class="voice-note-button">🎤</button>
+            <button id="sendMessageBtn">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.5 10.7708L3.66667 16.1875C3.38889 16.2986 3.125 16.2743 2.875 16.1146C2.625 15.9549 2.5 15.7222 2.5 15.4167V4.58335C2.5 4.27779 2.625 4.04516 2.875 3.88543C3.125 3.72571 3.38889 3.70141 3.66667 3.81252L16.5 9.22918"
+                        fill="white" />
+                </svg>
+            </button>
         </div>
+    </div>
     <script>
-       
-document.getElementById('emojiButton').addEventListener('click', () => {
-    const emojiPicker = document.getElementById('emojiPicker');
-    emojiPicker.style.display = emojiPicker.style.display === 'none' ? 'block' : 'none';
-});
-
-document.getElementById('emojiPicker').addEventListener('click', (e) => {
-    if (e.target.tagName === 'SPAN' || e.target.textContent) {
-        const emoji = e.target.textContent;
-        const messageInput = document.getElementById('messageInput');
-        messageInput.value += emoji; 
-    }
-});
-
-document.addEventListener('click', (e) => {
-    if (!e.target.closest('.chat-footer')) {
-        document.getElementById('emojiPicker').style.display = 'none';
-    }
-});
+        document.getElementById('emojiButton').addEventListener('click', () => {
+            const emojiPicker = document.getElementById('emojiPicker');
+            emojiPicker.style.display = emojiPicker.style.display === 'none' ? 'block' : 'none';
+        });
+        document.getElementById('emojiPicker').addEventListener('click', (e) => {
+            if (e.target.tagName === 'SPAN' || e.target.textContent) {
+                const emoji = e.target.textContent;
+                const messageInput = document.getElementById('messageInput');
+                messageInput.value += emoji;
+            }
+        });
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.chat-footer')) {
+                document.getElementById('emojiPicker').style.display = 'none';
+            }
+        });
     </script>
-        <!-- ************************Scripts Start Here*********************************-->
+    <!-- ************************Scripts Start Here*********************************-->
     <!--------------------------------- Jquery --------------------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -444,7 +434,7 @@ document.addEventListener('click', (e) => {
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
     <script>
         let isSender = true;
         function getTime() {
@@ -534,7 +524,7 @@ document.addEventListener('click', (e) => {
                         canvas.style.maxWidth = '200px';
                         canvas.style.borderRadius = '8px';
                         const fileReader = new FileReader();
-                        fileReader.onload = function() {
+                        fileReader.onload = function () {
                             const pdfData = new Uint8Array(this.result);
                             pdfjsLib.getDocument(pdfData).promise.then(pdf => {
                                 pdf.getPage(1).then(page => {
@@ -603,64 +593,37 @@ document.addEventListener('click', (e) => {
         });
         document.getElementById('plusButton').addEventListener('click', handleFileUpload);
     </script>
-
     <!-- ---------------------------------------------------- -->
     <script>
-   
-        const emojis = [ "😀", "😃", "😄", "😁", "😆", "😅", "😂", "🤣", "😜", "😎", "😍", "🤩", "😘",
-  "🐶", "🐱", "🦁", "🐸", "🦋", "🐝", "🌹", "🌻", "🌞", "🌈", "🌊", "🔥", "🍎", "🍔", 
-  "🍕", "🍦", "🍿", "🍩", "🍫", "🍓", "🍇", "🍉", "🍒", "🥗", "🥑", "🥕", "🌽", "🥔",
-  "🥐", "🍞", "🍪", "🥖", "🥨", "🍻", "🍷", "🥂", "🍸", "🍺", "🍾", "🥃", "🍷", "🥡", 
-  "🥢", "🍽", "🍴", "🍕", "🥘", "🍝", "🍣", "🍤", "🍲", "🍛", "🍜", "🥗", "🍝", "🍤", 
-  "🍥", "🍢", "🍡", "🍣", "🍳", "🥚", "🍪", "🥧", "🍨", "🍩", "🍦", "🎂", "🍰", "🥧", 
-  "🍮", "🍡", "🥠", "🍢"];
-    
-        
+        const emojis = ["😀", "😃", "😄", "😁", "😆", "😅", "😂", "🤣", "😜", "😎", "😍", "🤩", "😘",
+            "🐶", "🐱", "🦁", "🐸", "🦋", "🐝", "🌹", "🌻", "🌞", "🌈", "🌊", "🔥", "🍎", "🍔",
+            "🍕", "🍦", "🍿", "🍩", "🍫", "🍓", "🍇", "🍉", "🍒", "🥗", "🥑", "🥕", "🌽", "🥔",
+            "🥐", "🍞", "🍪", "🥖", "🥨", "🍻", "🍷", "🥂", "🍸", "🍺", "🍾", "🥃", "🍷", "🥡",
+            "🥢", "🍽", "🍴", "🍕", "🥘", "🍝", "🍣", "🍤", "🍲", "🍛", "🍜", "🥗", "🍝", "🍤",
+            "🍥", "🍢", "🍡", "🍣", "🍳", "🥚", "🍪", "🥧", "🍨", "🍩", "🍦", "🎂", "🍰", "🥧",
+            "🍮", "🍡", "🥠", "🍢"];
         const emojiToggle = document.getElementById('emojiToggle');
         const emojiPicker = document.getElementById('emojiPicker');
         const chatInput = document.getElementById('messageInput');
-    
-        
         function renderEmojis() {
-            emojiPicker.innerHTML = ''; 
+            emojiPicker.innerHTML = '';
             emojis.forEach((emoji) => {
                 const emojiSpan = document.createElement('span');
                 emojiSpan.textContent = emoji;
                 emojiSpan.classList.add('emoji');
                 emojiSpan.addEventListener('click', () => {
-                    
                     chatInput.value += emoji;
                 });
                 emojiPicker.appendChild(emojiSpan);
             });
         }
-    
-       
         emojiToggle.addEventListener('click', () => {
-            // emojiPicker.classList.toggle('hidden');
-            // renderEmojis(); 
-            if(sendMessageBtn.click){
+            if (sendMessageBtn.click) {
                 emojiPicker.classList.toggle('d-none');
                 renderEmojis();
             }
         });
-        // emojiToggle.addEventListener('click', () => {
-        //     // emojiPicker.classList.toggle('hidden');
-        //     // renderEmojis(); 
-        //     if(sendMessageBtn.click){
-        //         emojiPicker.classList.add('d-none');
-        //         renderEmojis();
-        //     }
-        // });
-//         document.addEventListener('click', (event) => {
-//   let targetDiv = document.getElementById('emojiPicker');
-  
-//   // Check if the click is outside the target div
-//   if (targetDiv && !targetDiv.contains(event.target)) {
-//     targetDiv.classList.add('d-none');
-//   }
-// }); 
     </script>
-     <!-- ---------------------------------------------------- -->
+    <!-- ---------------------------------------------------- -->
 </body>
 </html>
