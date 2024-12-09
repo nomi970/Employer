@@ -1180,4 +1180,11 @@ body {
     .dashbord-2 .naivgation-header{
         height: 60px;
     }
+    .header-title{
+        display: none;
+    }
+    .header-input{
+        width: 100% !important;
+        max-width: 100% !important;
+    }
 }
