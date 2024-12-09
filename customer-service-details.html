@@ -220,6 +220,13 @@
             background: #F4F3F3;
             border-radius: 20px;
         }
+
+        @media(max-width: 991px) {
+            #emojiPicker{
+                top: -130px !important;
+            }
+        }
+
         @media(max-width: 650px) {
             .flx_wrap_700 {
                 flex-wrap: wrap;
@@ -235,6 +242,10 @@
             .message-content canvas {
                 width: 100% !important;
             }
+            #emojiPicker{
+                top: -200px !important;
+            }
+           
         }
         @media only screen and (max-width: 500px) {
             .main-header-center .btn {
@@ -259,6 +270,11 @@
             .chat_title{
                 margin: 15px 0px;
             }
+            #emojiPicker{
+                top: -230px !important;
+            }
+         
+
         }
         .separator::before, 
         .separator::after {
@@ -285,6 +301,29 @@
         background-color: #FFF1F3;
         color: #C01048 !important;
     }
+    #emojiPicker{
+        position: absolute;
+        top: -100px;
+        left: 0px;
+        z-index: 999;
+        background-color:white !important;
+        max-width: 1000px;
+        height: auto;
+        padding: 16px;
+        border-radius:20px;
+        border-top-right-radius:0px;
+        border-top-left-radius:0px;
+        cursor:pointer;
+    }
+    #messageInput:focus{
+        border:none !important;
+        outline: none !important;
+        box-shadow:none !important;
+    }
+    .chat-footer{
+        position: relative;
+    }
+
     </style>
 </head>
 <body>
@@ -321,7 +360,7 @@
                             class="profile-pic">
                         <span class="timestamp">6:21 PM</span>
                     </div>
-                    <div class="message-content app-body-font">Hello, how can I get support?</div>
+                    <div class="message-content app-body-font emoji-wrapper">Hello, how can I get support?</div>
                 </div>
                 <!-- Sample Message 2 (Receiver) -->
                 <div class="message-row support-message">
@@ -348,13 +387,20 @@
             </div> -->
             <!-- Chat Footer -->
 <div class="chat-footer">
-    <button id="emojiButton" class="emoji-button">😀</button>
+    <!-- <button id="emojiButton" class="emoji-button">😀</button>
     <div id="emojiPicker" class="emoji-picker" style="display: none;">
         😀 😃 😄 😁 😆 😅 😂 🤣 😊 😇 🙂 🙃 😉 😌 😍 🥰 😘 😗 😙 😚 😋 😛 😝 😜 🤪
+    </div> -->
+
+    <!-- ---------------------------------------------------- -->
+    <div class="chat-container">
+        <button id="emojiToggle">😊</button>
+        <div id="emojiPicker" class="hidden"></div>
     </div>
+     <!-- ---------------------------------------------------- -->
     <button id="plusButton" class="plus-button">+</button>
     <input type="file" id="fileInput" style="display: none;" accept="image/*,application/pdf">
-    <input type="text" id="messageInput" placeholder="Type a message...">
+    <input class="ps-3" type="text" id="messageInput" placeholder="Type a message...">
     <button id="voiceNoteButton" class="voice-note-button">🎤</button>
     <button id="sendMessageBtn">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -557,5 +603,64 @@ document.addEventListener('click', (e) => {
         });
         document.getElementById('plusButton').addEventListener('click', handleFileUpload);
     </script>
+
+    <!-- ---------------------------------------------------- -->
+    <script>
+   
+        const emojis = [ "😀", "😃", "😄", "😁", "😆", "😅", "😂", "🤣", "😜", "😎", "😍", "🤩", "😘",
+  "🐶", "🐱", "🦁", "🐸", "🦋", "🐝", "🌹", "🌻", "🌞", "🌈", "🌊", "🔥", "🍎", "🍔", 
+  "🍕", "🍦", "🍿", "🍩", "🍫", "🍓", "🍇", "🍉", "🍒", "🥗", "🥑", "🥕", "🌽", "🥔",
+  "🥐", "🍞", "🍪", "🥖", "🥨", "🍻", "🍷", "🥂", "🍸", "🍺", "🍾", "🥃", "🍷", "🥡", 
+  "🥢", "🍽", "🍴", "🍕", "🥘", "🍝", "🍣", "🍤", "🍲", "🍛", "🍜", "🥗", "🍝", "🍤", 
+  "🍥", "🍢", "🍡", "🍣", "🍳", "🥚", "🍪", "🥧", "🍨", "🍩", "🍦", "🎂", "🍰", "🥧", 
+  "🍮", "🍡", "🥠", "🍢"];
+    
+        
+        const emojiToggle = document.getElementById('emojiToggle');
+        const emojiPicker = document.getElementById('emojiPicker');
+        const chatInput = document.getElementById('messageInput');
+    
+        
+        function renderEmojis() {
+            emojiPicker.innerHTML = ''; 
+            emojis.forEach((emoji) => {
+                const emojiSpan = document.createElement('span');
+                emojiSpan.textContent = emoji;
+                emojiSpan.classList.add('emoji');
+                emojiSpan.addEventListener('click', () => {
+                    
+                    chatInput.value += emoji;
+                });
+                emojiPicker.appendChild(emojiSpan);
+            });
+        }
+    
+       
+        emojiToggle.addEventListener('click', () => {
+            // emojiPicker.classList.toggle('hidden');
+            // renderEmojis(); 
+            if(sendMessageBtn.click){
+                emojiPicker.classList.toggle('d-none');
+                renderEmojis();
+            }
+        });
+        // emojiToggle.addEventListener('click', () => {
+        //     // emojiPicker.classList.toggle('hidden');
+        //     // renderEmojis(); 
+        //     if(sendMessageBtn.click){
+        //         emojiPicker.classList.add('d-none');
+        //         renderEmojis();
+        //     }
+        // });
+//         document.addEventListener('click', (event) => {
+//   let targetDiv = document.getElementById('emojiPicker');
+  
+//   // Check if the click is outside the target div
+//   if (targetDiv && !targetDiv.contains(event.target)) {
+//     targetDiv.classList.add('d-none');
+//   }
+// }); 
+    </script>
+     <!-- ---------------------------------------------------- -->
 </body>
 </html>
