@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chat-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        #chatInput {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #emojiToggle {
+            margin-left: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        #emojiPicker {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            background: #fff;
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            border-radius: 5px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .emoji {
+            cursor: pointer;
+            font-size: 24px;
+            transition: transform 0.2s ease;
+        }
+
+        .emoji:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="audioRecorder">
+        <!-- Input for the message and audio recording -->
+        <input type="text" id="messageInput" placeholder="Type your message..." />
+        
+        <!-- Button to start/stop recording -->
+        <button id="recordButton">🎤</button>
+        
+        <!-- Time Remaining / Recording indicator -->
+        <div id="timeRemaining">Time Remaining: <span id="timeDisplay">10s</span></div>
+        
+        <!-- Audio waveform container -->
+        <div id="waveform"></div>
+    
+        <!-- Submit Button to submit both text and audio -->
+        <button id="submitButton">Submit</button>
+    </div>
+    
+    <!-- Audio Player for playback (optional) -->
+    <audio id="audioPlayer" controls></audio>
+    
+
+    
+</body>
+<script src="https://unpkg.com/wavesurfer.js"></script>
+<script>
+ const recordButton = document.getElementById('recordButton');
+const submitButton = document.getElementById('submitButton');
+const timeDisplay = document.getElementById('timeDisplay');
+const messageInput = document.getElementById('messageInput');
+const waveformContainer = document.getElementById('waveform');
+let mediaRecorder;
+let audioChunks = [];
+let isRecording = false;
+let remainingTime = 10; // Set initial time (10 seconds)
+let recordingInterval;
+let wavesurfer;
+let audioBlob;
+let audioUrl;
+
+// Initialize WaveSurfer to show the audio waveform
+function initWaveSurfer(stream) {
+  wavesurfer = WaveSurfer.create({
+    container: waveformContainer,
+    waveColor: 'violet',
+    progressColor: 'purple',
+    height: 100,
+    barWidth: 2,
+    barHeight: 1,
+    barGap: 3,
+  });
+
+  wavesurfer.loadStream(stream); // Load the live audio stream to show waveform
+}
+
+// Start the recording process
+async function startRecording() {
+  // Access the user's microphone
+  const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+  mediaRecorder = new MediaRecorder(stream);
+
+  mediaRecorder.ondataavailable = (event) => {
+    audioChunks.push(event.data);
+  };
+
+  mediaRecorder.onstop = () => {
+    audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+    audioUrl = URL.createObjectURL(audioBlob);
+    audioPlayer.src = audioUrl;
+    audioChunks = []; // Reset audio chunks for next recording
+    wavesurfer.loadBlob(audioBlob); // Load the final waveform after recording
+  };
+
+  mediaRecorder.start();
+
+  initWaveSurfer(stream); // Initialize WaveSurfer with the stream
+
+  // Start a timer to update the remaining time
+  recordingInterval = setInterval(() => {
+    if (remainingTime <= 0) {
+      clearInterval(recordingInterval); // Stop recording when time is up
+      mediaRecorder.stop(); // Stop the recording
+      return;
+    }
+
+    remainingTime--;
+    timeDisplay.textContent = `Time Remaining: ${remainingTime}s`;
+    wavesurfer.seekTo((10 - remainingTime) / 10); // Update waveform progress based on remaining time
+  }, 1000);
+}
+
+// Stop recording and send the audio
+async function stopRecordingAndSend() {
+  mediaRecorder.stop();
+
+  // Send the audio to the server or perform other actions (like uploading)
+  const formData = new FormData();
+  formData.append('audio', audioBlob, 'recording.wav');
+  formData.append('message', messageInput.value); // Add the typed message to the FormData
+
+  try {
+    const response = await fetch('/submit-audio-message', {
+      method: 'POST',
+      body: formData
+    });
+    const result = await response.json();
+    console.log('Audio and message sent successfully:', result);
+  } catch (error) {
+    console.error('Error sending audio and message:', error);
+  }
+}
+
+// Toggle the recording process on button click
+recordButton.addEventListener('click', () => {
+  if (isRecording) {
+    // Stop the recording and send the audio
+    stopRecordingAndSend();
+    recordButton.textContent = '🎤'; // Change button back to start
+  } else {
+    // Start recording
+    startRecording();
+    recordButton.textContent = '⏹️'; // Change button to indicate stop
+  }
+  isRecording = !isRecording; // Toggle the recording state
+});
+
+// Submit button click handler
+submitButton.addEventListener('click', () => {
+  if (!audioBlob) {
+    alert('Please record an audio message first.');
+    return;
+  }
+
+  // Send audio and text when submitting
+  stopRecordingAndSend();
+  messageInput.value = ''; // Clear the message input after submitting
+  recordButton.textContent = '🎤'; // Reset the button to start recording again
+  remainingTime = 10; // Reset the remaining time for the next recording
+  timeDisplay.textContent = `Time Remaining: ${remainingTime}s`;
+  wavesurfer.empty(); // Clear the waveform for the next recording
+});
+
+
+</script>
+
+</html>

@@ -378,11 +378,13 @@ body {
 .accordion-button:not(.accordion_button-active) {
     background-color: white !important;
 }
-.accordion_button-active.accordion-button:not(.collapsed)::after{
+
+.accordion_button-active.accordion-button:not(.collapsed)::after {
     transform: rotate(360deg);
 }
-.accordion_button-active.accordion-button::after{
-    background-image:url('../images/employer-ease-pics/chevron-up-white.svg')!important;
+
+.accordion_button-active.accordion-button::after {
+    background-image: url('../images/employer-ease-pics/chevron-up-white.svg') !important;
     transform: rotate(180deg);
 }
 

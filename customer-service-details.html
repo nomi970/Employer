@@ -1,6 +1,6 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,6 @@
             margin: 20px auto;
             padding: 24px;
         }
-
         .chat-header {
             display: flex;
             align-items: center;
@@ -42,22 +41,18 @@
             padding: 8px 0px;
             justify-content: space-between
         }
-
         .message-row {
             display: flex;
             align-items: flex-start;
             margin-bottom: 15px;
             gap: 10px;
         }
-
         .message-row.user-message {
             justify-content: flex-start;
         }
-
         .message-row.support-message {
             justify-content: flex-end;
         }
-
         .message-content {
             max-width: 70%;
             border-radius: 12px;
@@ -70,21 +65,17 @@
             position: relative;
             word-wrap: break-word;
         }
-
         .user-message .message-content {
             background-color: #DCEBFF;
         }
-
         .support-message .message-content {
             background-color: #F3F3F3;
         }
-
         .profile-pic {
             width: 30px;
             height: 30px;
             border-radius: 50%;
         }
-
         .timestamp {
             font-family: Poppins;
             font-size: 12px;
@@ -93,7 +84,6 @@
             text-align: left;
             color: #707070;
         }
-
         .chat-footer {
             display: flex;
             align-items: center;
@@ -101,7 +91,6 @@
             border-radius: 16px;
             border: 1px solid #DCDCDE;
         }
-
         .chat-footer .plus-button {
             background-color: white !important;
             color: #1779FF !important;
@@ -117,7 +106,6 @@
             text-align: center;
             margin-top: -4px;
         }
-
         .chat-footer input {
             flex: 1;
             outline: none;
@@ -129,11 +117,9 @@
             text-align: left;
             color: #5E5E62;
         }
-
         .chat-footer input::placeholder {
             color: #5E5E62;
         }
-
         .chat-footer button {
             width: 36px;
             height: 36px;
@@ -144,14 +130,12 @@
             color: #fff;
             cursor: pointer;
         }
-
         .file-link {
             display: inline-block;
             margin-left: 10px;
             text-decoration: none;
             color: #007bff;
         }
-
         .file-thumbnail {
             width: 100%;
             max-height: 150px;
@@ -160,7 +144,6 @@
             margin-top: 5px;
             object-fit: fill
         }
-
         .pdf-thumbnail {
             width: 100px;
             height: 100px;
@@ -170,7 +153,6 @@
             line-height: 100px;
             border-radius: 8px;
         }
-
         .message-content iframe {
             width: 100%;
             object-fit: fill;
@@ -182,7 +164,6 @@
             border-radius: 8px;
             overflow: hidden;
         }
-
         .pdf-embed {
             height: 150px !important;
             border: none !important;
@@ -192,7 +173,6 @@
             margin-top: 10px;
             width: 100px;
         }
-
         .file-name {
             margin-top: 10px;
             font-size: 14px;
@@ -200,108 +180,98 @@
             display: block;
             max-width: 200px;
         }
-
         .pdf-embed {
             border: none;
             overflow: hidden;
         }
-
         .file-thumbnail {
             display: block;
             margin: 0 auto;
         }
-
         .profile-pic {
             width: 40px;
             height: 40px;
             border-radius: 50%;
         }
-
         .message-content {
             max-width: 45%;
             padding: 12px;
         }
-
         .main-header-center .btn {
             position: absolute;
             right: 9px;
             top: 8px;
         }
-
         .chat_title {
             text-align: center;
             display: flex;
             justify-content: center;
             margin: 36px 0px;
         }
-
         .chat-body {
             overflow-y: auto;
             height: 60vh;
         }
-
         .gpps {
             display: flex;
             flex-direction: column;
         }
-
         .request__bx {
             padding: 7px 14px;
             background: #F4F3F3;
             border-radius: 20px;
         }
-
+        @media(max-width: 991px) {
+            #emojiPicker {
+                top: -130px !important;
+            }
+        }
         @media(max-width: 650px) {
             .flx_wrap_700 {
                 flex-wrap: wrap;
                 margin-top: 20px;
                 gap: 12px !important;
             }
-
             .pd_none {
                 padding: 0 !important;
             }
-
             .message-content img {
                 width: 100% !important;
             }
-
             .message-content canvas {
                 width: 100% !important;
             }
+            #emojiPicker {
+                top: -200px !important;
+            }
         }
-
         @media only screen and (max-width: 500px) {
             .main-header-center .btn {
                 top: 5px
             }
-
             .message-content {
                 max-width: 85%;
             }
-
             .message-content {
                 font-size: 14px
             }
-
             .chat-wrapper {
                 padding: 14px
             }
-
             .timestamp {
                 font-size: 11px
             }
-
             .profile-pic {
                 width: 34px;
                 height: 34px;
             }
-
             .chat_title {
                 margin: 15px 0px;
             }
+            #emojiPicker {
+                top: -230px !important;
+            }
         }
-
         .separator::before,
         .separator::after {
             content: "";
@@ -309,31 +279,54 @@
             border-bottom: 1px solid #87745733;
             margin: 0 10px;
         }
-
         .separator {
             display: flex;
             align-items: center;
             text-align: center;
         }
-
         .ori__reguest::before,
         .ori__reguest::after {
             margin: 0 !important;
         }
-
         .status {
             padding: 2px 8px;
             border-radius: 16px;
             width: fit-content;
         }
-
         .in-progress {
             background-color: #FFF1F3;
             color: #C01048 !important;
         }
+        #emojiPicker {
+            position: absolute;
+            top: -100px;
+            left: 0px;
+            z-index: 999;
+            background-color: rgba(255, 255, 255, 0.66) !important;
+            max-width: 1000px;
+            height: auto;
+            padding: 16px;
+            border-radius: 20px;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+            cursor: pointer;
+        }
+        #messageInput:focus {
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        .chat-footer {
+            position: relative;
+        }
+        .noselect {
+  user-select: none; /* Prevent text selection */
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none; /* For Firefox */
+  -ms-user-select: none; /* For Internet Explorer */
+}
     </style>
 </head>
-
 <body>
     <div class="chat-wrapper">
         <!-- Chat Header -->
@@ -369,7 +362,7 @@
                     <img src="assets/images/icons/support_ticket_profile.png" alt="User Profile" class="profile-pic">
                     <span class="timestamp">6:21 PM</span>
                 </div>
-                <div class="message-content app-body-font">Hello, how can I get support?</div>
+                <div class="message-content app-body-font emoji-wrapper">Hello, how can I get support?</div>
             </div>
             <!-- Sample Message 2 (Receiver) -->
             <div class="message-row support-message">
@@ -396,146 +389,46 @@
             </div> -->
         <!-- Chat Footer -->
         <div class="chat-footer">
-            <button id="emojiButton" class="emoji-button">😀</button>
-            <div id="emojiPicker" class="emoji-picker" style="display: none;">
-                😀 😃 😄 😁 😆 😅 😂 🤣 😊 😇 🙂 🙃 😉 😌 😍 🥰 😘 😗 😙 😚 😋 😛 😝 😜 🤪
+            <!-- <button id="emojiButton" class="emoji-button">😀</button>
+    <div id="emojiPicker" class="emoji-picker" style="display: none;">
+        😀 😃 😄 😁 😆 😅 😂 🤣 😊 😇 🙂 🙃 😉 😌 😍 🥰 😘 😗 😙 😚 😋 😛 😝 😜 🤪
+    </div> -->
+            <!-- ---------------------------------------------------- -->
+            <div class="chat-container">
+                <button class="bg-transparent" id="emojiToggle"><img src="assets/images/employer-ease-pics/select-emoji.svg"
+                        alt=""></button>
+                <div id="emojiPicker" class="hidden noselect"></div>
             </div>
-            <button id="plusButton" class="plus-button">+</button>
+            <!-- ---------------------------------------------------- -->
+            
             <input type="file" id="fileInput" style="display: none;" accept="image/*,application/pdf">
-            <input type="text" id="messageInput" placeholder="Type a message...">
-            <button id="voiceNoteButton" class="voice-note-button">🎤</button>
-            <button id="sendMessageBtn">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.5 10.7708L3.66667 16.1875C3.38889 16.2986 3.125 16.2743 2.875 16.1146C2.625 15.9549 2.5 15.7222 2.5 15.4167V4.58335C2.5 4.27779 2.625 4.04516 2.875 3.88543C3.125 3.72571 3.38889 3.70141 3.66667 3.81252L16.5 9.22918"
-                        fill="white" />
-                </svg>
+            <input class="ps-3 bg-transparent typing-text-input" type="text" id="messageInput" placeholder="Type a message...">
+            <button id="plusButton" class="plus-button"><img src="assets/images/employer-ease-pics/add-file.svg" alt=""></button>
+            <button id="voiceNoteButton" class="voice-note-button bg-transparent"><img
+                    src="assets/images/employer-ease-pics/mic.svg" alt=""></button>
+            <button id="sendMessageBtn" class="bg-transparent">
+                <img width="40px" height="40px" src="assets/images/employer-ease-pics/send-button.svg" alt="">
             </button>
-        </div>
-        <div id="chatBody"></div>
-
+            </div>
     </div>
-    <!-- <script>
-        let mediaRecorder;
-        let recordedChunks = [];
-
-        function handleVoiceRecording() {
-            const voiceButton = document.getElementById('voiceNoteButton');
-
-            navigator.mediaDevices.getUserMedia({ audio: true })
-                .then(stream => {
-                    mediaRecorder = new MediaRecorder(stream);
-
-                    mediaRecorder.ondataavailable = event => {
-                        recordedChunks.push(event.data);
-                    };
-
-                    mediaRecorder.onstop = () => {
-                        const audioBlob = new Blob(recordedChunks, { type: 'audio/ogg; codecs=opus' });
-                        recordedChunks = [];
-                        const audioUrl = URL.createObjectURL(audioBlob);
-
-                        const chatBody = document.getElementById('chatBody');
-                        const messageRow = document.createElement('div');
-                        messageRow.classList.add('message-row', isSender ? 'user-message' : 'support-message');
-
-                        const profileSection = document.createElement('div');
-                        profileSection.classList.add('gap-2', 'gpps');
-                        const profilePic = document.createElement('img');
-                        profilePic.src = isSender ? 'assets/images/icons/support_ticket_profile.png' : 'assets/images/icons/listing-item1.png';
-                        profilePic.alt = isSender ? 'User Profile' : 'Support Profile';
-                        profilePic.classList.add('profile-pic');
-
-                        const timestamp = document.createElement('span');
-                        timestamp.classList.add('timestamp');
-                        timestamp.textContent = getTime();
-                        profileSection.appendChild(profilePic);
-                        profileSection.appendChild(timestamp);
-
-                        const messageContent = document.createElement('div');
-                        messageContent.classList.add('message-content');
-                        const audio = document.createElement('audio');
-                        audio.controls = true;
-                        audio.src = audioUrl;
-                        messageContent.appendChild(audio);
-
-                        if (isSender) {
-                            messageRow.appendChild(profileSection);
-                            messageRow.appendChild(messageContent);
-                        } else {
-                            messageRow.appendChild(messageContent);
-                            messageRow.appendChild(profileSection);
-                        }
-
-                        chatBody.appendChild(messageRow);
-                        chatBody.scrollTop = chatBody.scrollHeight;
-
-                        isSender = !isSender;
-                    };
-
-                    if (mediaRecorder.state === 'inactive') {
-                        mediaRecorder.start();
-                        voiceButton.textContent = '🛑 Stop';
-                    } else if (mediaRecorder.state === 'recording') {
-                        mediaRecorder.stop();
-                        voiceButton.textContent = '🎤';
-                    }
-                })
-                .catch(err => console.error('Error accessing microphone:', err));
-        }
-
-        document.getElementById('voiceNoteButton').addEventListener('click', handleVoiceRecording);
-
-    </script>
     <script>
+        document.getElementById('emojiButton').addEventListener('click', () => {
+            const emojiPicker = document.getElementById('emojiPicker');
+            emojiPicker.style.display = emojiPicker.style.display === 'none' ? 'block' : 'none';
+        });
         document.getElementById('emojiPicker').addEventListener('click', (e) => {
             if (e.target.tagName === 'SPAN' || e.target.textContent) {
                 const emoji = e.target.textContent;
                 const messageInput = document.getElementById('messageInput');
-
-                if (messageInput.value.trim()) {
-                    // Append emoji to existing message
-                    messageInput.value += emoji;
-                } else {
-                    // Send emoji as a standalone message
-                    const chatBody = document.getElementById('chatBody');
-                    const messageRow = document.createElement('div');
-                    messageRow.classList.add('message-row', isSender ? 'user-message' : 'support-message');
-
-                    const profileSection = document.createElement('div');
-                    profileSection.classList.add('gap-2', 'gpps');
-                    const profilePic = document.createElement('img');
-                    profilePic.src = isSender ? 'assets/images/icons/support_ticket_profile.png' : 'assets/images/icons/listing-item1.png';
-                    profilePic.alt = isSender ? 'User Profile' : 'Support Profile';
-                    profilePic.classList.add('profile-pic');
-
-                    const timestamp = document.createElement('span');
-                    timestamp.classList.add('timestamp');
-                    timestamp.textContent = getTime();
-                    profileSection.appendChild(profilePic);
-                    profileSection.appendChild(timestamp);
-
-                    const messageContent = document.createElement('div');
-                    messageContent.classList.add('message-content');
-                    messageContent.textContent = emoji;
-
-                    if (isSender) {
-                        messageRow.appendChild(profileSection);
-                        messageRow.appendChild(messageContent);
-                    } else {
-                        messageRow.appendChild(messageContent);
-                        messageRow.appendChild(profileSection);
-                    }
-
-                    chatBody.appendChild(messageRow);
-                    chatBody.scrollTop = chatBody.scrollHeight;
-
-                    isSender = !isSender;
-                }
+                messageInput.value += emoji;
             }
         });
-
-    </script> -->
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.chat-footer')) {
+                document.getElementById('emojiPicker').style.display = 'none';
+            }
+        });
+    </script>
     <!-- ************************Scripts Start Here*********************************-->
     <!--------------------------------- Jquery --------------------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -548,7 +441,7 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
-    <!-- <script>
+    <script>
         let isSender = true;
         function getTime() {
             const now = new Date();
@@ -705,222 +598,38 @@
             if (e.key === 'Enter') handleSendMessage();
         });
         document.getElementById('plusButton').addEventListener('click', handleFileUpload);
-    </script> -->
-
-    <script>
-        // Utility to get the current time
-function getTime() {
-    const now = new Date();
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
-    const ampm = hours >= 12 ? 'PM' : 'AM';
-    hours = hours % 12 || 12;
-    minutes = minutes < 10 ? '0' + minutes : minutes;
-    return `${hours}:${minutes} ${ampm}`;
-}
-
-let isSender = true;
-
-// Function to handle sending text messages
-function handleSendMessage() {
-    const messageInput = document.getElementById('messageInput');
-    const chatBody = document.getElementById('chatBody');
-    const messageText = messageInput.value.trim();
-
-    if (messageText) {
-        const messageRow = document.createElement('div');
-        messageRow.classList.add('message-row', isSender ? 'user-message' : 'support-message');
-
-        const profileSection = document.createElement('div');
-        profileSection.classList.add('gap-2', 'gpps');
-
-        const profilePic = document.createElement('img');
-        profilePic.src = isSender
-            ? 'assets/images/icons/support_ticket_profile.png'
-            : 'assets/images/icons/listing-item1.png';
-        profilePic.alt = isSender ? 'User Profile' : 'Support Profile';
-        profilePic.classList.add('profile-pic');
-
-        const timestamp = document.createElement('span');
-        timestamp.classList.add('timestamp');
-        timestamp.textContent = getTime();
-
-        profileSection.appendChild(profilePic);
-        profileSection.appendChild(timestamp);
-
-        const messageContent = document.createElement('div');
-        messageContent.classList.add('message-content');
-        messageContent.textContent = messageText;
-
-        if (isSender) {
-            messageRow.appendChild(profileSection);
-            messageRow.appendChild(messageContent);
-        } else {
-            messageRow.appendChild(messageContent);
-            messageRow.appendChild(profileSection);
-        }
-
-        chatBody.appendChild(messageRow);
-        chatBody.scrollTop = chatBody.scrollHeight;
-        messageInput.value = '';
-        isSender = !isSender;
-    }
-}
-
-// Function to handle file uploads
-function handleFileUpload() {
-    const fileInput = document.getElementById('fileInput');
-    fileInput.click();
-
-    fileInput.onchange = () => {
-        const file = fileInput.files[0];
-        if (file) {
-            const chatBody = document.getElementById('chatBody');
-            const messageRow = document.createElement('div');
-            messageRow.classList.add('message-row', isSender ? 'user-message' : 'support-message');
-
-            const profileSection = document.createElement('div');
-            profileSection.classList.add('gap-2', 'gpps');
-
-            const profilePic = document.createElement('img');
-            profilePic.src = isSender
-                ? 'assets/images/icons/support_ticket_profile.png'
-                : 'assets/images/icons/listing-item1.png';
-            profilePic.alt = isSender ? 'User Profile' : 'Support Profile';
-            profilePic.classList.add('profile-pic');
-
-            const timestamp = document.createElement('span');
-            timestamp.classList.add('timestamp');
-            timestamp.textContent = getTime();
-
-            profileSection.appendChild(profilePic);
-            profileSection.appendChild(timestamp);
-
-            const messageContent = document.createElement('div');
-            messageContent.classList.add('message-content');
-
-            if (file.type.startsWith('image/')) {
-                const img = document.createElement('img');
-                img.src = URL.createObjectURL(file);
-                img.alt = 'Uploaded Image';
-                img.style.maxWidth = '200px';
-                img.style.borderRadius = '8px';
-                messageContent.appendChild(img);
-            } else {
-                const fileLink = document.createElement('a');
-                fileLink.href = URL.createObjectURL(file);
-                fileLink.textContent = file.name;
-                fileLink.target = '_blank';
-                fileLink.style.textDecoration = 'none';
-                messageContent.appendChild(fileLink);
-            }
-
-            if (isSender) {
-                messageRow.appendChild(profileSection);
-                messageRow.appendChild(messageContent);
-            } else {
-                messageRow.appendChild(messageContent);
-                messageRow.appendChild(profileSection);
-            }
-
-            chatBody.appendChild(messageRow);
-            chatBody.scrollTop = chatBody.scrollHeight;
-            isSender = !isSender;
-        }
-    };
-}
-
-// Function to handle voice recordings
-let mediaRecorder;
-let recordedChunks = [];
-
-function handleVoiceRecording() {
-    const voiceButton = document.getElementById('voiceNoteButton');
-
-    navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
-        mediaRecorder = new MediaRecorder(stream);
-
-        mediaRecorder.ondataavailable = event => {
-            recordedChunks.push(event.data);
-        };
-
-        mediaRecorder.onstop = () => {
-            const audioBlob = new Blob(recordedChunks, { type: 'audio/ogg; codecs=opus' });
-            recordedChunks = [];
-            const audioUrl = URL.createObjectURL(audioBlob);
-
-            const chatBody = document.getElementById('chatBody');
-            const messageRow = document.createElement('div');
-            messageRow.classList.add('message-row', isSender ? 'user-message' : 'support-message');
-
-            const profileSection = document.createElement('div');
-            profileSection.classList.add('gap-2', 'gpps');
-
-            const profilePic = document.createElement('img');
-            profilePic.src = isSender
-                ? 'assets/images/icons/support_ticket_profile.png'
-                : 'assets/images/icons/listing-item1.png';
-            profilePic.alt = isSender ? 'User Profile' : 'Support Profile';
-            profilePic.classList.add('profile-pic');
-
-            const timestamp = document.createElement('span');
-            timestamp.classList.add('timestamp');
-            timestamp.textContent = getTime();
-
-            profileSection.appendChild(profilePic);
-            profileSection.appendChild(timestamp);
-
-            const messageContent = document.createElement('div');
-            messageContent.classList.add('message-content');
-
-            const audio = document.createElement('audio');
-            audio.controls = true;
-            audio.src = audioUrl;
-            messageContent.appendChild(audio);
-
-            if (isSender) {
-                messageRow.appendChild(profileSection);
-                messageRow.appendChild(messageContent);
-            } else {
-                messageRow.appendChild(messageContent);
-                messageRow.appendChild(profileSection);
-            }
-
-            chatBody.appendChild(messageRow);
-            chatBody.scrollTop = chatBody.scrollHeight;
-
-            isSender = !isSender;
-        };
-
-        if (mediaRecorder.state === 'inactive') {
-            mediaRecorder.start();
-            voiceButton.textContent = '🛑 Stop';
-        } else if (mediaRecorder.state === 'recording') {
-            mediaRecorder.stop();
-            voiceButton.textContent = '🎤';
-        }
-    }).catch(err => console.error('Error accessing microphone:', err));
-}
-
-// Function to handle emojis
-function handleEmojiClick(e) {
-    if (e.target.tagName === 'SPAN' || e.target.textContent) {
-        const emoji = e.target.textContent;
-        const messageInput = document.getElementById('messageInput');
-        messageInput.value += emoji;
-    }
-}
-
-// Event listeners
-document.getElementById('sendMessageBtn').addEventListener('click', handleSendMessage);
-document.getElementById('messageInput').addEventListener('keydown', e => {
-    if (e.key === 'Enter') handleSendMessage();
-});
-document.getElementById('plusButton').addEventListener('click', handleFileUpload);
-document.getElementById('voiceNoteButton').addEventListener('click', handleVoiceRecording);
-document.getElementById('emojiPicker').addEventListener('click', handleEmojiClick);
-
     </script>
+    <!-- ---------------------------------------------------- -->
+    <script>
+        const emojis = ["😀", "😃", "😄", "😁", "😆", "😅", "😂", "🤣", "😜", "😎", "😍", "🤩", "😘",
+            "🐶", "🐱", "🦁", "🐸", "🦋", "🐝", "🌹", "🌻", "🌞", "🌈", "🌊", "🔥", "🍎", "🍔",
+            "🍕", "🍦", "🍿", "🍩", "🍫", "🍓", "🍇", "🍉", "🍒", "🥗", "🥑", "🥕", "🌽", "🥔",
+            "🥐", "🍞", "🍪", "🥖", "🥨", "🍻", "🍷", "🥂", "🍸", "🍺", "🍾", "🥃", "🍷", "🥡",
+            "🥢", "🍽", "🍴", "🍕", "🥘", "🍝", "🍣", "🍤", "🍲", "🍛", "🍜", "🥗", "🍝", "🍤",
+            "🍥", "🍢", "🍡", "🍣", "🍳", "🥚", "🍪", "🥧", "🍨", "🍩", "🍦", "🎂", "🍰", "🥧",
+            "🍮", "🍡", "🥠", "🍢"];
+        const emojiToggle = document.getElementById('emojiToggle');
+        const emojiPicker = document.getElementById('emojiPicker');
+        const chatInput = document.getElementById('messageInput');
+        function renderEmojis() {
+            emojiPicker.innerHTML = '';
+            emojis.forEach((emoji) => {
+                const emojiSpan = document.createElement('span');
+                emojiSpan.textContent = emoji;
+                emojiSpan.classList.add('emoji');
+                emojiSpan.addEventListener('click', () => {
+                    chatInput.value += emoji;
+                });
+                emojiPicker.appendChild(emojiSpan);
+            });
+        }
+        emojiToggle.addEventListener('click', () => {
+            if (sendMessageBtn.click) {
+                emojiPicker.classList.toggle('d-none');
+                renderEmojis();
+            }
+        });
+    </script>
+    <!-- ---------------------------------------------------- -->
 </body>
-
 </html>
