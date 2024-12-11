@@ -301,7 +301,7 @@
             top: -100px;
             left: 0px;
             z-index: 999;
-            background-color: white !important;
+            background-color: rgba(255, 255, 255, 0.66) !important;
             max-width: 1000px;
             height: auto;
             padding: 16px;
@@ -318,6 +318,12 @@
         .chat-footer {
             position: relative;
         }
+        .noselect {
+  user-select: none; /* Prevent text selection */
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none; /* For Firefox */
+  -ms-user-select: none; /* For Internet Explorer */
+}
     </style>
 </head>
 <body>
@@ -388,22 +394,21 @@
     </div> -->
             <!-- ---------------------------------------------------- -->
             <div class="chat-container">
-                <button id="emojiToggle">😊</button>
-                <div id="emojiPicker" class="hidden"></div>
+                <button class="bg-transparent" id="emojiToggle"><img src="assets/images/employer-ease-pics/select-emoji.svg"
+                        alt=""></button>
+                <div id="emojiPicker" class="hidden noselect"></div>
             </div>
             <!-- ---------------------------------------------------- -->
-            <button id="plusButton" class="plus-button">+</button>
+            
             <input type="file" id="fileInput" style="display: none;" accept="image/*,application/pdf">
-            <input class="ps-3" type="text" id="messageInput" placeholder="Type a message...">
-            <button id="voiceNoteButton" class="voice-note-button">🎤</button>
-            <button id="sendMessageBtn">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16.5 10.7708L3.66667 16.1875C3.38889 16.2986 3.125 16.2743 2.875 16.1146C2.625 15.9549 2.5 15.7222 2.5 15.4167V4.58335C2.5 4.27779 2.625 4.04516 2.875 3.88543C3.125 3.72571 3.38889 3.70141 3.66667 3.81252L16.5 9.22918"
-                        fill="white" />
-                </svg>
+            <input class="ps-3 bg-transparent typing-text-input" type="text" id="messageInput" placeholder="Type a message...">
+            <button id="plusButton" class="plus-button"><img src="assets/images/employer-ease-pics/add-file.svg" alt=""></button>
+            <button id="voiceNoteButton" class="voice-note-button bg-transparent"><img
+                    src="assets/images/employer-ease-pics/mic.svg" alt=""></button>
+            <button id="sendMessageBtn" class="bg-transparent">
+                <img width="40px" height="40px" src="assets/images/employer-ease-pics/send-button.svg" alt="">
             </button>
-        </div>
+            </div>
     </div>
     <script>
         document.getElementById('emojiButton').addEventListener('click', () => {
