@@ -2263,21 +2263,21 @@
         const date_Display = document.getElementById('date-Display');
         const date_Picker = document.getElementById('date-Picker');
 
-       
+
         date_Picker.addEventListener('change', updateDisplay);
 
         function updateDisplay() {
             const selectedDate = new Date(date_Picker.value);
-            const currentDate = new Date(); 
+            const currentDate = new Date();
 
-            
+
             selectedDate.setHours(0, 0, 0, 0);
             currentDate.setHours(0, 0, 0, 0);
 
-           
+
             const differenceInDays = (selectedDate - currentDate) / (1000 * 60 * 60 * 24);
 
-          
+
             let label = '';
             if (differenceInDays === 0) {
                 label = 'Today';
@@ -2291,7 +2291,7 @@
                 label = `${Math.abs(Math.round(differenceInDays))} days ago`;
             }
 
-            
+
             const formattedDate = selectedDate.toLocaleDateString('en-US', {
                 weekday: 'long',
                 year: 'numeric',
@@ -2299,7 +2299,7 @@
                 day: 'numeric'
             });
 
-           
+
             date_Display.textContent = `${formattedDate} | ${label}`;
         }
     </script>
@@ -2313,7 +2313,7 @@
     </script>
     <!-- --------------------------check all checkbox of table----------------------------- -->
     <script>
-      
+
         document.querySelectorAll('table').forEach((table) => {
 
             const headerCheckbox = table.querySelector('thead input[type="checkbox"]');

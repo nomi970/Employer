@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description"
+    <meta name="description"
         content="Discover top-notch appliances at Zero Tolerance. From kitchen essentials to smart gadgets, find everything you need for a modern lifestyle. Shop now for reliability and performance." />
     <meta name="title" content="Zero Tolerance: Your Destination for High-Quality Appliances" />
     <link rel="icon" href="assets/images/employer-ease-pics/rocket.svg">
@@ -30,6 +31,7 @@
             top: 18px;
             left: 20%;
         }
+
         @media (max-width: 520px) {
             .location-card {
                 left: 0px;
@@ -48,6 +50,7 @@
             border-top-right-radius: 8px;
             /* color: red !important; */
         }
+
         /* thead tr th {
             color: red !important;
         } */
@@ -56,6 +59,7 @@
             padding: 12px 15px;
             border-top: 1px solid #EAECF0;
         }
+
         /* Add alternating row colors */
         /* table.appointment-listing-table tbody tr:nth-child(even) {
     background-color: #F9FAFB;
@@ -65,6 +69,7 @@
             border-radius: 50%;
             margin-right: 10px;
         }
+
         /* Styling for the table container */
         .table-responsive {
             border-radius: 8px;
@@ -72,6 +77,7 @@
             background-color: #FFFFFF;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+
         /* Styling for the table when there are no data rows */
         table.appointment-listing-table tbody tr.empty-table {
             background-color: #f9f9f9;
@@ -79,6 +85,7 @@
             font-style: italic;
             color: #6c757d;
         }
+
         /* Styling for hover effect on rows */
         /* table.appointment-listing-table tbody tr:hover {
     background-color: #f1f1f1;
@@ -88,10 +95,12 @@
             display: flex;
             align-items: center;
         }
+
         /* Make sure the last column has no border on the bottom */
         table.appointment-listing-table td:last-child {
             border-bottom: 0;
         }
+
         /* Make the table header sticky if desired (optional) */
         table.appointment-listing-table thead {
             position: sticky;
@@ -101,6 +110,7 @@
             color: red !important;
             border-radius: 12px;
         }
+
         /* General table styling */
         .appointment-listing-table {
             width: 100%;
@@ -109,6 +119,7 @@
             font-family: Arial, sans-serif;
             font-size: 14px;
         }
+
         /* Style for the table's empty rows (in case of no data) */
         .appointment-listing-table tbody tr.no-data td {
             text-align: center;
@@ -117,6 +128,7 @@
         }
     </style>
 </head>
+
 <body>
     <section class="hero-section">
         <div class="main-dashbord">
@@ -384,7 +396,7 @@
                     </div>
                 </div>
             </aside>
-            <div class="dashbord-2">
+            <div class="dashbord-2" id="dashboard-2">
                 <div class="naivgation-header">
                     <div class="d-flex align-items-center justify-content-between gap-2 w-100">
                         <div class="main-search-bar">
@@ -414,7 +426,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center gap-1">
+                        <!-- --------------------------------content show on tab and hide on mobile-------------------------------- -->
+                        <div class="d-flex align-items-center gap-1 d-none d-md-block">
                             <div class="d-flex align-items-center" style="gap: 16px">
                                 <div class="dropdown">
                                     <button class="d-block border-0 bg-transparent" data-bs-toggle="dropdown"
@@ -516,6 +529,86 @@
                                     </svg> -->
                             </div>
                         </div>
+                        <!-- -------------------------------------================Off convas for mobile small screen===============------------------------------------ -->
+                        <div class="d-block d-md-none">
+                            <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRightUnique" aria-controls="offcanvasRightUnique">
+                                <img src="assets/images/employer-ease-pics/user-profile.svg" alt="">
+                            </button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightUnique" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="">
+                                        <div class="w-100" style="gap: 16px">
+                                            <div class="dropdown">
+                                                <button class="d-flex align-items-center border-0 bg-transparent" data-bs-toggle="dropdown"
+                                                    aria-expanded="false" type="button" style="gap: 8px">
+                                                    <div
+                                                        class="icon-placeholder rounded-circle d-flex align-items-center justify-content-center">
+                                                        <img src="assets/images/employer-ease-pics/header-profile.svg" alt="">
+                                                    </div>
+                                                    <i class="fa fa-chevron-down text-dark" style="font-size: 14px;"></i>
+                                                </button>
+                                                <ul class="dropdown-menu language-dropdown">
+                                                    <li>
+                                                        <a class="dropdown-item" href="User-profile.html">
+                                                            <!-- SVG content -->
+                                                            Account Settings
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="login.html">
+                                                            <!-- SVG content -->
+                                                            Sign out
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <hr>
+                                            <div class="dropdown">
+                                                <button class="d-block border-0 bg-transparent dropdown-toggle" data-bs-toggle="dropdown"
+                                                    aria-expanded="false" type="button">
+                                                    <span class="">
+                                                        <img class="me-2"
+                                                            src="assets/images/employer-ease-pics/language-switch.svg" alt="" />Eng<sub>
+                                                            (US)</sub>
+                                                    </span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Urdu</a></li>
+                                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column gap-3 mt-3">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="dropdown">
+                                                <button class="d-block border-0 bg-transparent" data-bs-toggle="dropdown"
+                                                    aria-expanded="false" type="button">
+                                                    <img class="mt-2" src="assets/images/employer-ease-pics/cart.svg" alt="" />
+                                                    <span class="dot active"></span>
+                                                </button>
+                                            </div>
+                                            <label class="mt-2 fs_14 fw_500 tertiary-black j_family" for="">Cart</label>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="dropdown ms-1">
+                                                <button class="d-block border-0 bg-transparent" data-bs-toggle="dropdown"
+                                                    aria-expanded="false" type="button">
+                                                    <img src="assets/images/employer-ease-pics/calendar.svg" alt="" />
+                                                    <span class="dot active"></span>
+                                                </button>
+                                            </div>
+                                            <label class="fs_14 fw_500 tertiary-black j_family" for="Cart">Calendar</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -------------------------------------================Off convas for mobile small screen===============------------------------------------ -->
                     </div>
                 </div>
                 <!-- Content Section -->
@@ -805,51 +898,51 @@
                                                                     src="assets/images/employer-ease-pics/3-dot-line.svg"
                                                                     alt="menu" loading="lazy">
                                                             </button>
-                                                             <ul class="dropdown-menu py-2">
-                                                            <li class="rounded"><button type="button"
-                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#Withdraw__amount">
-                                                                    <svg class="me-1" width="20" height="14"
-                                                                        viewBox="0 0 20 14" fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                        <path
-                                                                            d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
-                                                                            stroke="#475467" stroke-width="1.66667"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round" />
-                                                                        <path
-                                                                            d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
-                                                                            stroke="#475467" stroke-width="1.66667"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round" />
-                                                                    </svg>
-                                                                    View</button></li>
-                                                            <li class="rounded"><a
-                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
-                                                                    href="#" data-bs-toggle="modal">
-                                                                    <svg class="me-1" width="24" height="24"
-                                                                        viewBox="0 0 24 24" fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                        <path
-                                                                            d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
-                                                                            stroke="#6F7784" stroke-width="2" />
-                                                                    </svg>
-                                                                    Share</a></li>
-                                                            <li class="rounded"><a
-                                                                    class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
-                                                                    href="#" data-bs-toggle="modal">
-                                                                    <svg class="ms-1" width="24" height="24"
-                                                                        viewBox="0 0 24 24" fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                        <path
-                                                                            d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
-                                                                            stroke="#6F7784" stroke-width="2"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round" />
-                                                                    </svg>
-                                                                    Delete</a></li>
-                                                        </ul>
+                                                            <ul class="dropdown-menu py-2">
+                                                                <li class="rounded"><button type="button"
+                                                                        class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#Withdraw__amount">
+                                                                        <svg class="me-1" width="20" height="14"
+                                                                            viewBox="0 0 20 14" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path
+                                                                                d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
+                                                                                stroke="#475467" stroke-width="1.66667"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path
+                                                                                d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
+                                                                                stroke="#475467" stroke-width="1.66667"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        View</button></li>
+                                                                <li class="rounded"><a
+                                                                        class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                        href="#" data-bs-toggle="modal">
+                                                                        <svg class="me-1" width="24" height="24"
+                                                                            viewBox="0 0 24 24" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path
+                                                                                d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
+                                                                                stroke="#6F7784" stroke-width="2" />
+                                                                        </svg>
+                                                                        Share</a></li>
+                                                                <li class="rounded"><a
+                                                                        class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                        href="#" data-bs-toggle="modal">
+                                                                        <svg class="ms-1" width="24" height="24"
+                                                                            viewBox="0 0 24 24" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path
+                                                                                d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
+                                                                                stroke="#6F7784" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        Delete</a></li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -877,51 +970,51 @@
                                                                     src="assets/images/employer-ease-pics/3-dot-line.svg"
                                                                     alt="menu" loading="lazy">
                                                             </button>
-                                                             <ul class="dropdown-menu py-2">
-                                                            <li class="rounded"><button type="button"
-                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#Withdraw__amount">
-                                                                    <svg class="me-1" width="20" height="14"
-                                                                        viewBox="0 0 20 14" fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                        <path
-                                                                            d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
-                                                                            stroke="#475467" stroke-width="1.66667"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round" />
-                                                                        <path
-                                                                            d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
-                                                                            stroke="#475467" stroke-width="1.66667"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round" />
-                                                                    </svg>
-                                                                    View</button></li>
-                                                            <li class="rounded"><a
-                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
-                                                                    href="#" data-bs-toggle="modal">
-                                                                    <svg class="me-1" width="24" height="24"
-                                                                        viewBox="0 0 24 24" fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                        <path
-                                                                            d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
-                                                                            stroke="#6F7784" stroke-width="2" />
-                                                                    </svg>
-                                                                    Share</a></li>
-                                                            <li class="rounded"><a
-                                                                    class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
-                                                                    href="#" data-bs-toggle="modal">
-                                                                    <svg class="ms-1" width="24" height="24"
-                                                                        viewBox="0 0 24 24" fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                        <path
-                                                                            d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
-                                                                            stroke="#6F7784" stroke-width="2"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round" />
-                                                                    </svg>
-                                                                    Delete</a></li>
-                                                        </ul>
+                                                            <ul class="dropdown-menu py-2">
+                                                                <li class="rounded"><button type="button"
+                                                                        class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#Withdraw__amount">
+                                                                        <svg class="me-1" width="20" height="14"
+                                                                            viewBox="0 0 20 14" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path
+                                                                                d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
+                                                                                stroke="#475467" stroke-width="1.66667"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path
+                                                                                d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
+                                                                                stroke="#475467" stroke-width="1.66667"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        View</button></li>
+                                                                <li class="rounded"><a
+                                                                        class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                        href="#" data-bs-toggle="modal">
+                                                                        <svg class="me-1" width="24" height="24"
+                                                                            viewBox="0 0 24 24" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path
+                                                                                d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
+                                                                                stroke="#6F7784" stroke-width="2" />
+                                                                        </svg>
+                                                                        Share</a></li>
+                                                                <li class="rounded"><a
+                                                                        class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                        href="#" data-bs-toggle="modal">
+                                                                        <svg class="ms-1" width="24" height="24"
+                                                                            viewBox="0 0 24 24" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path
+                                                                                d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
+                                                                                stroke="#6F7784" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        Delete</a></li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -949,51 +1042,51 @@
                                                                     src="assets/images/employer-ease-pics/3-dot-line.svg"
                                                                     alt="menu" loading="lazy">
                                                             </button>
-                                                             <ul class="dropdown-menu py-2">
-                                                            <li class="rounded"><button type="button"
-                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#Withdraw__amount">
-                                                                    <svg class="me-1" width="20" height="14"
-                                                                        viewBox="0 0 20 14" fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                        <path
-                                                                            d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
-                                                                            stroke="#475467" stroke-width="1.66667"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round" />
-                                                                        <path
-                                                                            d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
-                                                                            stroke="#475467" stroke-width="1.66667"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round" />
-                                                                    </svg>
-                                                                    View</button></li>
-                                                            <li class="rounded"><a
-                                                                    class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
-                                                                    href="#" data-bs-toggle="modal">
-                                                                    <svg class="me-1" width="24" height="24"
-                                                                        viewBox="0 0 24 24" fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                        <path
-                                                                            d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
-                                                                            stroke="#6F7784" stroke-width="2" />
-                                                                    </svg>
-                                                                    Share</a></li>
-                                                            <li class="rounded"><a
-                                                                    class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
-                                                                    href="#" data-bs-toggle="modal">
-                                                                    <svg class="ms-1" width="24" height="24"
-                                                                        viewBox="0 0 24 24" fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                        <path
-                                                                            d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
-                                                                            stroke="#6F7784" stroke-width="2"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round" />
-                                                                    </svg>
-                                                                    Delete</a></li>
-                                                        </ul>
+                                                            <ul class="dropdown-menu py-2">
+                                                                <li class="rounded"><button type="button"
+                                                                        class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#Withdraw__amount">
+                                                                        <svg class="me-1" width="20" height="14"
+                                                                            viewBox="0 0 20 14" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path
+                                                                                d="M2.01677 7.59366C1.90328 7.41396 1.84654 7.32411 1.81477 7.18553C1.79091 7.08143 1.79091 6.91727 1.81477 6.81317C1.84654 6.67458 1.90328 6.58473 2.01677 6.40503C2.95461 4.92005 5.74617 1.16602 10.0003 1.16602C14.2545 1.16602 17.0461 4.92005 17.9839 6.40503C18.0974 6.58473 18.1541 6.67458 18.1859 6.81317C18.2098 6.91727 18.2098 7.08143 18.1859 7.18553C18.1541 7.32411 18.0974 7.41396 17.9839 7.59366C17.0461 9.07865 14.2545 12.8327 10.0003 12.8327C5.74617 12.8327 2.95461 9.07865 2.01677 7.59366Z"
+                                                                                stroke="#475467" stroke-width="1.66667"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path
+                                                                                d="M10.0003 9.49935C11.381 9.49935 12.5003 8.38006 12.5003 6.99935C12.5003 5.61864 11.381 4.49935 10.0003 4.49935C8.61962 4.49935 7.50034 5.61864 7.50034 6.99935C7.50034 8.38006 8.61962 9.49935 10.0003 9.49935Z"
+                                                                                stroke="#475467" stroke-width="1.66667"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        View</button></li>
+                                                                <li class="rounded"><a
+                                                                        class="rounded  dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                        href="#" data-bs-toggle="modal">
+                                                                        <svg class="me-1" width="24" height="24"
+                                                                            viewBox="0 0 24 24" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path
+                                                                                d="M8.33333 15.5829V14.5829H9.33333C12.5166 14.5829 15.5524 14.76 18.2281 16.0054C19.2501 16.481 20.2022 17.1035 21.0845 17.907C20.8124 17.2632 20.5072 16.6035 20.1661 15.9447C18.0166 11.7927 14.6096 7.96989 9.33333 7.96989H8.33333V6.96989V2.8191L1.28336 11.506L8.33333 20.3488V15.5829Z"
+                                                                                stroke="#6F7784" stroke-width="2" />
+                                                                        </svg>
+                                                                        Share</a></li>
+                                                                <li class="rounded"><a
+                                                                        class="rounded dropdown-item font_18 ln_32 d-flex align-items-center gap-2 app-high-gray table-drop-down"
+                                                                        href="#" data-bs-toggle="modal">
+                                                                        <svg class="ms-1" width="24" height="24"
+                                                                            viewBox="0 0 24 24" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path
+                                                                                d="M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6"
+                                                                                stroke="#6F7784" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        Delete</a></li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1523,66 +1616,97 @@
                                         <div class="web_content_tabs mt_24">
                                             <div class="accordion" id="accordionExample">
                                                 <div class="accordion-item">
-                                                  <h2 class="accordion-header" id="headingOne">
-                                                    <button class="accordion-button collapsed d-flex align-items-center justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                        <div class="d-flex justify-content-between w-100 pe-2">
-                                                            <p>View full mobile report</p>
-                                                            <div class="d-flex align-items-center gap-2">
+                                                    <h2 class="accordion-header" id="headingOne">
+                                                        <button
+                                                            class="accordion-button collapsed d-flex align-items-center justify-content-between w-100"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                                            aria-controls="collapseOne">
+                                                            <div class="d-flex justify-content-between w-100 pe-2">
+                                                                <p>View full mobile report</p>
                                                                 <div class="d-flex align-items-center gap-2">
-                                                                    <img width="24" height="24" src="./assets/images/icons/cancel.svg" alt="cancel">
-                                                                    <p class="font_14 fw_400">5 Should fix</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center gap-2">
-                                                                    <img width="24" height="24" src="./assets/images/icons/error.svg" alt="error">
-                                                                    <p class="font_14 fw_400">7 Consider fixing</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center gap-2">
-                                                                    <img width="24" height="24" src="./assets/images/icons/done.svg" alt="done">
-                                                                    <p class="font_14 fw_400">33 Passed rules</p>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <img width="24" height="24"
+                                                                            src="./assets/images/icons/cancel.svg"
+                                                                            alt="cancel">
+                                                                        <p class="font_14 fw_400">5 Should fix</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <img width="24" height="24"
+                                                                            src="./assets/images/icons/error.svg"
+                                                                            alt="error">
+                                                                        <p class="font_14 fw_400">7 Consider fixing</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <img width="24" height="24"
+                                                                            src="./assets/images/icons/done.svg"
+                                                                            alt="done">
+                                                                        <p class="font_14 fw_400">33 Passed rules</p>
+                                                                    </div>
                                                                 </div>
                                                             </div>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body p-0 pt-3">
+                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                            Corrupti, tenetur. Similique ipsum minima magnam itaque
+                                                            nihil obcaecati laboriosam possimus corrupti facere.
+                                                            Sapiente alias quasi quae culpa perspiciatis perferendis
+                                                            obcaecati ipsa!
                                                         </div>
-                                                    </button>
-                                                  </h2>
-                                                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body p-0 pt-3">
-                                                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, tenetur. Similique ipsum minima magnam itaque nihil obcaecati laboriosam possimus corrupti facere. Sapiente alias quasi quae culpa perspiciatis perferendis obcaecati ipsa!
                                                     </div>
-                                                  </div>
                                                 </div>
                                                 <div class="accordion-item">
-                                                  <h2 class="accordion-header" id="headingTwo">
-                                                    <button class="accordion-button collapsed d-flex align-items-center justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                        <div class="d-flex justify-content-between w-100 pe-2">
-                                                            <p>View full desktop report</p>
-                                                            <div class="d-flex align-items-center gap-2">
+                                                    <h2 class="accordion-header" id="headingTwo">
+                                                        <button
+                                                            class="accordion-button collapsed d-flex align-items-center justify-content-between w-100"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseTwo" aria-expanded="false"
+                                                            aria-controls="collapseTwo">
+                                                            <div class="d-flex justify-content-between w-100 pe-2">
+                                                                <p>View full desktop report</p>
                                                                 <div class="d-flex align-items-center gap-2">
-                                                                    <img width="24" height="24" src="./assets/images/icons/cancel.svg" alt="cancel">
-                                                                    <p class="font_14 fw_400">3 Should fix</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center gap-2">
-                                                                    <img width="24" height="24" src="./assets/images/icons/error.svg" alt="error">
-                                                                    <p class="font_14 fw_400">5 Consider fixing</p>
-                                                                </div>
-                                                                <div class="d-flex align-items-center gap-2">
-                                                                    <img width="24" height="24" src="./assets/images/icons/done.svg" alt="done">
-                                                                    <p class="font_14 fw_400">37 Passed rules</p>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <img width="24" height="24"
+                                                                            src="./assets/images/icons/cancel.svg"
+                                                                            alt="cancel">
+                                                                        <p class="font_14 fw_400">3 Should fix</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <img width="24" height="24"
+                                                                            src="./assets/images/icons/error.svg"
+                                                                            alt="error">
+                                                                        <p class="font_14 fw_400">5 Consider fixing</p>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <img width="24" height="24"
+                                                                            src="./assets/images/icons/done.svg"
+                                                                            alt="done">
+                                                                        <p class="font_14 fw_400">37 Passed rules</p>
+                                                                    </div>
                                                                 </div>
                                                             </div>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body p-0 pt-3">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Ducimus earum doloremque, porro vel suscipit expedita!
+                                                            Placeat id inventore, non voluptates adipisci, vitae ducimus
+                                                            voluptate asperiores officia minima qui, doloribus
+                                                            doloremque!
                                                         </div>
-                                                    </button>
-                                                  </h2>
-                                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body p-0 pt-3">
-                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus earum doloremque, porro vel suscipit expedita! Placeat id inventore, non voluptates adipisci, vitae ducimus voluptate asperiores officia minima qui, doloribus doloremque!
                                                     </div>
-                                                  </div>
                                                 </div>
-                                              </div>
+                                            </div>
                                         </div>
                                         <div
                                             class="d-flex align-items-center gap-2 flex-wrap justify-content-between mt_24">
-                                            <p class="font_16 fw_400 global-gray ln_26 mb-4 mt_24"> Ready to further enhance your website and boost online engagement? Find out how! 
+                                            <p class="font_16 fw_400 global-gray ln_26 mb-4 mt_24"> Ready to further
+                                                enhance your website and boost online engagement? Find out how!
                                             </p>
                                             <button class="view_more_btn font_14 fw_600 global-dark-gray"
                                                 type="button">Get in Touch</button>
@@ -1958,10 +2082,30 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/icons/microsoft.svg" alt="pdf"> Microsoft 365</h2></td>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> Hello Elementor</h2></td>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> Elementor</h2></td>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> Online Storefront</h2></td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/icons/microsoft.svg"
+                                                                        alt="pdf"> Microsoft 365</h2>
+                                                            </td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> Hello Elementor</h2>
+                                                            </td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> Elementor</h2>
+                                                            </td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> Online Storefront</h2>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                     <thead>
@@ -1974,10 +2118,30 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> WordPress</h2></td>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> Priority Hints</h2></td>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> HSTS</h2></td>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> MySQL</h2></td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> WordPress</h2>
+                                                            </td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> Priority Hints</h2>
+                                                            </td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> HSTS</h2>
+                                                            </td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> MySQL</h2>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                     <thead>
@@ -1990,10 +2154,30 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> Go Daddy</h2></td>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> Elementor</h2></td>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> Microsoft 365</h2></td>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> LiteSpeed</h2></td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> Go Daddy</h2>
+                                                            </td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> Elementor</h2>
+                                                            </td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> Microsoft 365</h2>
+                                                            </td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> LiteSpeed</h2>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                     <thead>
@@ -2006,25 +2190,70 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> jQuery Migrate</h2></td>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> Twitter Emoji (Twemoji)</h2></td>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> HTTP/3</h2></td>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> PHP</h2></td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> jQuery Migrate</h2>
+                                                            </td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> Twitter Emoji (Twemoji)</h2>
+                                                            </td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> HTTP/3</h2>
+                                                            </td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> PHP</h2>
+                                                            </td>
                                                         </tr>
                                                         <tr>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> jQuery</h2></td>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> Google Font API</h2></td>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> RSS</h2></td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> jQuery</h2>
+                                                            </td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> Google Font API</h2>
+                                                            </td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> RSS</h2>
+                                                            </td>
                                                             <td></td>
                                                         </tr>
                                                         <tr>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> jQuery UI</h2></td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> jQuery UI</h2>
+                                                            </td>
                                                             <td></td>
                                                             <td></td>
                                                             <td></td>
                                                         </tr>
                                                         <tr>
-                                                            <td><h2 class="font_14 fw_500"><img style="border-radius:0" width="40" height="40" src="assets/images/employer-ease-pics/pdf.svg" alt="pdf"> Core-Js</h2></td>
+                                                            <td>
+                                                                <h2 class="font_14 fw_500"><img style="border-radius:0"
+                                                                        width="40" height="40"
+                                                                        src="assets/images/employer-ease-pics/pdf.svg"
+                                                                        alt="pdf"> Core-Js</h2>
+                                                            </td>
                                                             <td></td>
                                                             <td></td>
                                                             <td></td>
@@ -2048,20 +2277,29 @@
                 </div>
             </div>
     </section>
-    <!-------------------------- ********** Section 1 ********** ------------------------->
-    <!-- ************************Scripts Start Here*********************************-->
     <!--------------------------------- Jquery --------------------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-------------------------------- Jquery Ends------------------------------->
     <!-- ------------------------------- Popper Js ----------------------------- -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        const navbar = document.getElementById('dashboard-2')
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    navbar.classList.add('navbar-scroll')
+  }
+  else {
+    navbar.classList.remove('navbar-scroll')
+  }
+});
+    </script>
     <script>
         // First Chart (myBarChart)
         const ctx1 = document.getElementById('myBarChart').getContext('2d');
@@ -2484,4 +2722,5 @@
         });
     </script>
 </body>
+
 </html>
