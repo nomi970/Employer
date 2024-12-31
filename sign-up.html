@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,43 +10,51 @@
     <link rel="stylesheet" href="./assets/css/common.css">
     <title>Get Started</title>
     <style>
-        .d__grid{
+        .d__grid {
             display: grid;
         }
-        .global_input{
+
+        .global_input {
             position: relative;
         }
-      #name-error,
-      #email-error,
-      #password-error{
-        position: absolute;
-        bottom: -22px;
-        left: 0;
-        color: red !important;
-        font-size: 14px;
-      }
+
+        #name-error,
+        #email-error,
+        #password-error {
+            position: absolute;
+            bottom: -22px;
+            left: 0;
+            color: red !important;
+            font-size: 14px;
+        }
+
         @media screen and (max-width: 992px) {
+
             /* .get_started_im{
                 display: none;
             } */
-            .n_none_500{
+            .n_none_500 {
                 display: none;
             }
-            .d__grid{
+
+            .d__grid {
                 display: unset;
                 border-radius: 0;
             }
-            .get_info_main_content{
+
+            .get_info_main_content {
                 margin-top: 40px;
             }
         }
     </style>
 </head>
+
 <body>
     <section class="" style="height: 100%;">
         <div class="main_get_started global-light-gray-bg">
             <div class="get_started_info global-bg-white d__grid">
-                <div class="main_logo" style="height: 0;"><img src="./assets/images/main-logo.png" alt="main-logo"></div>
+                <div class="main_logo" style="height: 0;"><img src="./assets/images/main-logo.png" alt="main-logo">
+                </div>
                 <!-- <div class="get_info_main_content">
                     <div class="text-center text-md-start">
                         <h2 class="font_36 fw_600 global-black">Sign up</h2>
@@ -100,19 +109,24 @@
                     </div>
                     <div>
                         <div class="global_input mt_32">
-                            <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="f-name">First Name <span class="required_span">*</span></label>
-                            <input class="mt-2" type="text" name="name" id="name" placeholder="Enter first name" required>
+                            <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="f-name">First Name <span
+                                    class="required_span">*</span></label>
+                            <input class="mt-2" type="text" name="name" id="name" placeholder="Enter first name"
+                                required>
                         </div>
                         <div class="global_input mt_20">
-                            <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="company-name">Email <span class="required_span">*</span></label>
+                            <label class="font_14 fw_500 ln_20 w-100 global-dark-gray" for="company-name">Email <span
+                                    class="required_span">*</span></label>
                             <input class="mt-2" type="email" name="email" id="email" placeholder="Enter your email">
                         </div>
                         <div class="global_input position-relative w-100 mt_20">
-                            <label for="password" class="font_14 fw_500 ln_20 w-100 global-dark-gray">Password <span class="required_span">*</span></label>
+                            <label for="password" class="font_14 fw_500 ln_20 w-100 global-dark-gray">Password <span
+                                    class="required_span">*</span></label>
                             <input id="password" class="mt-2" type="password" name="password" placeholder="Password" />
                             <span toggle="#password" class="field-icon toggle-password absolute cursor-pointer"
                                 style="top: 40px; right: 13px; position: absolute;">
-                                <img src="assets/images/icons/close-eye.svg" alt="Toggle Password Visibility" class="eye-icon">
+                                <img src="assets/images/icons/close-eye.svg" alt="Toggle Password Visibility"
+                                    class="eye-icon">
                             </span>
                         </div>
                     </div>
@@ -126,7 +140,8 @@
                             <p class="font_16 fw_600 ln_24 global-dark-gray">Sign in with Google</p>
                         </button>
                         <button type="button" class="d-flex align-items-center gap-2 justify-content-center mt-3">
-                            <img width="24" height="24" src="./assets/images/icons/linkedin-icon.svg" alt="linkedin-icon">
+                            <img width="24" height="24" src="./assets/images/icons/linkedin-icon.svg"
+                                alt="linkedin-icon">
                             <p class="font_16 fw_600 ln_24 global-dark-gray">Sign in with LinkedIn</p>
                         </button>
                     </div>
@@ -140,7 +155,8 @@
                     </div>
                 </form>
             </div>
-            <div class="n_none_500"><img class="get_started_im h_50vh_sm" width="100%" src="./assets/images/get-started-sec.png" alt="">
+            <div class="n_none_500"><img class="get_started_im h_50vh_sm" width="100%"
+                    src="./assets/images/get-started-sec.png" alt="">
             </div>
         </div>
     </section>
@@ -172,7 +188,7 @@
         });
     </script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $("#signupForm").validate({
                 rules: {
                     name: {
@@ -202,14 +218,15 @@
                 },
                 errorElement: "span",
                 errorClass: "text-danger",
-                highlight: function(element) {
+                highlight: function (element) {
                     $(element).addClass("is-invalid");
                 },
-                unhighlight: function(element) {
+                unhighlight: function (element) {
                     $(element).removeClass("is-invalid");
                 }
             });
         });
-        </script>
+    </script>
 </body>
+
 </html>
