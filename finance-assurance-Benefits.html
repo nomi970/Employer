@@ -30,6 +30,9 @@
             top: 18px;
             left: 20%;
         }
+        .mt_70{
+            margin-top: 70px;
+        }
 
         @media (max-width: 520px) {
             .location-card {
@@ -123,13 +126,13 @@
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#panelsStayOpen-collapseOne2" aria-expanded="true"
                                         aria-controls="panelsStayOpen-collapseOne">
-                                        <div class="nav-item custom-nav-item">
+                                        <a href="./finance-center.html" class="nav-item custom-nav-item">
                                             <span>
                                                 <img src="assets/images/employer-ease-pics/finance-assurance-icon.svg"
                                                     alt="icon">
                                             </span>
                                             <h2 class="text-white">Finance Center</h2>
-                                        </div>
+                                        </a>
                                     </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapseOne2" class="accordion-collapse collapse show">
@@ -591,20 +594,58 @@
                                                 <input class="form-control" id="lName" type="text"
                                                     placeholder="Sollivan">
                                             </div>
+                                            <div class="d-flex flex-column mt_70">
+                                                <div class="position-relative">
+                                                    <label class="d-flex align-items-center">
+                                                        <input class="global-check me-2" type="checkbox">
+                                                      <span class="tertiary-black fs_12 fw_400 j_family">Spouse</span>  
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="row g-4">
+                                        <div class="col-12 col-md-6">
+                                            <div class="d-flex flex-column">
+                                                <label class="tertiary-black pb-2 fs_12 fw_400 j_family"
+                                                    for="fName">First Name</label>
+                                                <input class="form-control" id="fName" type="text" placeholder="Lorem Ipsum">
+                                            </div>
                                             <div class="d-flex flex-column mt-4">
                                                 <label class="tertiary-black pb-2 fs_12 fw_400 j_family"
-                                                    for="fName">Home Address</label>
+                                                    for="fName">Date Of Birth</label>
                                                 <div class="position-relative">
-                                                    <input class="form-control benefits-forms-inputs" id="Address"
-                                                        type="text"
-                                                        placeholder="ABC, Street 123, Road XYZ, City, State">
-                                                    <div class="position-absolute " style="left: 10px; top:9px;"><a
-                                                            href="#"><img
-                                                                src="assets/images/employer-ease-pics/location-dot.svg"
+                                                    <input class="form-control" id="dateBirth" type="text"
+                                                        placeholder="28 February, 1998">
+                                                    <div class="position-absolute" style="right: 10px; top:7px;"><a
+                                                            id="calnedarIcon" href="#"><img
+                                                                src="assets/images/employer-ease-pics/calendar-gray.svg"
                                                                 alt=""></a>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="d-flex flex-column">
+                                                <label class="tertiary-black pb-2 fs_12 fw_400 j_family"
+                                                    for="lName">First Name</label>
+                                                <input class="form-control" id="lName" type="text"
+                                                    placeholder="Lorem Ipsum">
+                                            </div>
+                                            <div class="d-flex flex-column mt-4">
+                                                <div class="position-relative" bis_skin_checked="1">
+                                                    <label class="tertiary-black pb-2 fs_12 fw_400 j_family" for="dep">Department</label>
+                                                    <select class="" name="" id="">
+                                                        <option value="">Select Location</option>
+                                                        <option value="">Lahore</option>
+                                                        <option value="">Karachi</option>
+                                                        <option value="">Islamabad</option>
+                                                    </select>
+                                                    
+                                                </div>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                     <div class="d-flex gap-3 justify-content-end mt-4">
